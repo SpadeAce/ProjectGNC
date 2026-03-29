@@ -52,7 +52,12 @@ Excel 값만 바꾸는 경우 (필드 추가/삭제 없음).
 `TableData/` 폴더의 xlsx 파일을 열어 값을 수정하고 저장한다.
 
 ### 2. 변환 실행
-`Tools/RunTableTool.bat`을 더블클릭한다.
+아래 방법 중 하나로 실행한다.
+
+- **VSCode 단축키**: `Ctrl+Shift+B` (기본 빌드 태스크로 등록됨)
+- **VSCode 명령 팔레트**: `Ctrl+Shift+P` → `Tasks: Run Task` → `Run Table Tool`
+- **직접 실행**: `Tools/RunTableTool.bat` 더블클릭
+
 ```
 처리한 데이터 시트 수  : 12
 생성된 JSON 파일 수    : 12
@@ -102,6 +107,8 @@ Claude에서 `/add-table Xxx` 커맨드를 실행하면 아래 파일이 자동 
 
 ### 2. 데이터 수정
 `TableData/XxxDataTable.xlsx`에 해당 컬럼을 추가/삭제한다.
+**참고**: 스키마에 필드를 추가했지만 데이터 엑셀에 컬럼을 아직 만들지 않아도 에러 없이 진행된다.
+누락된 컬럼은 proto3 기본값(int→0, string→"", bool→false, enum→0번 값)으로 자동 채워진다.
 
 ### 3. 변환 실행
 `Tools/RunTableTool.bat` 더블클릭.
@@ -179,29 +186,50 @@ TextSub->SetLanguage(ELanguage::Eng);
 | FieldType | Proto 타입 | UE5 C++ 타입 | 비고 |
 |---|---|---|---|
 | `enum:EnumName` | EnumName (enum) | `EEnumName` | Enum.xlsx에 정의 필요 |
-| `asset:ClassName` | string | `TSoftObjectPtr<UClassName>` | UE5 에셋 경로 |
+| `asset:ClassName` | string | `TSoftObjectPtr<UClassName>` | 데이터 에셋 참조 |
+| `classref:ClassName` | string | `TSoftClassPtr<AClassName>` | BP 클래스 참조 |
 
-### asset 타입 사용법
+### asset / classref 타입 사용법
 
-에셋 참조가 필요한 필드에 `asset:ClassName`을 지정하면 파이프라인에서 문자열로 처리되고,
-C++ 구조체에서는 `TSoftObjectPtr`로 선언하여 에디터에서 에셋 드롭다운 선택이 가능해진다.
+에셋 참조 필드는 두 가지 타입으로 구분된다. 파이프라인 내부에서는 둘 다 `string`으로 처리되며, 차이는 C++ 코드 생성 시에만 발생한다.
 
-**스키마 예시** (`_Schema` 시트):
+| 타입 | 용도 | C++ 타입 | 에디터 UI |
+|---|---|---|---|
+| `asset:X` | 데이터 에셋 인스턴스 참조 | `TSoftObjectPtr<UX>` | 에셋 선택 드롭다운 |
+| `classref:X` | 블루프린트 클래스 참조 | `TSoftClassPtr<AX>` | BP 클래스 선택 드롭다운 |
+
+**에디터 설정값 보존**: asset/classref 타입 필드는 엑셀에 컬럼이 없어도 기존 JSON의 값이 자동 보존된다.
+UE5 에디터에서 수동 설정한 에셋 경로가 파이프라인 재실행 시 소실되지 않는다.
+엑셀에 해당 컬럼이 존재하면 엑셀 값이 우선 적용된다.
+
+**asset 예시** — 데이터 에셋 참조 (예: TileMapPreset):
 
 | MessageName | FieldName | FieldType | FieldNumber | Rule |
 |---|---|---|---|---|
 | StagePresetData | presetPath | asset:TileMapPreset | 4 | repeated |
 
-**C++ 구조체**:
 ```cpp
 UPROPERTY(EditAnywhere, BlueprintReadWrite)
 TArray<TSoftObjectPtr<UTileMapPreset>> PresetPath;
+
+// 로드
+UTileMapPreset* Preset = PresetRef.LoadSynchronous();
 ```
 
-**C++ 로드 코드**:
+**classref 예시** — BP 클래스 참조 (예: CardGameActor):
+
+| MessageName | FieldName | FieldType | FieldNumber | Rule |
+|---|---|---|---|---|
+| PawnData | prefabPath | classref:CardGameActor | 14 | optional |
+
 ```cpp
-// TSoftObjectPtr → 동기 로드
-UTileMapPreset* Preset = PresetRef.LoadSynchronous();
+UPROPERTY(EditAnywhere, BlueprintReadWrite)
+TSoftClassPtr<ACardGameActor> PrefabPath;
+
+// 클래스 로드
+UClass* ActorClass = PrefabPath.LoadSynchronous();
+// 스폰
+GetWorld()->SpawnActor<ACardGameActor>(ActorClass, SpawnTransform);
 ```
 
 **Excel 데이터 입력값**: UE5 패키지 경로 문자열

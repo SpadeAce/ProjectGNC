@@ -94,8 +94,8 @@ def _is_valid_cell(
                 return True
         return False
 
-    # asset:X 타입 — UE5 에셋 경로 문자열
-    if field_type.startswith("asset:"):
+    # asset:X / classref:X 타입 — UE5 에셋 경로 문자열
+    if field_type.startswith("asset:") or field_type.startswith("classref:"):
         return isinstance(value, str)
 
     if field_type in _SCALAR_TYPE_MAP:
@@ -162,7 +162,7 @@ def _validate_schema(excel_data: ExcelData) -> None:
                         sheet="_Schema",
                     )
 
-            # asset:X 타입은 별도 참조 검증 없음 (UE5 에셋 경로)
+            # asset:X / classref:X 타입은 별도 참조 검증 없음 (UE5 에셋 경로)
 
             # {X}IdAlias 필드는 반드시 대응하는 {X}Id 필드가 같은 메시지에 있어야 한다
             if fd.field_name != "idAlias" and fd.field_name.endswith("IdAlias"):
@@ -178,6 +178,7 @@ def _validate_schema(excel_data: ExcelData) -> None:
             # 알 수 없는 스칼라 타입 경고 (오류는 protoc에서 발생)
             if (not fd.field_type.startswith("enum:")
                     and not fd.field_type.startswith("asset:")
+                    and not fd.field_type.startswith("classref:")
                     and fd.field_type not in _SCALAR_TYPE_MAP):
                 print(
                     f"  경고: {msg_name}.{fd.field_name}의 타입 '{fd.field_type}'은 "
@@ -300,9 +301,9 @@ def _validate_data_sheet(
     missing -= alias_covered
 
     if missing:
-        raise ValidationError(
-            f"스키마에 있지만 시트에 없는 컬럼: {sorted(missing)}",
-            sheet=sheet_name,
+        print(
+            f"  경고: [{sheet_name}] 스키마에 있지만 시트에 없는 컬럼: {sorted(missing)} "
+            "→ 기본값(proto3 zero value)으로 채워집니다."
         )
     if extra:
         raise ValidationError(

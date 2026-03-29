@@ -225,11 +225,11 @@
   },
   {
     "id": 103,
-    "idAlias": "text_pawn_name_assult",
+    "idAlias": "text_pawn_name_assault",
     "kor": "돌격병",
     "eng": "Assult",
     "jpn": "",
-    "Name": "text_pawn_name_assult"
+    "Name": "text_pawn_name_assault"
   },
   {
     "id": 104,

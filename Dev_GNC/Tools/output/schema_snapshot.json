@@ -313,7 +313,7 @@
     {
       "field_name": "prefabPath",
       "field_number": 14,
-      "field_type": "string"
+      "field_type": "classref:CardGameActor"
     }
   ],
   "PawnGrowthData": [

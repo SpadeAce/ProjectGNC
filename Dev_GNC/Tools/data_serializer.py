@@ -139,8 +139,8 @@ def _coerce_scalar(value: Any, field_type: str, enum_lookup: _EnumLookup | None 
             f"enum '{enum_name}'을 찾을 수 없어 '{s}'를 변환할 수 없습니다."
         )
 
-    # asset:X 타입 — UE5 에셋 경로 문자열
-    if field_type.startswith("asset:"):
+    # asset:X / classref:X 타입 — UE5 에셋 경로 문자열
+    if field_type.startswith("asset:") or field_type.startswith("classref:"):
         return str(value)
 
     if field_type in ("float", "double"):

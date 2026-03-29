@@ -28,7 +28,7 @@
 'text_name_preset_zulu줄루"Zulu
 (etext_pawn_name_none신병"Recruit
 *ftext_pawn_name_scout	정찰병"Scout
-,gtext_pawn_name_assult	돌격병"Assult
+-gtext_pawn_name_assault	돌격병"Assult
 *htext_pawn_name_heavy	중갑병"Heavy
 4itext_pawn_name_specialist	특수병"
 Specialist

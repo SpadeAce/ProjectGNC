@@ -24,7 +24,7 @@ void UDPawn::InitFromId(int32 InPawnId, UDataSubsystem* DataSub, UTextSubsystem*
 
 	if (Data)
 	{
-		IconPath = Data->PrefabPath;
+		IconPath = Data->PrefabPath.ToString();
 	}
 
 	RecalculateStats();
@@ -38,7 +38,7 @@ void UDPawn::InitFromData(const FPawnDataRow* InData, UDataSubsystem* DataSub, U
 	{
 		Data = InData;
 		PawnId = InData->Id;
-		IconPath = InData->PrefabPath;
+		IconPath = InData->PrefabPath.ToString();
 	}
 
 	if (DataSub)

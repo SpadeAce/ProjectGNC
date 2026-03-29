@@ -16,7 +16,7 @@ allowed-tools: Read, Write, Edit, Glob, Grep
   - `RowStruct`: `F{BaseName}DataRow` 또는 `F{BaseName}Row` — proto 메시지명에 따라 결정
   - `TableVar`: `{BaseName}DataTable` (예: `BuffDataTable`)
   - `CacheVar`: `{BaseName}Cache` (예: `BuffCache`)
-  - `AssetPath`: `/Game/Variant_CardGame/DataTables/DT_{DataName}.DT_{DataName}`
+  - `AssetPath`: `/Game/CardGame/DataTables/DT_{DataName}.DT_{DataName}`
 
 ## 1단계: 사전 검증
 
@@ -31,28 +31,37 @@ allowed-tools: Read, Write, Edit, Glob, Grep
 - 없으면: "DT_{DataName}.json이 없습니다. RunTableTool.bat 실행 후 다시 시도하세요." 출력 후 중단.
 
 **중복 확인**
-- `Source/Dev_GNC/Variant_CardGame/Data/CardGameRowTypes.h`에서 `{RowStruct}` 가 이미 존재하면 "이미 등록된 테이블입니다." 출력 후 중단.
+- `Source/Dev_GNC/CardGame/Data/CardGameRowTypes.h`에서 `{RowStruct}` 가 이미 존재하면 "이미 등록된 테이블입니다." 출력 후 중단.
 
 ## 2단계: Proto 메시지 분석
 
 `Tools/output/proto/GameData.proto`에서 `message {DataName}` 의 필드 목록을 읽는다.
-각 필드에 대해:
-- proto 타입 → UE5 타입 매핑:
+**추가로** `Tools/output/schema_snapshot.json`에서 `{DataName}` 키의 원본 `field_type`을 참조한다.
+schema_snapshot의 `field_type`이 proto 타입보다 우선한다 (asset/classref 정보가 보존됨).
+
+각 필드에 대해 (schema_snapshot의 field_type 기준):
+- 타입 매핑:
   - `int32` → `int32`
   - `string` → `FString`
   - `float` → `float`
   - `bool` → `bool`
-  - enum 타입 → 대응하는 UENUM (CardGameTypes.h에서 확인)
-  - `repeated int32` → `TArray<int32>`
-  - `repeated string` → `TArray<FString>`
-  - `repeated float` → `TArray<float>`
-  - `repeated enum` → `TArray<E해당Enum>`
+  - `enum:EnumName` → 대응하는 UENUM `E{EnumName}` (CardGameTypes.h에서 확인)
+  - `asset:ClassName` → `TSoftObjectPtr<U{ClassName}>` (forward declaration 추가)
+  - `classref:ClassName` → `TSoftClassPtr<A{ClassName}>` (forward declaration 추가)
+- repeated 접두사가 있으면 `TArray<T>`로 감싼다
+  - 예: `repeated asset:X` → `TArray<TSoftObjectPtr<UX>>`
+  - 예: `repeated classref:X` → `TArray<TSoftClassPtr<AX>>`
+
+asset/classref 타입 필드가 있으면:
+- CardGameRowTypes.h 상단에 해당 클래스의 forward declaration을 추가한다 (이미 있으면 스킵)
+  - `asset:TileMapPreset` → `class UTileMapPreset;`
+  - `classref:CardGameActor` → `class ACardGameActor;`
 
 id 필드가 `int32`인지 `string`인지 확인한다 (기본값: `int32`).
 
 ## 3단계: CardGameRowTypes.h에 FTableRowBase 구조체 추가
 
-`Source/Dev_GNC/Variant_CardGame/Data/CardGameRowTypes.h`의 마지막 구조체 뒤에 추가한다.
+`Source/Dev_GNC/CardGame/Data/CardGameRowTypes.h`의 마지막 구조체 뒤에 추가한다.
 
 ```cpp
 USTRUCT(BlueprintType)

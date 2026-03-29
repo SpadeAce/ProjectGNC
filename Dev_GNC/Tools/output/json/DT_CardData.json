@@ -514,11 +514,11 @@
   },
   {
     "id": 20201,
-    "idAlias": "card_assult_skill1",
+    "idAlias": "card_assault_skill1",
     "type": "Stable",
     "target": "Enemy",
-    "name": "text_card_name_assult_skill1",
-    "desc": "text_card_desc_assult_skill1",
+    "name": "text_card_name_assault_skill1",
+    "desc": "text_card_desc_assault_skill1",
     "energyCost": 1,
     "range": 1,
     "effectId": [
@@ -531,15 +531,15 @@
     "price": 0,
     "radius": 0,
     "iconPath": "",
-    "Name": "card_assult_skill1"
+    "Name": "card_assault_skill1"
   },
   {
     "id": 20202,
-    "idAlias": "card_assult_skill2",
+    "idAlias": "card_assault_skill2",
     "type": "Stable",
     "target": "Enemy",
-    "name": "text_card_name_assult_skill2",
-    "desc": "text_card_desc_assult_skill2",
+    "name": "text_card_name_assault_skill2",
+    "desc": "text_card_desc_assault_skill2",
     "energyCost": 1,
     "range": 1,
     "effectId": [
@@ -552,15 +552,15 @@
     "price": 0,
     "radius": 0,
     "iconPath": "",
-    "Name": "card_assult_skill2"
+    "Name": "card_assault_skill2"
   },
   {
     "id": 20203,
-    "idAlias": "card_assult_skill3",
+    "idAlias": "card_assault_skill3",
     "type": "Stable",
     "target": "Enemy",
-    "name": "text_card_name_assult_skill3",
-    "desc": "text_card_desc_assult_skill3",
+    "name": "text_card_name_assault_skill3",
+    "desc": "text_card_desc_assault_skill3",
     "energyCost": 1,
     "range": 1,
     "effectId": [
@@ -573,15 +573,15 @@
     "price": 0,
     "radius": 0,
     "iconPath": "",
-    "Name": "card_assult_skill3"
+    "Name": "card_assault_skill3"
   },
   {
     "id": 20204,
-    "idAlias": "card_assult_skill4",
+    "idAlias": "card_assault_skill4",
     "type": "Stable",
     "target": "Enemy",
-    "name": "text_card_name_assult_skill4",
-    "desc": "text_card_desc_assult_skill4",
+    "name": "text_card_name_assault_skill4",
+    "desc": "text_card_desc_assault_skill4",
     "energyCost": 1,
     "range": 1,
     "effectId": [
@@ -594,15 +594,15 @@
     "price": 0,
     "radius": 0,
     "iconPath": "",
-    "Name": "card_assult_skill4"
+    "Name": "card_assault_skill4"
   },
   {
     "id": 20205,
-    "idAlias": "card_assult_skill5",
+    "idAlias": "card_assault_skill5",
     "type": "Stable",
     "target": "Enemy",
-    "name": "text_card_name_assult_skill5",
-    "desc": "text_card_desc_assult_skill5",
+    "name": "text_card_name_assault_skill5",
+    "desc": "text_card_desc_assault_skill5",
     "energyCost": 1,
     "range": 1,
     "effectId": [
@@ -615,7 +615,7 @@
     "price": 0,
     "radius": 0,
     "iconPath": "",
-    "Name": "card_assult_skill5"
+    "Name": "card_assault_skill5"
   },
   {
     "id": 20301,

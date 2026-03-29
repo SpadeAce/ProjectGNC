@@ -98,12 +98,56 @@ def _msg_to_dict(msg) -> dict:
 # 공개 API
 # ---------------------------------------------------------------------------
 
+def _load_existing_json(json_path: Path) -> dict[str, dict]:
+    """
+    기존 JSON 파일을 로드하여 {row_name: row_dict} 맵으로 반환한다.
+
+    파일이 없거나 파싱 실패 시 빈 dict를 반환한다.
+    """
+    if not json_path.exists():
+        return {}
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            rows = json.load(f)
+        return {row["Name"]: row for row in rows if "Name" in row}
+    except (json.JSONDecodeError, KeyError, TypeError):
+        return {}
+
+
+def _preserve_asset_fields(
+    rows: list[dict],
+    existing_map: dict[str, dict],
+    asset_field_names: list[str],
+    table_name: str,
+) -> None:
+    """
+    새 JSON 행에서 asset 필드 값이 비어있으면 기존 JSON의 값으로 복원한다. (in-place)
+
+    비어있는 기준: 빈 문자열(""), 빈 리스트([]), 또는 키 자체가 없는 경우.
+    """
+    for row in rows:
+        row_name = row.get("Name")
+        if not row_name or row_name not in existing_map:
+            continue
+
+        old_row = existing_map[row_name]
+        for field in asset_field_names:
+            new_val = row.get(field)
+            old_val = old_row.get(field)
+
+            # 새 값이 비어있고 기존 값이 존재하면 복원
+            if (new_val is None or new_val == "" or new_val == []) and old_val:
+                row[field] = old_val
+                print(f"  [PRESERVE] {table_name}.{field}: {row_name}")
+
+
 def export_bytes_to_json(
     bytes_dir: Path,
     pb2_dir: Path,
     output_dir: Path,
     package_name: str,
     table_names: list[str],
+    asset_fields: dict[str, list[str]] | None = None,
 ) -> list[str]:
     """
     .bytes 파일들을 UE5 DataTable JSON으로 변환한다.
@@ -114,6 +158,8 @@ def export_bytes_to_json(
         output_dir:   JSON 출력 디렉터리
         package_name: proto 패키지명 (예: "GameData")
         table_names:  변환할 테이블명 리스트
+        asset_fields: {테이블명: [asset 필드명, ...]} — 엑셀에 컬럼이 없을 때
+                      기존 JSON 값을 보존할 필드 목록. None이면 보존 안 함.
 
     Returns:
         생성된 JSON 파일 경로 문자열 목록
@@ -149,6 +195,15 @@ def export_bytes_to_json(
             rows.append(d)
 
         out_path = output_dir / f"DT_{table_name}.json"
+
+        # asset 필드 보존: 새 데이터에서 비어있으면 기존 JSON 값 복원
+        if asset_fields and table_name in asset_fields:
+            existing_map = _load_existing_json(out_path)
+            if existing_map:
+                _preserve_asset_fields(
+                    rows, existing_map,
+                    asset_fields[table_name], table_name,
+                )
         out_path.write_text(
             json.dumps(rows, ensure_ascii=False, indent=2),
             encoding="utf-8",

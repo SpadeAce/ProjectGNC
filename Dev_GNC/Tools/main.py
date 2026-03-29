@@ -185,9 +185,18 @@ def run_pipeline(args: argparse.Namespace) -> None:
         json_dir = TOOL_DIR / "output" / "json"
         table_names = list(excel_data.data.keys())
 
+        # 스키마에서 asset:X / classref:X 타입 필드 추출 (JSON 보존 대상)
+        asset_fields: dict[str, list[str]] = {}
+        for msg_name, fields in excel_data.schema.items():
+            af = [fd.field_name for fd in fields
+                  if fd.field_type.startswith("asset:") or fd.field_type.startswith("classref:")]
+            if af:
+                asset_fields[msg_name] = af
+
         json_files = export_bytes_to_json(
             bytes_dir, pb2_dir, json_dir,
             config["package_name"], table_names,
+            asset_fields=asset_fields,
         )
 
     # ------------------------------------------------------------------

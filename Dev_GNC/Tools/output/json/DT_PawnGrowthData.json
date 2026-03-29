@@ -164,7 +164,7 @@
   },
   {
     "id": 11,
-    "idAlias": "pawn_growth_assult_1",
+    "idAlias": "pawn_growth_assault_1",
     "classType": "Assault",
     "level": 1,
     "requireExp": 100,
@@ -178,11 +178,11 @@
       20201,
       20202
     ],
-    "Name": "pawn_growth_assult_1"
+    "Name": "pawn_growth_assault_1"
   },
   {
     "id": 12,
-    "idAlias": "pawn_growth_assult_2",
+    "idAlias": "pawn_growth_assault_2",
     "classType": "Assault",
     "level": 2,
     "requireExp": 200,
@@ -193,11 +193,11 @@
       1
     ],
     "cardId": [],
-    "Name": "pawn_growth_assult_2"
+    "Name": "pawn_growth_assault_2"
   },
   {
     "id": 13,
-    "idAlias": "pawn_growth_assult_3",
+    "idAlias": "pawn_growth_assault_3",
     "classType": "Assault",
     "level": 3,
     "requireExp": 300,
@@ -208,11 +208,11 @@
       1
     ],
     "cardId": [],
-    "Name": "pawn_growth_assult_3"
+    "Name": "pawn_growth_assault_3"
   },
   {
     "id": 14,
-    "idAlias": "pawn_growth_assult_4",
+    "idAlias": "pawn_growth_assault_4",
     "classType": "Assault",
     "level": 4,
     "requireExp": 400,
@@ -225,11 +225,11 @@
     "cardId": [
       20203
     ],
-    "Name": "pawn_growth_assult_4"
+    "Name": "pawn_growth_assault_4"
   },
   {
     "id": 15,
-    "idAlias": "pawn_growth_assult_5",
+    "idAlias": "pawn_growth_assault_5",
     "classType": "Assault",
     "level": 5,
     "requireExp": 500,
@@ -240,11 +240,11 @@
       1
     ],
     "cardId": [],
-    "Name": "pawn_growth_assult_5"
+    "Name": "pawn_growth_assault_5"
   },
   {
     "id": 16,
-    "idAlias": "pawn_growth_assult_6",
+    "idAlias": "pawn_growth_assault_6",
     "classType": "Assault",
     "level": 6,
     "requireExp": 600,
@@ -257,11 +257,11 @@
       1
     ],
     "cardId": [],
-    "Name": "pawn_growth_assult_6"
+    "Name": "pawn_growth_assault_6"
   },
   {
     "id": 17,
-    "idAlias": "pawn_growth_assult_7",
+    "idAlias": "pawn_growth_assault_7",
     "classType": "Assault",
     "level": 7,
     "requireExp": 700,
@@ -276,11 +276,11 @@
     "cardId": [
       20204
     ],
-    "Name": "pawn_growth_assult_7"
+    "Name": "pawn_growth_assault_7"
   },
   {
     "id": 18,
-    "idAlias": "pawn_growth_assult_8",
+    "idAlias": "pawn_growth_assault_8",
     "classType": "Assault",
     "level": 8,
     "requireExp": 800,
@@ -293,11 +293,11 @@
       1
     ],
     "cardId": [],
-    "Name": "pawn_growth_assult_8"
+    "Name": "pawn_growth_assault_8"
   },
   {
     "id": 19,
-    "idAlias": "pawn_growth_assult_9",
+    "idAlias": "pawn_growth_assault_9",
     "classType": "Assault",
     "level": 9,
     "requireExp": 900,
@@ -310,11 +310,11 @@
       1
     ],
     "cardId": [],
-    "Name": "pawn_growth_assult_9"
+    "Name": "pawn_growth_assault_9"
   },
   {
     "id": 20,
-    "idAlias": "pawn_growth_assult_10",
+    "idAlias": "pawn_growth_assault_10",
     "classType": "Assault",
     "level": 10,
     "requireExp": 1000,
@@ -329,7 +329,7 @@
     "cardId": [
       20205
     ],
-    "Name": "pawn_growth_assult_10"
+    "Name": "pawn_growth_assault_10"
   },
   {
     "id": 21,

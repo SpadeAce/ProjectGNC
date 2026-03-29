@@ -8,6 +8,7 @@
 #include "CardGameRowTypes.generated.h"
 
 class UTileMapPreset;
+class ACardGameActor;
 
 // ── 1. PawnData ──────────────────────────────────────────
 USTRUCT(BlueprintType)
@@ -28,7 +29,7 @@ struct FPawnDataRow : public FTableRowBase
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Sight = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Accuracy = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Ammo = 0;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString PrefabPath;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) TSoftClassPtr<ACardGameActor> PrefabPath;
 };
 
 // ── 2. MonsterData ───────────────────────────────────────

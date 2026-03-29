@@ -123,7 +123,7 @@ def _to_proto_type(field_type: str) -> str:
     """
     if field_type.startswith("enum:"):
         return field_type[5:]
-    if field_type.startswith("asset:"):
+    if field_type.startswith("asset:") or field_type.startswith("classref:"):
         return "string"
     return field_type
 
