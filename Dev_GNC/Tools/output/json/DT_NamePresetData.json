@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "name": "text_name_preset_alpha",
+    "Name": "Row_1"
+  },
+  {
+    "id": 2,
+    "name": "text_name_preset_bravo",
+    "Name": "Row_2"
+  },
+  {
+    "id": 3,
+    "name": "text_name_preset_charlie",
+    "Name": "Row_3"
+  },
+  {
+    "id": 4,
+    "name": "text_name_preset_delta",
+    "Name": "Row_4"
+  },
+  {
+    "id": 5,
+    "name": "text_name_preset_echo",
+    "Name": "Row_5"
+  },
+  {
+    "id": 6,
+    "name": "text_name_preset_foxtrot",
+    "Name": "Row_6"
+  },
+  {
+    "id": 7,
+    "name": "text_name_preset_golf",
+    "Name": "Row_7"
+  },
+  {
+    "id": 8,
+    "name": "text_name_preset_hotel",
+    "Name": "Row_8"
+  },
+  {
+    "id": 9,
+    "name": "text_name_preset_india",
+    "Name": "Row_9"
+  },
+  {
+    "id": 10,
+    "name": "text_name_preset_juliet",
+    "Name": "Row_10"
+  },
+  {
+    "id": 11,
+    "name": "text_name_preset_kilo",
+    "Name": "Row_11"
+  },
+  {
+    "id": 12,
+    "name": "text_name_preset_lima",
+    "Name": "Row_12"
+  },
+  {
+    "id": 13,
+    "name": "text_name_preset_mike",
+    "Name": "Row_13"
+  },
+  {
+    "id": 14,
+    "name": "text_name_preset_november",
+    "Name": "Row_14"
+  },
+  {
+    "id": 15,
+    "name": "text_name_preset_oscar",
+    "Name": "Row_15"
+  },
+  {
+    "id": 16,
+    "name": "text_name_preset_papa",
+    "Name": "Row_16"
+  },
+  {
+    "id": 17,
+    "name": "text_name_preset_quebec",
+    "Name": "Row_17"
+  },
+  {
+    "id": 18,
+    "name": "text_name_preset_romeo",
+    "Name": "Row_18"
+  },
+  {
+    "id": 19,
+    "name": "text_name_preset_sierra",
+    "Name": "Row_19"
+  },
+  {
+    "id": 20,
+    "name": "text_name_preset_tango",
+    "Name": "Row_20"
+  },
+  {
+    "id": 21,
+    "name": "text_name_preset_uniform",
+    "Name": "Row_21"
+  },
+  {
+    "id": 22,
+    "name": "text_name_preset_victor",
+    "Name": "Row_22"
+  },
+  {
+    "id": 23,
+    "name": "text_name_preset_whiskey",
+    "Name": "Row_23"
+  },
+  {
+    "id": 24,
+    "name": "text_name_preset_xray",
+    "Name": "Row_24"
+  },
+  {
+    "id": 25,
+    "name": "text_name_preset_yankee",
+    "Name": "Row_25"
+  },
+  {
+    "id": 26,
+    "name": "text_name_preset_zulu",
+    "Name": "Row_26"
+  }
+]

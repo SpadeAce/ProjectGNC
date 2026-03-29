@@ -1,0 +1,269 @@
+[
+  {
+    "id": 10001,
+    "idAlias": "equip_weapon_pistol",
+    "name": "text_equip_weapon_pistol",
+    "slot": "WeaponMain",
+    "price": 50,
+    "iconPath": "Textures/Icon/Equipment/equip_weapon_pistol",
+    "statusType": [
+      "Atk",
+      "AmmoCap"
+    ],
+    "statusValue": [
+      1,
+      2
+    ],
+    "cardId": [
+      101,
+      101
+    ],
+    "Name": "equip_weapon_pistol"
+  },
+  {
+    "id": 10002,
+    "idAlias": "equip_weapon_rifle",
+    "name": "text_equip_weapon_rifle",
+    "slot": "WeaponMain",
+    "price": 100,
+    "iconPath": "Textures/Icon/Equipment/equip_weapon_rifle",
+    "statusType": [
+      "Atk",
+      "AmmoCap"
+    ],
+    "statusValue": [
+      2,
+      3
+    ],
+    "cardId": [
+      102,
+      102,
+      102
+    ],
+    "Name": "equip_weapon_rifle"
+  },
+  {
+    "id": 10003,
+    "idAlias": "equip_weapon_sniper_rifle",
+    "name": "text_equip_weapon_sniper_rifle",
+    "slot": "WeaponMain",
+    "price": 100,
+    "iconPath": "Textures/Icon/Equipment/equip_weapon_sniper",
+    "statusType": [
+      "Atk",
+      "AmmoCap"
+    ],
+    "statusValue": [
+      5,
+      2
+    ],
+    "cardId": [
+      105
+    ],
+    "Name": "equip_weapon_sniper_rifle"
+  },
+  {
+    "id": 10004,
+    "idAlias": "equip_weapon_shotgun",
+    "name": "text_equip_weapon_shotgun",
+    "slot": "WeaponMain",
+    "price": 100,
+    "iconPath": "Textures/Icon/Equipment/equip_weapon_shootgun",
+    "statusType": [
+      "Atk",
+      "AmmoCap"
+    ],
+    "statusValue": [
+      3,
+      2
+    ],
+    "cardId": [
+      103,
+      103,
+      104
+    ],
+    "Name": "equip_weapon_shotgun"
+  },
+  {
+    "id": 30001,
+    "idAlias": "equip_armor_light",
+    "name": "text_equip_armor_light",
+    "slot": "Armor",
+    "price": 100,
+    "iconPath": "Textures/Icon/Equipment/equip_armor_light",
+    "statusType": [
+      "Def",
+      "Movement"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "equip_armor_light"
+  },
+  {
+    "id": 30002,
+    "idAlias": "equip_armor_medium",
+    "name": "text_equip_armor_medium",
+    "slot": "Armor",
+    "price": 100,
+    "iconPath": "Textures/Icon/Equipment/equip_armor_medium",
+    "statusType": [
+      "Def"
+    ],
+    "statusValue": [
+      2
+    ],
+    "cardId": [],
+    "Name": "equip_armor_medium"
+  },
+  {
+    "id": 30003,
+    "idAlias": "equip_armor_heavy",
+    "name": "text_equip_armor_heavy",
+    "slot": "Armor",
+    "price": 100,
+    "iconPath": "Textures/Icon/Equipment/equip_armor_heavy",
+    "statusType": [
+      "Def",
+      "Shield"
+    ],
+    "statusValue": [
+      3,
+      5
+    ],
+    "cardId": [],
+    "Name": "equip_armor_heavy"
+  },
+  {
+    "id": 50101,
+    "idAlias": "equip_tool_grenade",
+    "name": "text_equip_tool_grenade",
+    "slot": "Tool",
+    "price": 50,
+    "iconPath": "Textures/Card/Grenade",
+    "cardId": [
+      201
+    ],
+    "statusType": [],
+    "statusValue": [],
+    "Name": "equip_tool_grenade"
+  },
+  {
+    "id": 50102,
+    "idAlias": "equip_tool_grenade_smoke",
+    "name": "text_equip_tool_grenade_smoke",
+    "slot": "Tool",
+    "price": 50,
+    "iconPath": "Textures/Card/26",
+    "cardId": [
+      202
+    ],
+    "statusType": [],
+    "statusValue": [],
+    "Name": "equip_tool_grenade_smoke"
+  },
+  {
+    "id": 50103,
+    "idAlias": "equip_tool_grenade_flashbang",
+    "name": "text_equip_tool_grenade_flashbang",
+    "slot": "Tool",
+    "price": 50,
+    "iconPath": "Textures/Card/37",
+    "cardId": [
+      203
+    ],
+    "statusType": [],
+    "statusValue": [],
+    "Name": "equip_tool_grenade_flashbang"
+  },
+  {
+    "id": 50104,
+    "idAlias": "equip_tool_grenade_incendiary",
+    "name": "text_equip_tool_grenade_incendiary",
+    "slot": "Tool",
+    "price": 50,
+    "iconPath": "Textures/Card/14",
+    "cardId": [
+      204
+    ],
+    "statusType": [],
+    "statusValue": [],
+    "Name": "equip_tool_grenade_incendiary"
+  },
+  {
+    "id": 50105,
+    "idAlias": "equip_tool_grenade_flare",
+    "name": "text_equip_tool_grenade_flare",
+    "slot": "Tool",
+    "price": 50,
+    "iconPath": "Textures/Card/11",
+    "cardId": [
+      205
+    ],
+    "statusType": [],
+    "statusValue": [],
+    "Name": "equip_tool_grenade_flare"
+  },
+  {
+    "id": 50201,
+    "idAlias": "equip_tool_medikit",
+    "name": "text_equip_tool_medikit",
+    "slot": "Tool",
+    "price": 50,
+    "iconPath": "Textures/Card/2",
+    "cardId": [
+      206
+    ],
+    "statusType": [],
+    "statusValue": [],
+    "Name": "equip_tool_medikit"
+  },
+  {
+    "id": 50301,
+    "idAlias": "equip_tool_plate",
+    "name": "text_equip_tool_plate",
+    "slot": "Tool",
+    "price": 50,
+    "iconPath": "Textures/Card/48",
+    "cardId": [
+      207
+    ],
+    "statusType": [],
+    "statusValue": [],
+    "Name": "equip_tool_plate"
+  },
+  {
+    "id": 60101,
+    "idAlias": "equip_tool_backpack",
+    "name": "text_equip_tool_backpack",
+    "slot": "Tool",
+    "price": 100,
+    "iconPath": "Textures/Card/Backpack",
+    "statusType": [
+      "CardCap"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "equip_tool_backpack"
+  },
+  {
+    "id": 60102,
+    "idAlias": "equip_tool_extended_magazine",
+    "name": "text_equip_tool_extended_magazine",
+    "slot": "Tool",
+    "price": 100,
+    "iconPath": "Textures/Card/1",
+    "statusType": [
+      "AmmoCap"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "equip_tool_extended_magazine"
+  }
+]

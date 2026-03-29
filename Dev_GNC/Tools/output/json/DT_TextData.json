@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "idAlias": "text_name_preset_alpha",
+    "kor": "알파",
+    "eng": "Alpha",
+    "jpn": "",
+    "Name": "text_name_preset_alpha"
+  },
+  {
+    "id": 2,
+    "idAlias": "text_name_preset_bravo",
+    "kor": "브라보",
+    "eng": "Bravo",
+    "jpn": "",
+    "Name": "text_name_preset_bravo"
+  },
+  {
+    "id": 3,
+    "idAlias": "text_name_preset_charlie",
+    "kor": "찰리",
+    "eng": "Charlie",
+    "jpn": "",
+    "Name": "text_name_preset_charlie"
+  },
+  {
+    "id": 4,
+    "idAlias": "text_name_preset_delta",
+    "kor": "델타",
+    "eng": "Delta",
+    "jpn": "",
+    "Name": "text_name_preset_delta"
+  },
+  {
+    "id": 5,
+    "idAlias": "text_name_preset_echo",
+    "kor": "에코",
+    "eng": "Echo",
+    "jpn": "",
+    "Name": "text_name_preset_echo"
+  },
+  {
+    "id": 6,
+    "idAlias": "text_name_preset_foxtrot",
+    "kor": "폭스트롯",
+    "eng": "Foxtrot",
+    "jpn": "",
+    "Name": "text_name_preset_foxtrot"
+  },
+  {
+    "id": 7,
+    "idAlias": "text_name_preset_golf",
+    "kor": "골프",
+    "eng": "Golf",
+    "jpn": "",
+    "Name": "text_name_preset_golf"
+  },
+  {
+    "id": 8,
+    "idAlias": "text_name_preset_hotel",
+    "kor": "호텔",
+    "eng": "Hotel",
+    "jpn": "",
+    "Name": "text_name_preset_hotel"
+  },
+  {
+    "id": 9,
+    "idAlias": "text_name_preset_india",
+    "kor": "인디아",
+    "eng": "India",
+    "jpn": "",
+    "Name": "text_name_preset_india"
+  },
+  {
+    "id": 10,
+    "idAlias": "text_name_preset_juliet",
+    "kor": "줄리엣",
+    "eng": "Juliet",
+    "jpn": "",
+    "Name": "text_name_preset_juliet"
+  },
+  {
+    "id": 11,
+    "idAlias": "text_name_preset_kilo",
+    "kor": "킬로",
+    "eng": "Kilo",
+    "jpn": "",
+    "Name": "text_name_preset_kilo"
+  },
+  {
+    "id": 12,
+    "idAlias": "text_name_preset_lima",
+    "kor": "리마",
+    "eng": "Lima",
+    "jpn": "",
+    "Name": "text_name_preset_lima"
+  },
+  {
+    "id": 13,
+    "idAlias": "text_name_preset_mike",
+    "kor": "마이크",
+    "eng": "Mike",
+    "jpn": "",
+    "Name": "text_name_preset_mike"
+  },
+  {
+    "id": 14,
+    "idAlias": "text_name_preset_november",
+    "kor": "노벰버",
+    "eng": "November",
+    "jpn": "",
+    "Name": "text_name_preset_november"
+  },
+  {
+    "id": 15,
+    "idAlias": "text_name_preset_oscar",
+    "kor": "오스카",
+    "eng": "Oscar",
+    "jpn": "",
+    "Name": "text_name_preset_oscar"
+  },
+  {
+    "id": 16,
+    "idAlias": "text_name_preset_papa",
+    "kor": "파파",
+    "eng": "Papa",
+    "jpn": "",
+    "Name": "text_name_preset_papa"
+  },
+  {
+    "id": 17,
+    "idAlias": "text_name_preset_quebec",
+    "kor": "퀘벡",
+    "eng": "Quebec",
+    "jpn": "",
+    "Name": "text_name_preset_quebec"
+  },
+  {
+    "id": 18,
+    "idAlias": "text_name_preset_romeo",
+    "kor": "로미오",
+    "eng": "Romeo",
+    "jpn": "",
+    "Name": "text_name_preset_romeo"
+  },
+  {
+    "id": 19,
+    "idAlias": "text_name_preset_sierra",
+    "kor": "시에라",
+    "eng": "Sierra",
+    "jpn": "",
+    "Name": "text_name_preset_sierra"
+  },
+  {
+    "id": 20,
+    "idAlias": "text_name_preset_tango",
+    "kor": "탱고",
+    "eng": "Tango",
+    "jpn": "",
+    "Name": "text_name_preset_tango"
+  },
+  {
+    "id": 21,
+    "idAlias": "text_name_preset_uniform",
+    "kor": "유니폼",
+    "eng": "Uniform",
+    "jpn": "",
+    "Name": "text_name_preset_uniform"
+  },
+  {
+    "id": 22,
+    "idAlias": "text_name_preset_victor",
+    "kor": "빅터",
+    "eng": "Victor",
+    "jpn": "",
+    "Name": "text_name_preset_victor"
+  },
+  {
+    "id": 23,
+    "idAlias": "text_name_preset_whiskey",
+    "kor": "위스키",
+    "eng": "Whiskey",
+    "jpn": "",
+    "Name": "text_name_preset_whiskey"
+  },
+  {
+    "id": 24,
+    "idAlias": "text_name_preset_xray",
+    "kor": "엑스레이",
+    "eng": "XRay",
+    "jpn": "",
+    "Name": "text_name_preset_xray"
+  },
+  {
+    "id": 25,
+    "idAlias": "text_name_preset_yankee",
+    "kor": "양키",
+    "eng": "Yankee",
+    "jpn": "",
+    "Name": "text_name_preset_yankee"
+  },
+  {
+    "id": 26,
+    "idAlias": "text_name_preset_zulu",
+    "kor": "줄루",
+    "eng": "Zulu",
+    "jpn": "",
+    "Name": "text_name_preset_zulu"
+  },
+  {
+    "id": 101,
+    "idAlias": "text_pawn_name_none",
+    "kor": "신병",
+    "eng": "Recruit",
+    "jpn": "",
+    "Name": "text_pawn_name_none"
+  },
+  {
+    "id": 102,
+    "idAlias": "text_pawn_name_scout",
+    "kor": "정찰병",
+    "eng": "Scout",
+    "jpn": "",
+    "Name": "text_pawn_name_scout"
+  },
+  {
+    "id": 103,
+    "idAlias": "text_pawn_name_assult",
+    "kor": "돌격병",
+    "eng": "Assult",
+    "jpn": "",
+    "Name": "text_pawn_name_assult"
+  },
+  {
+    "id": 104,
+    "idAlias": "text_pawn_name_heavy",
+    "kor": "중갑병",
+    "eng": "Heavy",
+    "jpn": "",
+    "Name": "text_pawn_name_heavy"
+  },
+  {
+    "id": 105,
+    "idAlias": "text_pawn_name_specialist",
+    "kor": "특수병",
+    "eng": "Specialist",
+    "jpn": "",
+    "Name": "text_pawn_name_specialist"
+  },
+  {
+    "id": 1001,
+    "idAlias": "text_card_name_shoot",
+    "kor": "사격",
+    "eng": "Shoot",
+    "jpn": "",
+    "Name": "text_card_name_shoot"
+  },
+  {
+    "id": 1002,
+    "idAlias": "text_card_name_shoot_slug",
+    "kor": "슬러그샷",
+    "eng": "Slug",
+    "jpn": "",
+    "Name": "text_card_name_shoot_slug"
+  },
+  {
+    "id": 1003,
+    "idAlias": "text_card_name_shoot_snipe",
+    "kor": "저격",
+    "eng": "Snipe",
+    "jpn": "",
+    "Name": "text_card_name_shoot_snipe"
+  },
+  {
+    "id": 1004,
+    "idAlias": "text_card_name_grenade",
+    "kor": "수류탄",
+    "eng": "Grenade",
+    "jpn": "",
+    "Name": "text_card_name_grenade"
+  },
+  {
+    "id": 1005,
+    "idAlias": "text_card_name_grenade_smoke",
+    "kor": "연막탄",
+    "eng": "Smoke",
+    "jpn": "",
+    "Name": "text_card_name_grenade_smoke"
+  },
+  {
+    "id": 1006,
+    "idAlias": "text_card_name_grenade_flashbang",
+    "kor": "섬광탄",
+    "eng": "Flash Bang",
+    "jpn": "",
+    "Name": "text_card_name_grenade_flashbang"
+  },
+  {
+    "id": 1007,
+    "idAlias": "text_card_name_grenade_incendiary",
+    "kor": "소이탄",
+    "eng": "Incendiary",
+    "jpn": "",
+    "Name": "text_card_name_grenade_incendiary"
+  },
+  {
+    "id": 1008,
+    "idAlias": "text_card_name_grenade_flare",
+    "kor": "신호탄",
+    "eng": "Flare",
+    "jpn": "",
+    "Name": "text_card_name_grenade_flare"
+  },
+  {
+    "id": 1009,
+    "idAlias": "text_card_name_medikit",
+    "kor": "치료킷",
+    "eng": "Medikit",
+    "jpn": "",
+    "Name": "text_card_name_medikit"
+  },
+  {
+    "id": 1010,
+    "idAlias": "text_card_name_plate",
+    "kor": "방탄판",
+    "eng": "Plate",
+    "jpn": "",
+    "Name": "text_card_name_plate"
+  },
+  {
+    "id": 1011,
+    "idAlias": "text_card_name_reload",
+    "kor": "재장전",
+    "eng": "Reload",
+    "jpn": "",
+    "Name": "text_card_name_reload"
+  },
+  {
+    "id": 1012,
+    "idAlias": "text_card_name_supply",
+    "kor": "보급품",
+    "eng": "Supply",
+    "jpn": "",
+    "Name": "text_card_name_supply"
+  },
+  {
+    "id": 2001,
+    "idAlias": "text_card_desc_enemy_attack",
+    "kor": "단일 적에게 <color=#ff0000>{0}피해</color>를 줍니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_enemy_attack"
+  },
+  {
+    "id": 2002,
+    "idAlias": "text_card_desc_ground_attack",
+    "kor": "지정된 범위에 <color=#ff0000>{0}피해</color>를 줍니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_ground_attack"
+  },
+  {
+    "id": 2003,
+    "idAlias": "text_card_desc_smoke",
+    "kor": "지정된 범위에 연막을 설치합니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_smoke"
+  },
+  {
+    "id": 2004,
+    "idAlias": "text_card_desc_flashbang",
+    "kor": "지정된 범위에 기절 효과를 발생시킵니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_flashbang"
+  },
+  {
+    "id": 2005,
+    "idAlias": "text_card_desc_incendiary",
+    "kor": "지정된 범위에 화상 효과를 발생시킵니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_incendiary"
+  },
+  {
+    "id": 2006,
+    "idAlias": "text_card_desc_flare",
+    "kor": "지정된 위치에 신호탄을 설치합니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_flare"
+  },
+  {
+    "id": 2007,
+    "idAlias": "text_card_desc_medikit",
+    "kor": "단일 아군을 <color=#00ff00>{0}회복</color>합니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_medikit"
+  },
+  {
+    "id": 2008,
+    "idAlias": "text_card_desc_medikit_self",
+    "kor": "<color=#00ff00>{0}회복</color>합니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_medikit_self"
+  },
+  {
+    "id": 2009,
+    "idAlias": "text_card_desc_plate",
+    "kor": "자신에게 <color=#0000ff>{0}보호막</color>을 부여합니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_plate"
+  },
+  {
+    "id": 2010,
+    "idAlias": "text_card_desc_reload",
+    "kor": "탄약을 모두 회복합니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_reload"
+  },
+  {
+    "id": 2011,
+    "idAlias": "text_card_desc_supply",
+    "kor": "카드를 {0}장 획득합니다.",
+    "eng": "",
+    "jpn": "",
+    "Name": "text_card_desc_supply"
+  },
+  {
+    "id": 3001,
+    "idAlias": "text_equip_weapon_pistol",
+    "kor": "권총",
+    "eng": "Pistol",
+    "jpn": "",
+    "Name": "text_equip_weapon_pistol"
+  },
+  {
+    "id": 3002,
+    "idAlias": "text_equip_weapon_rifle",
+    "kor": "소총",
+    "eng": "Rifle",
+    "jpn": "",
+    "Name": "text_equip_weapon_rifle"
+  },
+  {
+    "id": 3003,
+    "idAlias": "text_equip_weapon_sniper_rifle",
+    "kor": "저격총",
+    "eng": "SR",
+    "jpn": "",
+    "Name": "text_equip_weapon_sniper_rifle"
+  },
+  {
+    "id": 3004,
+    "idAlias": "text_equip_weapon_shotgun",
+    "kor": "산탄총",
+    "eng": "Shotgun",
+    "jpn": "",
+    "Name": "text_equip_weapon_shotgun"
+  },
+  {
+    "id": 3005,
+    "idAlias": "text_equip_armor_light",
+    "kor": "경량 방탄복",
+    "eng": "Light Armor",
+    "jpn": "",
+    "Name": "text_equip_armor_light"
+  },
+  {
+    "id": 3006,
+    "idAlias": "text_equip_armor_medium",
+    "kor": "표준 방탄복",
+    "eng": "Medium Armor",
+    "jpn": "",
+    "Name": "text_equip_armor_medium"
+  },
+  {
+    "id": 3007,
+    "idAlias": "text_equip_armor_heavy",
+    "kor": "중량 방탄복",
+    "eng": "Heavy Armor",
+    "jpn": "",
+    "Name": "text_equip_armor_heavy"
+  },
+  {
+    "id": 3008,
+    "idAlias": "text_equip_tool_grenade",
+    "kor": "수류탄",
+    "eng": "Grenade",
+    "jpn": "",
+    "Name": "text_equip_tool_grenade"
+  },
+  {
+    "id": 3009,
+    "idAlias": "text_equip_tool_grenade_smoke",
+    "kor": "연막탄",
+    "eng": "Smoke",
+    "jpn": "",
+    "Name": "text_equip_tool_grenade_smoke"
+  },
+  {
+    "id": 3010,
+    "idAlias": "text_equip_tool_grenade_flashbang",
+    "kor": "섬광탄",
+    "eng": "Flash Bang",
+    "jpn": "",
+    "Name": "text_equip_tool_grenade_flashbang"
+  },
+  {
+    "id": 3011,
+    "idAlias": "text_equip_tool_grenade_incendiary",
+    "kor": "소이탄",
+    "eng": "Incendiary",
+    "jpn": "",
+    "Name": "text_equip_tool_grenade_incendiary"
+  },
+  {
+    "id": 3012,
+    "idAlias": "text_equip_tool_grenade_flare",
+    "kor": "신호탄",
+    "eng": "Flare",
+    "jpn": "",
+    "Name": "text_equip_tool_grenade_flare"
+  },
+  {
+    "id": 3013,
+    "idAlias": "text_equip_tool_medikit",
+    "kor": "치료킷",
+    "eng": "Medikit",
+    "jpn": "",
+    "Name": "text_equip_tool_medikit"
+  },
+  {
+    "id": 3014,
+    "idAlias": "text_equip_tool_plate",
+    "kor": "방탄판",
+    "eng": "Plate",
+    "jpn": "",
+    "Name": "text_equip_tool_plate"
+  },
+  {
+    "id": 3015,
+    "idAlias": "text_equip_tool_backpack",
+    "kor": "전술배낭",
+    "eng": "Backpack",
+    "jpn": "",
+    "Name": "text_equip_tool_backpack"
+  },
+  {
+    "id": 3016,
+    "idAlias": "text_equip_tool_extended_magazine",
+    "kor": "확장탄창",
+    "eng": "Magazine",
+    "jpn": "",
+    "Name": "text_equip_tool_extended_magazine"
+  }
+]

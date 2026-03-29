@@ -1,0 +1,531 @@
+{
+  "CardData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "type",
+      "field_number": 3,
+      "field_type": "enum:CardType"
+    },
+    {
+      "field_name": "target",
+      "field_number": 4,
+      "field_type": "enum:TargetType"
+    },
+    {
+      "field_name": "name",
+      "field_number": 5,
+      "field_type": "string"
+    },
+    {
+      "field_name": "desc",
+      "field_number": 6,
+      "field_type": "string"
+    },
+    {
+      "field_name": "energyCost",
+      "field_number": 7,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "ammoCost",
+      "field_number": 8,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "price",
+      "field_number": 9,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "range",
+      "field_number": 10,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "radius",
+      "field_number": 11,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "effectId",
+      "field_number": 12,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "effectIdAlias",
+      "field_number": 13,
+      "field_type": "string"
+    },
+    {
+      "field_name": "effectValue",
+      "field_number": 14,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "iconPath",
+      "field_number": 15,
+      "field_type": "string"
+    }
+  ],
+  "CardEffectData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "name",
+      "field_number": 3,
+      "field_type": "string"
+    },
+    {
+      "field_name": "effectType",
+      "field_number": 4,
+      "field_type": "enum:CardEffectType"
+    },
+    {
+      "field_name": "target",
+      "field_number": 5,
+      "field_type": "enum:TargetType"
+    },
+    {
+      "field_name": "duration",
+      "field_number": 6,
+      "field_type": "int32"
+    }
+  ],
+  "EquipmentData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "name",
+      "field_number": 3,
+      "field_type": "string"
+    },
+    {
+      "field_name": "slot",
+      "field_number": 4,
+      "field_type": "enum:EquipSlotType"
+    },
+    {
+      "field_name": "price",
+      "field_number": 5,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "iconPath",
+      "field_number": 6,
+      "field_type": "string"
+    },
+    {
+      "field_name": "statusType",
+      "field_number": 7,
+      "field_type": "enum:StatusType"
+    },
+    {
+      "field_name": "statusValue",
+      "field_number": 8,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "cardId",
+      "field_number": 9,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "cardIdAlias",
+      "field_number": 10,
+      "field_type": "string"
+    }
+  ],
+  "MonsterData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "name",
+      "field_number": 3,
+      "field_type": "string"
+    },
+    {
+      "field_name": "hp",
+      "field_number": 4,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "shield",
+      "field_number": 5,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "armor",
+      "field_number": 6,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "movement",
+      "field_number": 7,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "attack",
+      "field_number": 8,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "range",
+      "field_number": 9,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "sight",
+      "field_number": 10,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "prefabPath",
+      "field_number": 11,
+      "field_type": "string"
+    },
+    {
+      "field_name": "projectilePath",
+      "field_number": 12,
+      "field_type": "string"
+    },
+    {
+      "field_name": "gold",
+      "field_number": 13,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "exp",
+      "field_number": 14,
+      "field_type": "int32"
+    }
+  ],
+  "NamePresetData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "name",
+      "field_number": 2,
+      "field_type": "string"
+    }
+  ],
+  "PawnData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "name",
+      "field_number": 3,
+      "field_type": "string"
+    },
+    {
+      "field_name": "classType",
+      "field_number": 4,
+      "field_type": "enum:ClassType"
+    },
+    {
+      "field_name": "hp",
+      "field_number": 5,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "shield",
+      "field_number": 6,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "armor",
+      "field_number": 7,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "movement",
+      "field_number": 8,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "attack",
+      "field_number": 9,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "range",
+      "field_number": 10,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "sight",
+      "field_number": 11,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "accuracy",
+      "field_number": 12,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "ammo",
+      "field_number": 13,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "prefabPath",
+      "field_number": 14,
+      "field_type": "string"
+    }
+  ],
+  "PawnGrowthData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "classType",
+      "field_number": 3,
+      "field_type": "enum:ClassType"
+    },
+    {
+      "field_name": "level",
+      "field_number": 4,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "requireExp",
+      "field_number": 5,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "statusType",
+      "field_number": 6,
+      "field_type": "enum:StatusType"
+    },
+    {
+      "field_name": "statusValue",
+      "field_number": 7,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "cardId",
+      "field_number": 8,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "cardIdAlias",
+      "field_number": 9,
+      "field_type": "string"
+    }
+  ],
+  "ShopData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "level",
+      "field_number": 3,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "cardId",
+      "field_number": 4,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "cardIdAlias",
+      "field_number": 5,
+      "field_type": "string"
+    },
+    {
+      "field_name": "itemId",
+      "field_number": 6,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "itemIdAlias",
+      "field_number": 7,
+      "field_type": "string"
+    }
+  ],
+  "StagePresetData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "level",
+      "field_number": 3,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "presetPath",
+      "field_number": 4,
+      "field_type": "asset:TileMapPreset"
+    }
+  ],
+  "StageRewardData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "level",
+      "field_number": 3,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "cardId",
+      "field_number": 4,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "cardIdAlias",
+      "field_number": 5,
+      "field_type": "string"
+    },
+    {
+      "field_name": "cardProb",
+      "field_number": 6,
+      "field_type": "int32"
+    }
+  ],
+  "TextData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "kor",
+      "field_number": 3,
+      "field_type": "string"
+    },
+    {
+      "field_name": "eng",
+      "field_number": 4,
+      "field_type": "string"
+    },
+    {
+      "field_name": "jpn",
+      "field_number": 5,
+      "field_type": "string"
+    }
+  ],
+  "TileEntityData": [
+    {
+      "field_name": "id",
+      "field_number": 1,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "idAlias",
+      "field_number": 2,
+      "field_type": "string"
+    },
+    {
+      "field_name": "name",
+      "field_number": 3,
+      "field_type": "string"
+    },
+    {
+      "field_name": "entityType",
+      "field_number": 4,
+      "field_type": "enum:TileEntityType"
+    },
+    {
+      "field_name": "passable",
+      "field_number": 5,
+      "field_type": "bool"
+    },
+    {
+      "field_name": "hp",
+      "field_number": 6,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "shield",
+      "field_number": 7,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "armor",
+      "field_number": 8,
+      "field_type": "int32"
+    },
+    {
+      "field_name": "prefabPath",
+      "field_number": 9,
+      "field_type": "string"
+    }
+  ]
+}

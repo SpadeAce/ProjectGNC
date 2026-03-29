@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "idAlias": "card_effect_damage",
+    "name": "데미지",
+    "effectType": "Damage",
+    "target": "Enemy",
+    "duration": 0,
+    "Name": "card_effect_damage"
+  },
+  {
+    "id": 2,
+    "idAlias": "card_effect_reload",
+    "name": "재장전",
+    "effectType": "Reload",
+    "target": "Self",
+    "duration": 0,
+    "Name": "card_effect_reload"
+  },
+  {
+    "id": 3,
+    "idAlias": "card_effect_heal",
+    "name": "회복",
+    "effectType": "Heal",
+    "target": "Ally",
+    "duration": 0,
+    "Name": "card_effect_heal"
+  },
+  {
+    "id": 4,
+    "idAlias": "card_effect_shield",
+    "name": "실드",
+    "effectType": "Shield",
+    "target": "Self",
+    "duration": 0,
+    "Name": "card_effect_shield"
+  },
+  {
+    "id": 5,
+    "idAlias": "card_effect_restore_action",
+    "name": "행동력 회복",
+    "effectType": "RestoreAction",
+    "target": "Self",
+    "duration": 0,
+    "Name": "card_effect_restore_action"
+  },
+  {
+    "id": 6,
+    "idAlias": "card_effect_buff_attack",
+    "name": "공격력 증가",
+    "effectType": "BuffAttack",
+    "target": "Self",
+    "duration": 2,
+    "Name": "card_effect_buff_attack"
+  },
+  {
+    "id": 7,
+    "idAlias": "card_effect_buff_armor",
+    "name": "방어력 증가",
+    "effectType": "BuffArmor",
+    "target": "Self",
+    "duration": 2,
+    "Name": "card_effect_buff_armor"
+  },
+  {
+    "id": 8,
+    "idAlias": "card_effect_buff_movement",
+    "name": "이동력 증가",
+    "effectType": "BuffMovement",
+    "target": "Self",
+    "duration": 2,
+    "Name": "card_effect_buff_movement"
+  },
+  {
+    "id": 9,
+    "idAlias": "card_effect_debuff_attack",
+    "name": "공격력 감소",
+    "effectType": "DebuffAttack",
+    "target": "Enemy",
+    "duration": 2,
+    "Name": "card_effect_debuff_attack"
+  },
+  {
+    "id": 10,
+    "idAlias": "card_effect_debuff_armor",
+    "name": "방어력 감소",
+    "effectType": "DebuffArmor",
+    "target": "Enemy",
+    "duration": 2,
+    "Name": "card_effect_debuff_armor"
+  },
+  {
+    "id": 11,
+    "idAlias": "card_effect_debuff_movement",
+    "name": "이동력 감소",
+    "effectType": "DebuffMovement",
+    "target": "Enemy",
+    "duration": 2,
+    "Name": "card_effect_debuff_movement"
+  },
+  {
+    "id": 12,
+    "idAlias": "card_effect_draw_card",
+    "name": "카드 드로우",
+    "effectType": "DrawCard",
+    "target": "Self",
+    "duration": 0,
+    "Name": "card_effect_draw_card"
+  }
+]

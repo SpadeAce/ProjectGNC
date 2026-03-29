@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "idAlias": "stage_reward_level_1",
+    "level": 1,
+    "cardId": [
+      10002,
+      10003,
+      10004,
+      10005,
+      10006,
+      10007,
+      10008
+    ],
+    "cardProb": [
+      50,
+      50,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "Name": "stage_reward_level_1"
+  },
+  {
+    "id": 2,
+    "idAlias": "stage_reward_level_2",
+    "level": 2,
+    "cardId": [
+      10002,
+      10003,
+      10004,
+      10005,
+      10006,
+      10007,
+      10008
+    ],
+    "cardProb": [
+      40,
+      40,
+      10,
+      10,
+      20,
+      20,
+      20
+    ],
+    "Name": "stage_reward_level_2"
+  },
+  {
+    "id": 3,
+    "idAlias": "stage_reward_level_3",
+    "level": 3,
+    "cardId": [
+      10002,
+      10003,
+      10004,
+      10005,
+      10006,
+      10007,
+      10008
+    ],
+    "cardProb": [
+      30,
+      30,
+      20,
+      10,
+      30,
+      30,
+      30
+    ],
+    "Name": "stage_reward_level_3"
+  },
+  {
+    "id": 4,
+    "idAlias": "stage_reward_level_4",
+    "level": 4,
+    "cardId": [
+      10002,
+      10003,
+      10004,
+      10005,
+      10006,
+      10007,
+      10008
+    ],
+    "cardProb": [
+      20,
+      20,
+      20,
+      10,
+      40,
+      40,
+      40
+    ],
+    "Name": "stage_reward_level_4"
+  },
+  {
+    "id": 5,
+    "idAlias": "stage_reward_level_5",
+    "level": 5,
+    "cardId": [
+      10002,
+      10003,
+      10004,
+      10005,
+      10006,
+      10007,
+      10008
+    ],
+    "cardProb": [
+      10,
+      10,
+      20,
+      10,
+      50,
+      50,
+      50
+    ],
+    "Name": "stage_reward_level_5"
+  }
+]

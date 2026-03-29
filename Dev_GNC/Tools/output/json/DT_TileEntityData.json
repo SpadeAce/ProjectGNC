@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "idAlias": "wall_half",
+    "name": "엄폐물",
+    "entityType": "WallHalf",
+    "passable": true,
+    "hp": 10,
+    "prefabPath": "Prefabs/Entity/Wall_Half",
+    "shield": 0,
+    "armor": 0,
+    "Name": "wall_half"
+  },
+  {
+    "id": 2,
+    "idAlias": "wall_full",
+    "name": "벽",
+    "entityType": "WallFull",
+    "hp": 20,
+    "prefabPath": "Prefabs/Entity/Wall_Full",
+    "passable": false,
+    "shield": 0,
+    "armor": 0,
+    "Name": "wall_full"
+  }
+]

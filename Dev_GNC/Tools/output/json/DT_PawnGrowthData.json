@@ -1,0 +1,676 @@
+[
+  {
+    "id": 1,
+    "idAlias": "pawn_growth_scount_1",
+    "classType": "Scout",
+    "level": 1,
+    "requireExp": 100,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [
+      20101,
+      20102
+    ],
+    "Name": "pawn_growth_scount_1"
+  },
+  {
+    "id": 2,
+    "idAlias": "pawn_growth_scount_2",
+    "classType": "Scout",
+    "level": 2,
+    "requireExp": 200,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_scount_2"
+  },
+  {
+    "id": 3,
+    "idAlias": "pawn_growth_scount_3",
+    "classType": "Scout",
+    "level": 3,
+    "requireExp": 300,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_scount_3"
+  },
+  {
+    "id": 4,
+    "idAlias": "pawn_growth_scount_4",
+    "classType": "Scout",
+    "level": 4,
+    "requireExp": 400,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [
+      20103
+    ],
+    "Name": "pawn_growth_scount_4"
+  },
+  {
+    "id": 5,
+    "idAlias": "pawn_growth_scount_5",
+    "classType": "Scout",
+    "level": 5,
+    "requireExp": 500,
+    "statusType": [
+      "Atk",
+      "Movement"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_scount_5"
+  },
+  {
+    "id": 6,
+    "idAlias": "pawn_growth_scount_6",
+    "classType": "Scout",
+    "level": 6,
+    "requireExp": 600,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_scount_6"
+  },
+  {
+    "id": 7,
+    "idAlias": "pawn_growth_scount_7",
+    "classType": "Scout",
+    "level": 7,
+    "requireExp": 700,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [
+      20104
+    ],
+    "Name": "pawn_growth_scount_7"
+  },
+  {
+    "id": 8,
+    "idAlias": "pawn_growth_scount_8",
+    "classType": "Scout",
+    "level": 8,
+    "requireExp": 800,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_scount_8"
+  },
+  {
+    "id": 9,
+    "idAlias": "pawn_growth_scount_9",
+    "classType": "Scout",
+    "level": 9,
+    "requireExp": 900,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_scount_9"
+  },
+  {
+    "id": 10,
+    "idAlias": "pawn_growth_scount_10",
+    "classType": "Scout",
+    "level": 10,
+    "requireExp": 1000,
+    "statusType": [
+      "Atk",
+      "Movement"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [
+      20105
+    ],
+    "Name": "pawn_growth_scount_10"
+  },
+  {
+    "id": 11,
+    "idAlias": "pawn_growth_assult_1",
+    "classType": "Assault",
+    "level": 1,
+    "requireExp": 100,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [
+      20201,
+      20202
+    ],
+    "Name": "pawn_growth_assult_1"
+  },
+  {
+    "id": 12,
+    "idAlias": "pawn_growth_assult_2",
+    "classType": "Assault",
+    "level": 2,
+    "requireExp": 200,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_assult_2"
+  },
+  {
+    "id": 13,
+    "idAlias": "pawn_growth_assult_3",
+    "classType": "Assault",
+    "level": 3,
+    "requireExp": 300,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_assult_3"
+  },
+  {
+    "id": 14,
+    "idAlias": "pawn_growth_assult_4",
+    "classType": "Assault",
+    "level": 4,
+    "requireExp": 400,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [
+      20203
+    ],
+    "Name": "pawn_growth_assult_4"
+  },
+  {
+    "id": 15,
+    "idAlias": "pawn_growth_assult_5",
+    "classType": "Assault",
+    "level": 5,
+    "requireExp": 500,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_assult_5"
+  },
+  {
+    "id": 16,
+    "idAlias": "pawn_growth_assult_6",
+    "classType": "Assault",
+    "level": 6,
+    "requireExp": 600,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      2,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_assult_6"
+  },
+  {
+    "id": 17,
+    "idAlias": "pawn_growth_assult_7",
+    "classType": "Assault",
+    "level": 7,
+    "requireExp": 700,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      2,
+      1
+    ],
+    "cardId": [
+      20204
+    ],
+    "Name": "pawn_growth_assult_7"
+  },
+  {
+    "id": 18,
+    "idAlias": "pawn_growth_assult_8",
+    "classType": "Assault",
+    "level": 8,
+    "requireExp": 800,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      2,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_assult_8"
+  },
+  {
+    "id": 19,
+    "idAlias": "pawn_growth_assult_9",
+    "classType": "Assault",
+    "level": 9,
+    "requireExp": 900,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      2,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_assult_9"
+  },
+  {
+    "id": 20,
+    "idAlias": "pawn_growth_assult_10",
+    "classType": "Assault",
+    "level": 10,
+    "requireExp": 1000,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      2,
+      1
+    ],
+    "cardId": [
+      20205
+    ],
+    "Name": "pawn_growth_assult_10"
+  },
+  {
+    "id": 21,
+    "idAlias": "pawn_growth_heavy_1",
+    "classType": "Heavy",
+    "level": 1,
+    "requireExp": 100,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [
+      20301,
+      20302
+    ],
+    "Name": "pawn_growth_heavy_1"
+  },
+  {
+    "id": 22,
+    "idAlias": "pawn_growth_heavy_2",
+    "classType": "Heavy",
+    "level": 2,
+    "requireExp": 200,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_heavy_2"
+  },
+  {
+    "id": 23,
+    "idAlias": "pawn_growth_heavy_3",
+    "classType": "Heavy",
+    "level": 3,
+    "requireExp": 300,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_heavy_3"
+  },
+  {
+    "id": 24,
+    "idAlias": "pawn_growth_heavy_4",
+    "classType": "Heavy",
+    "level": 4,
+    "requireExp": 400,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [
+      20303
+    ],
+    "Name": "pawn_growth_heavy_4"
+  },
+  {
+    "id": 25,
+    "idAlias": "pawn_growth_heavy_5",
+    "classType": "Heavy",
+    "level": 5,
+    "requireExp": 500,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_heavy_5"
+  },
+  {
+    "id": 26,
+    "idAlias": "pawn_growth_heavy_6",
+    "classType": "Heavy",
+    "level": 6,
+    "requireExp": 600,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_heavy_6"
+  },
+  {
+    "id": 27,
+    "idAlias": "pawn_growth_heavy_7",
+    "classType": "Heavy",
+    "level": 7,
+    "requireExp": 700,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [
+      20304
+    ],
+    "Name": "pawn_growth_heavy_7"
+  },
+  {
+    "id": 28,
+    "idAlias": "pawn_growth_heavy_8",
+    "classType": "Heavy",
+    "level": 8,
+    "requireExp": 800,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_heavy_8"
+  },
+  {
+    "id": 29,
+    "idAlias": "pawn_growth_heavy_9",
+    "classType": "Heavy",
+    "level": 9,
+    "requireExp": 900,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_heavy_9"
+  },
+  {
+    "id": 30,
+    "idAlias": "pawn_growth_heavy_10",
+    "classType": "Heavy",
+    "level": 10,
+    "requireExp": 1000,
+    "statusType": [
+      "Atk",
+      "Shield"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [
+      20305
+    ],
+    "Name": "pawn_growth_heavy_10"
+  },
+  {
+    "id": 31,
+    "idAlias": "pawn_growth_specialist_1",
+    "classType": "Specialist",
+    "level": 1,
+    "requireExp": 100,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [
+      20401,
+      20402
+    ],
+    "Name": "pawn_growth_specialist_1"
+  },
+  {
+    "id": 32,
+    "idAlias": "pawn_growth_specialist_2",
+    "classType": "Specialist",
+    "level": 2,
+    "requireExp": 200,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      2
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_specialist_2"
+  },
+  {
+    "id": 33,
+    "idAlias": "pawn_growth_specialist_3",
+    "classType": "Specialist",
+    "level": 3,
+    "requireExp": 300,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_specialist_3"
+  },
+  {
+    "id": 34,
+    "idAlias": "pawn_growth_specialist_4",
+    "classType": "Specialist",
+    "level": 4,
+    "requireExp": 400,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      2
+    ],
+    "cardId": [
+      20403
+    ],
+    "Name": "pawn_growth_specialist_4"
+  },
+  {
+    "id": 35,
+    "idAlias": "pawn_growth_specialist_5",
+    "classType": "Specialist",
+    "level": 5,
+    "requireExp": 500,
+    "statusType": [
+      "Atk",
+      "Range"
+    ],
+    "statusValue": [
+      1,
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_specialist_5"
+  },
+  {
+    "id": 36,
+    "idAlias": "pawn_growth_specialist_6",
+    "classType": "Specialist",
+    "level": 6,
+    "requireExp": 600,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      2
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_specialist_6"
+  },
+  {
+    "id": 37,
+    "idAlias": "pawn_growth_specialist_7",
+    "classType": "Specialist",
+    "level": 7,
+    "requireExp": 700,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [
+      20404
+    ],
+    "Name": "pawn_growth_specialist_7"
+  },
+  {
+    "id": 38,
+    "idAlias": "pawn_growth_specialist_8",
+    "classType": "Specialist",
+    "level": 8,
+    "requireExp": 800,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      2
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_specialist_8"
+  },
+  {
+    "id": 39,
+    "idAlias": "pawn_growth_specialist_9",
+    "classType": "Specialist",
+    "level": 9,
+    "requireExp": 900,
+    "statusType": [
+      "Atk"
+    ],
+    "statusValue": [
+      1
+    ],
+    "cardId": [],
+    "Name": "pawn_growth_specialist_9"
+  },
+  {
+    "id": 40,
+    "idAlias": "pawn_growth_specialist_10",
+    "classType": "Specialist",
+    "level": 10,
+    "requireExp": 1000,
+    "statusType": [
+      "Atk",
+      "Range"
+    ],
+    "statusValue": [
+      2,
+      1
+    ],
+    "cardId": [
+      20405
+    ],
+    "Name": "pawn_growth_specialist_10"
+  }
+]

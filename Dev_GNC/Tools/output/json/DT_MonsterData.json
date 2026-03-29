@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "idAlias": "monster_slime",
+    "name": "슬라임",
+    "hp": 10,
+    "movement": 4,
+    "attack": 5,
+    "range": 1,
+    "sight": 5,
+    "prefabPath": "Prefabs/Actor/Monster/Monster_Slime",
+    "gold": 50,
+    "exp": 50,
+    "shield": 0,
+    "armor": 0,
+    "projectilePath": "",
+    "Name": "monster_slime"
+  },
+  {
+    "id": 2,
+    "idAlias": "monster_turtle",
+    "name": "거북이",
+    "hp": 15,
+    "shield": 5,
+    "armor": 1,
+    "movement": 3,
+    "attack": 5,
+    "range": 1,
+    "sight": 4,
+    "prefabPath": "Prefabs/Actor/Monster/Monster_Turtle",
+    "gold": 100,
+    "exp": 100,
+    "projectilePath": "",
+    "Name": "monster_turtle"
+  }
+]

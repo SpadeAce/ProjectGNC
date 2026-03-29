@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "idAlias": "shop_level1",
+    "level": 1,
+    "cardId": [
+      10002,
+      10002
+    ],
+    "itemId": [],
+    "Name": "shop_level1"
+  },
+  {
+    "id": 2,
+    "idAlias": "shop_level2",
+    "level": 2,
+    "cardId": [
+      10002,
+      10002,
+      10003
+    ],
+    "itemId": [],
+    "Name": "shop_level2"
+  },
+  {
+    "id": 3,
+    "idAlias": "shop_level3",
+    "level": 3,
+    "cardId": [
+      10002,
+      10002,
+      10002,
+      10003
+    ],
+    "itemId": [],
+    "Name": "shop_level3"
+  },
+  {
+    "id": 4,
+    "idAlias": "shop_level4",
+    "level": 4,
+    "cardId": [
+      10002,
+      10002,
+      10002,
+      10003,
+      10004
+    ],
+    "itemId": [],
+    "Name": "shop_level4"
+  },
+  {
+    "id": 5,
+    "idAlias": "shop_level5",
+    "level": 5,
+    "cardId": [
+      10002,
+      10002,
+      10002,
+      10003,
+      10004
+    ],
+    "itemId": [],
+    "Name": "shop_level5"
+  }
+]

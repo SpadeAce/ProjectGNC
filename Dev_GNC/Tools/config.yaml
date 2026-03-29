@@ -1,0 +1,21 @@
+# ============================================================
+# CardGame Table Tool - UE5 Configuration
+# ============================================================
+
+# Path to protoc binary (relative to Tools/ directory)
+protoc_path: "./protoc-34.0-win64/bin/protoc"
+
+# ── 멀티 파일 모드 ─────────────────────────────────────────
+# 스키마 파일 디렉터리: Proto_*.xlsx + Enum.xlsx (Tools/ 기준 상대경로)
+schema_dir: "../TableData/Proto/"
+
+# 데이터 파일 디렉터리: *.xlsx 데이터 파일들
+data_dir: "../TableData/"
+
+# Proto package명
+package_name: "GameData"
+
+# ── UE5 전용 설정 ──────────────────────────────────────────
+# Unity 출력 경로 (사용하지 않지만 파이프라인 호환성을 위해 유지)
+unity_cs_output: "./output/cs/"
+unity_bytes_output: "./output/bytes/"

@@ -1,0 +1,15 @@
+
+%card_effect_damage	데미지 (
+%card_effect_reload	재장전 (
+ card_effect_heal회복 (
+"card_effect_shield실드 (
+4card_effect_restore_action행동력 회복 (
+3card_effect_buff_attack공격력 증가 (0
+2card_effect_buff_armor방어력 증가 (0
+5card_effect_buff_movement이동력 증가 	(0
+5	card_effect_debuff_attack공격력 감소 
+(0
+4
+card_effect_debuff_armor방어력 감소 (0
+7card_effect_debuff_movement이동력 감소 (0
+/card_effect_draw_card카드 드로우 (

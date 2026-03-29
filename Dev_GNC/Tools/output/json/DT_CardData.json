@@ -1,0 +1,830 @@
+[
+  {
+    "id": 101,
+    "idAlias": "card_shoot_pistol",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_shoot",
+    "desc": "text_card_desc_enemy_attack",
+    "ammoCost": 1,
+    "price": 100,
+    "range": 1,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      5
+    ],
+    "iconPath": "Textures/Card/18",
+    "energyCost": 0,
+    "radius": 0,
+    "Name": "card_shoot_pistol"
+  },
+  {
+    "id": 102,
+    "idAlias": "card_shoot_rifle",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_shoot",
+    "desc": "text_card_desc_enemy_attack",
+    "ammoCost": 1,
+    "price": 100,
+    "range": 2,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      5
+    ],
+    "iconPath": "Textures/Card/20",
+    "energyCost": 0,
+    "radius": 0,
+    "Name": "card_shoot_rifle"
+  },
+  {
+    "id": 103,
+    "idAlias": "card_shoot_bird",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_shoot",
+    "desc": "text_card_desc_enemy_attack",
+    "ammoCost": 1,
+    "price": 100,
+    "range": 1,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      10
+    ],
+    "iconPath": "Textures/Card/24",
+    "energyCost": 0,
+    "radius": 0,
+    "Name": "card_shoot_bird"
+  },
+  {
+    "id": 104,
+    "idAlias": "card_shoot_slug",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_shoot_slug",
+    "desc": "text_card_desc_enemy_attack",
+    "ammoCost": 2,
+    "price": 100,
+    "range": 2,
+    "effectId": [
+      1,
+      10
+    ],
+    "effectValue": [
+      5,
+      1
+    ],
+    "iconPath": "Textures/Card/21",
+    "energyCost": 0,
+    "radius": 0,
+    "Name": "card_shoot_slug"
+  },
+  {
+    "id": 105,
+    "idAlias": "card_shoot_snipe",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_shoot_snipe",
+    "desc": "text_card_desc_enemy_attack",
+    "ammoCost": 2,
+    "price": 100,
+    "range": 3,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      10
+    ],
+    "iconPath": "Textures/Card/10",
+    "energyCost": 0,
+    "radius": 0,
+    "Name": "card_shoot_snipe"
+  },
+  {
+    "id": 201,
+    "idAlias": "card_tool_grenade",
+    "type": "Supply",
+    "target": "Ground",
+    "name": "text_card_name_grenade",
+    "desc": "text_card_desc_ground_attack",
+    "price": 100,
+    "range": 3,
+    "radius": 1,
+    "effectId": [
+      1,
+      10
+    ],
+    "effectValue": [
+      10,
+      1
+    ],
+    "iconPath": "Textures/Card/Grenade",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "Name": "card_tool_grenade"
+  },
+  {
+    "id": 202,
+    "idAlias": "card_tool_grenade_smoke",
+    "type": "Supply",
+    "target": "Ground",
+    "name": "text_card_name_grenade_smoke",
+    "desc": "text_card_desc_smoke",
+    "price": 100,
+    "range": 3,
+    "radius": 1,
+    "iconPath": "Textures/Card/26",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "effectId": [],
+    "effectValue": [],
+    "Name": "card_tool_grenade_smoke"
+  },
+  {
+    "id": 203,
+    "idAlias": "card_tool_grenade_flashbang",
+    "type": "Supply",
+    "target": "Ground",
+    "name": "text_card_name_grenade_flashbang",
+    "desc": "text_card_desc_flashbang",
+    "price": 100,
+    "range": 3,
+    "radius": 1,
+    "iconPath": "Textures/Card/37",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "effectId": [],
+    "effectValue": [],
+    "Name": "card_tool_grenade_flashbang"
+  },
+  {
+    "id": 204,
+    "idAlias": "card_tool_grenade_Incendiary",
+    "type": "Supply",
+    "target": "Ground",
+    "name": "text_card_name_grenade_incendiary",
+    "desc": "text_card_desc_incendiary",
+    "price": 100,
+    "range": 3,
+    "radius": 1,
+    "iconPath": "Textures/Card/14",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "effectId": [],
+    "effectValue": [],
+    "Name": "card_tool_grenade_Incendiary"
+  },
+  {
+    "id": 205,
+    "idAlias": "card_tool_grenade_flare",
+    "type": "Supply",
+    "target": "Ground",
+    "name": "text_card_name_grenade_flare",
+    "desc": "text_card_desc_flare",
+    "price": 100,
+    "range": 3,
+    "iconPath": "Textures/Card/11",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "radius": 0,
+    "effectId": [],
+    "effectValue": [],
+    "Name": "card_tool_grenade_flare"
+  },
+  {
+    "id": 206,
+    "idAlias": "card_tool_medikit",
+    "type": "Supply",
+    "target": "Ally",
+    "name": "text_card_name_medikit",
+    "desc": "text_card_desc_medikit",
+    "price": 100,
+    "range": 2,
+    "effectId": [
+      3
+    ],
+    "effectValue": [
+      5
+    ],
+    "iconPath": "Textures/Card/2",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "radius": 0,
+    "Name": "card_tool_medikit"
+  },
+  {
+    "id": 207,
+    "idAlias": "card_tool_plate",
+    "type": "Supply",
+    "target": "Self",
+    "name": "text_card_name_plate",
+    "desc": "text_card_desc_plate",
+    "price": 100,
+    "effectId": [
+      4
+    ],
+    "effectValue": [
+      5
+    ],
+    "iconPath": "Textures/Card/48",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "range": 0,
+    "radius": 0,
+    "Name": "card_tool_plate"
+  },
+  {
+    "id": 10001,
+    "idAlias": "card_reload",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_reload",
+    "desc": "text_card_desc_reload",
+    "energyCost": 1,
+    "price": 100,
+    "effectId": [
+      2
+    ],
+    "effectValue": [
+      2
+    ],
+    "iconPath": "Textures/Card/Magazine",
+    "ammoCost": 0,
+    "range": 0,
+    "radius": 0,
+    "Name": "card_reload"
+  },
+  {
+    "id": 10002,
+    "idAlias": "card_medikit",
+    "type": "Consume",
+    "target": "Self",
+    "name": "text_card_name_medikit",
+    "desc": "text_card_desc_medikit_self",
+    "price": 50,
+    "range": 2,
+    "effectId": [
+      3
+    ],
+    "effectValue": [
+      5
+    ],
+    "iconPath": "Textures/Card/Medikit",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "radius": 0,
+    "Name": "card_medikit"
+  },
+  {
+    "id": 10003,
+    "idAlias": "card_plate",
+    "type": "Consume",
+    "target": "Self",
+    "name": "text_card_name_plate",
+    "desc": "text_card_desc_plate",
+    "energyCost": 1,
+    "price": 100,
+    "effectId": [
+      4
+    ],
+    "effectValue": [
+      5
+    ],
+    "iconPath": "Textures/Card/Plate",
+    "ammoCost": 0,
+    "range": 0,
+    "radius": 0,
+    "Name": "card_plate"
+  },
+  {
+    "id": 10004,
+    "idAlias": "card_supply",
+    "type": "Consume",
+    "target": "Self",
+    "name": "text_card_name_supply",
+    "desc": "text_card_desc_supply",
+    "energyCost": 1,
+    "price": 100,
+    "effectId": [
+      12
+    ],
+    "effectValue": [
+      2
+    ],
+    "iconPath": "Textures/Card/Supply",
+    "ammoCost": 0,
+    "range": 0,
+    "radius": 0,
+    "Name": "card_supply"
+  },
+  {
+    "id": 10005,
+    "idAlias": "card_restore_action",
+    "type": "Consume",
+    "target": "Self",
+    "name": "text_card_name_restore_action",
+    "desc": "text_card_desc_restore_action",
+    "price": 100,
+    "effectId": [
+      5
+    ],
+    "effectValue": [
+      1
+    ],
+    "iconPath": "Textures/Card/3",
+    "energyCost": 0,
+    "ammoCost": 0,
+    "range": 0,
+    "radius": 0,
+    "Name": "card_restore_action"
+  },
+  {
+    "id": 10006,
+    "idAlias": "card_buff_attack",
+    "type": "Consume",
+    "target": "Self",
+    "name": "text_card_name_buff_attack",
+    "desc": "text_card_desc_buff_attack",
+    "energyCost": 1,
+    "price": 100,
+    "effectId": [
+      6
+    ],
+    "effectValue": [
+      1
+    ],
+    "iconPath": "Textures/Card/4",
+    "ammoCost": 0,
+    "range": 0,
+    "radius": 0,
+    "Name": "card_buff_attack"
+  },
+  {
+    "id": 10007,
+    "idAlias": "card_buff_armor",
+    "type": "Consume",
+    "target": "Self",
+    "name": "text_card_name_buff_armor",
+    "desc": "text_card_desc_buff_armor",
+    "energyCost": 1,
+    "price": 100,
+    "effectId": [
+      7
+    ],
+    "effectValue": [
+      1
+    ],
+    "iconPath": "Textures/Card/8",
+    "ammoCost": 0,
+    "range": 0,
+    "radius": 0,
+    "Name": "card_buff_armor"
+  },
+  {
+    "id": 10008,
+    "idAlias": "card_buff_movement",
+    "type": "Consume",
+    "target": "Self",
+    "name": "text_card_name_buff_movement",
+    "desc": "text_card_desc_buff_movement",
+    "energyCost": 1,
+    "price": 100,
+    "effectId": [
+      8
+    ],
+    "effectValue": [
+      1
+    ],
+    "iconPath": "Textures/Card/35",
+    "ammoCost": 0,
+    "range": 0,
+    "radius": 0,
+    "Name": "card_buff_movement"
+  },
+  {
+    "id": 20101,
+    "idAlias": "card_scout_skill1",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_scout_skill1",
+    "desc": "text_card_desc_scout_skill1",
+    "energyCost": 1,
+    "effectId": [
+      8
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_scout_skill1"
+  },
+  {
+    "id": 20102,
+    "idAlias": "card_scout_skill2",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_scout_skill2",
+    "desc": "text_card_desc_scout_skill2",
+    "energyCost": 1,
+    "effectId": [
+      8
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_scout_skill2"
+  },
+  {
+    "id": 20103,
+    "idAlias": "card_scout_skill3",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_scout_skill3",
+    "desc": "text_card_desc_scout_skill3",
+    "energyCost": 1,
+    "effectId": [
+      8
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_scout_skill3"
+  },
+  {
+    "id": 20104,
+    "idAlias": "card_scout_skill4",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_scout_skill4",
+    "desc": "text_card_desc_scout_skill4",
+    "energyCost": 1,
+    "effectId": [
+      8
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_scout_skill4"
+  },
+  {
+    "id": 20105,
+    "idAlias": "card_scout_skill5",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_scout_skill5",
+    "desc": "text_card_desc_scout_skill5",
+    "energyCost": 1,
+    "effectId": [
+      8
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_scout_skill5"
+  },
+  {
+    "id": 20201,
+    "idAlias": "card_assult_skill1",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_assult_skill1",
+    "desc": "text_card_desc_assult_skill1",
+    "energyCost": 1,
+    "range": 1,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      5
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_assult_skill1"
+  },
+  {
+    "id": 20202,
+    "idAlias": "card_assult_skill2",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_assult_skill2",
+    "desc": "text_card_desc_assult_skill2",
+    "energyCost": 1,
+    "range": 1,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      5
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_assult_skill2"
+  },
+  {
+    "id": 20203,
+    "idAlias": "card_assult_skill3",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_assult_skill3",
+    "desc": "text_card_desc_assult_skill3",
+    "energyCost": 1,
+    "range": 1,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      5
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_assult_skill3"
+  },
+  {
+    "id": 20204,
+    "idAlias": "card_assult_skill4",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_assult_skill4",
+    "desc": "text_card_desc_assult_skill4",
+    "energyCost": 1,
+    "range": 1,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      5
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_assult_skill4"
+  },
+  {
+    "id": 20205,
+    "idAlias": "card_assult_skill5",
+    "type": "Stable",
+    "target": "Enemy",
+    "name": "text_card_name_assult_skill5",
+    "desc": "text_card_desc_assult_skill5",
+    "energyCost": 1,
+    "range": 1,
+    "effectId": [
+      1
+    ],
+    "effectValue": [
+      5
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_assult_skill5"
+  },
+  {
+    "id": 20301,
+    "idAlias": "card_heavy_skill1",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_heavy_skill1",
+    "desc": "text_card_desc_heavy_skill1",
+    "energyCost": 1,
+    "effectId": [
+      7
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_heavy_skill1"
+  },
+  {
+    "id": 20302,
+    "idAlias": "card_heavy_skill2",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_heavy_skill2",
+    "desc": "text_card_desc_heavy_skill2",
+    "energyCost": 1,
+    "effectId": [
+      7
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_heavy_skill2"
+  },
+  {
+    "id": 20303,
+    "idAlias": "card_heavy_skill3",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_heavy_skill3",
+    "desc": "text_card_desc_heavy_skill3",
+    "energyCost": 1,
+    "effectId": [
+      7
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_heavy_skill3"
+  },
+  {
+    "id": 20304,
+    "idAlias": "card_heavy_skill4",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_heavy_skill4",
+    "desc": "text_card_desc_heavy_skill4",
+    "energyCost": 1,
+    "effectId": [
+      7
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_heavy_skill4"
+  },
+  {
+    "id": 20305,
+    "idAlias": "card_heavy_skill5",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_heavy_skill5",
+    "desc": "text_card_desc_heavy_skill5",
+    "energyCost": 1,
+    "effectId": [
+      7
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_heavy_skill5"
+  },
+  {
+    "id": 20401,
+    "idAlias": "card_specialist_skill1",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_specialist_skill1",
+    "desc": "text_card_desc_specialist_skill1",
+    "energyCost": 1,
+    "effectId": [
+      6
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_specialist_skill1"
+  },
+  {
+    "id": 20402,
+    "idAlias": "card_specialist_skill2",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_specialist_skill2",
+    "desc": "text_card_desc_specialist_skill2",
+    "energyCost": 1,
+    "effectId": [
+      6
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_specialist_skill2"
+  },
+  {
+    "id": 20403,
+    "idAlias": "card_specialist_skill3",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_specialist_skill3",
+    "desc": "text_card_desc_specialist_skill3",
+    "energyCost": 1,
+    "effectId": [
+      6
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_specialist_skill3"
+  },
+  {
+    "id": 20404,
+    "idAlias": "card_specialist_skill4",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_specialist_skill4",
+    "desc": "text_card_desc_specialist_skill4",
+    "energyCost": 1,
+    "effectId": [
+      6
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_specialist_skill4"
+  },
+  {
+    "id": 20405,
+    "idAlias": "card_specialist_skill5",
+    "type": "Stable",
+    "target": "Self",
+    "name": "text_card_name_specialist_skill5",
+    "desc": "text_card_desc_specialist_skill5",
+    "energyCost": 1,
+    "effectId": [
+      6
+    ],
+    "effectValue": [
+      1
+    ],
+    "ammoCost": 0,
+    "price": 0,
+    "range": 0,
+    "radius": 0,
+    "iconPath": "",
+    "Name": "card_specialist_skill5"
+  }
+]

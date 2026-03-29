@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "idAlias": "stage_level_1",
+    "level": 1,
+    "presetPath": [
+      "/Game/CardGame/DataTables/TileMap/TMP_1_1.TMP_1_1",
+      "/Game/CardGame/DataTables/TileMap/TMP_1_2.TMP_1_2",
+      "/Game/CardGame/DataTables/TileMap/TMP_1_3.TMP_1_3",
+      "/Game/CardGame/DataTables/TileMap/TMP_1_4.TMP_1_4",
+      "/Game/CardGame/DataTables/TileMap/TMP_1_5.TMP_1_5"
+    ],
+    "Name": "stage_level_1"
+  },
+  {
+    "id": 2,
+    "idAlias": "stage_level_2",
+    "level": 2,
+    "presetPath": [
+      "/Game/CardGame/DataTables/TileMap/TMP_2_1.TMP_2_1",
+      "/Game/CardGame/DataTables/TileMap/TMP_2_2.TMP_2_2",
+      "/Game/CardGame/DataTables/TileMap/TMP_2_3.TMP_2_3",
+      "/Game/CardGame/DataTables/TileMap/TMP_2_4.TMP_2_4",
+      "/Game/CardGame/DataTables/TileMap/TMP_2_5.TMP_2_5"
+    ],
+    "Name": "stage_level_2"
+  },
+  {
+    "id": 3,
+    "idAlias": "stage_level_3",
+    "level": 3,
+    "presetPath": [
+      "/Game/CardGame/DataTables/TileMap/TMP_3_1.TMP_3_1",
+      "/Game/CardGame/DataTables/TileMap/TMP_3_2.TMP_3_2",
+      "/Game/CardGame/DataTables/TileMap/TMP_3_3.TMP_3_3",
+      "/Game/CardGame/DataTables/TileMap/TMP_3_4.TMP_3_4",
+      "/Game/CardGame/DataTables/TileMap/TMP_3_5.TMP_3_5"
+    ],
+    "Name": "stage_level_3"
+  },
+  {
+    "id": 4,
+    "idAlias": "stage_level_4",
+    "level": 4,
+    "presetPath": [
+      "/Game/CardGame/DataTables/TileMap/TMP_4_1.TMP_4_1",
+      "/Game/CardGame/DataTables/TileMap/TMP_4_2.TMP_4_2",
+      "/Game/CardGame/DataTables/TileMap/TMP_4_3.TMP_4_3",
+      "/Game/CardGame/DataTables/TileMap/TMP_4_4.TMP_4_4",
+      "/Game/CardGame/DataTables/TileMap/TMP_4_5.TMP_4_5"
+    ],
+    "Name": "stage_level_4"
+  },
+  {
+    "id": 5,
+    "idAlias": "stage_level_5",
+    "level": 5,
+    "presetPath": [
+      "/Game/CardGame/DataTables/TileMap/TMP_5_1.TMP_5_1",
+      "/Game/CardGame/DataTables/TileMap/TMP_5_2.TMP_5_2",
+      "/Game/CardGame/DataTables/TileMap/TMP_5_3.TMP_5_3",
+      "/Game/CardGame/DataTables/TileMap/TMP_5_4.TMP_5_4",
+      "/Game/CardGame/DataTables/TileMap/TMP_5_5.TMP_5_5"
+    ],
+    "Name": "stage_level_5"
+  }
+]
