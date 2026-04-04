@@ -1,0 +1,11 @@
+{
+  "MonsterData": [
+    "actorLink"
+  ],
+  "PawnData": [
+    "actorLink"
+  ],
+  "StagePresetData": [
+    "presetPath"
+  ]
+}

@@ -43,85 +43,85 @@ namespace GameData {
             "KAkSKAoKc3RhdHVzVHlwZRgHIAMoDjIULkdhbWVEYXRhLlN0YXR1c1R5cGUS",
             "EwoLc3RhdHVzVmFsdWUYCCADKAUSDgoGY2FyZElkGAkgAygFIjwKEkVxdWlw",
             "bWVudERhdGFUYWJsZRImCgVpdGVtcxgBIAMoCzIXLkdhbWVEYXRhLkVxdWlw",
-            "bWVudERhdGEi6gEKC01vbnN0ZXJEYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxp",
+            "bWVudERhdGEi6QEKC01vbnN0ZXJEYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxp",
             "YXMYAiABKAkSDAoEbmFtZRgDIAEoCRIKCgJocBgEIAEoBRIOCgZzaGllbGQY",
             "BSABKAUSDQoFYXJtb3IYBiABKAUSEAoIbW92ZW1lbnQYByABKAUSDgoGYXR0",
-            "YWNrGAggASgFEg0KBXJhbmdlGAkgASgFEg0KBXNpZ2h0GAogASgFEhIKCnBy",
-            "ZWZhYlBhdGgYCyABKAkSFgoOcHJvamVjdGlsZVBhdGgYDCABKAkSDAoEZ29s",
-            "ZBgNIAEoBRILCgNleHAYDiABKAUiOAoQTW9uc3RlckRhdGFUYWJsZRIkCgVp",
-            "dGVtcxgBIAMoCzIVLkdhbWVEYXRhLk1vbnN0ZXJEYXRhIioKDk5hbWVQcmVz",
-            "ZXREYXRhEgoKAmlkGAEgASgFEgwKBG5hbWUYAiABKAkiPgoTTmFtZVByZXNl",
-            "dERhdGFUYWJsZRInCgVpdGVtcxgBIAMoCzIYLkdhbWVEYXRhLk5hbWVQcmVz",
-            "ZXREYXRhIvwBCghQYXduRGF0YRIKCgJpZBgBIAEoBRIPCgdpZEFsaWFzGAIg",
-            "ASgJEgwKBG5hbWUYAyABKAkSJgoJY2xhc3NUeXBlGAQgASgOMhMuR2FtZURh",
-            "dGEuQ2xhc3NUeXBlEgoKAmhwGAUgASgFEg4KBnNoaWVsZBgGIAEoBRINCgVh",
-            "cm1vchgHIAEoBRIQCghtb3ZlbWVudBgIIAEoBRIOCgZhdHRhY2sYCSABKAUS",
-            "DQoFcmFuZ2UYCiABKAUSDQoFc2lnaHQYCyABKAUSEAoIYWNjdXJhY3kYDCAB",
-            "KAUSDAoEYW1tbxgNIAEoBRISCgpwcmVmYWJQYXRoGA4gASgJIjIKDVBhd25E",
-            "YXRhVGFibGUSIQoFaXRlbXMYASADKAsyEi5HYW1lRGF0YS5QYXduRGF0YSLH",
-            "AQoOUGF3bkdyb3d0aERhdGESCgoCaWQYASABKAUSDwoHaWRBbGlhcxgCIAEo",
-            "CRImCgljbGFzc1R5cGUYAyABKA4yEy5HYW1lRGF0YS5DbGFzc1R5cGUSDQoF",
-            "bGV2ZWwYBCABKAUSEgoKcmVxdWlyZUV4cBgFIAEoBRIoCgpzdGF0dXNUeXBl",
-            "GAYgAygOMhQuR2FtZURhdGEuU3RhdHVzVHlwZRITCgtzdGF0dXNWYWx1ZRgH",
-            "IAMoBRIOCgZjYXJkSWQYCCADKAUiPgoTUGF3bkdyb3d0aERhdGFUYWJsZRIn",
-            "CgVpdGVtcxgBIAMoCzIYLkdhbWVEYXRhLlBhd25Hcm93dGhEYXRhIlYKCFNo",
-            "b3BEYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkSDQoFbGV2ZWwY",
-            "AyABKAUSDgoGY2FyZElkGAQgAygFEg4KBml0ZW1JZBgGIAMoBSIyCg1TaG9w",
-            "RGF0YVRhYmxlEiEKBWl0ZW1zGAEgAygLMhIuR2FtZURhdGEuU2hvcERhdGEi",
-            "UQoPU3RhZ2VQcmVzZXREYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiAB",
-            "KAkSDQoFbGV2ZWwYAyABKAUSEgoKcHJlc2V0UGF0aBgEIAMoCSJAChRTdGFn",
-            "ZVByZXNldERhdGFUYWJsZRIoCgVpdGVtcxgBIAMoCzIZLkdhbWVEYXRhLlN0",
-            "YWdlUHJlc2V0RGF0YSJfCg9TdGFnZVJld2FyZERhdGESCgoCaWQYASABKAUS",
-            "DwoHaWRBbGlhcxgCIAEoCRINCgVsZXZlbBgDIAEoBRIOCgZjYXJkSWQYBCAD",
-            "KAUSEAoIY2FyZFByb2IYBiADKAUiQAoUU3RhZ2VSZXdhcmREYXRhVGFibGUS",
-            "KAoFaXRlbXMYASADKAsyGS5HYW1lRGF0YS5TdGFnZVJld2FyZERhdGEiTgoI",
-            "VGV4dERhdGESCgoCaWQYASABKAUSDwoHaWRBbGlhcxgCIAEoCRILCgNrb3IY",
-            "AyABKAkSCwoDZW5nGAQgASgJEgsKA2pwbhgFIAEoCSIyCg1UZXh0RGF0YVRh",
-            "YmxlEiEKBWl0ZW1zGAEgAygLMhIuR2FtZURhdGEuVGV4dERhdGEiugEKDlRp",
-            "bGVFbnRpdHlEYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkSDAoE",
-            "bmFtZRgDIAEoCRIsCgplbnRpdHlUeXBlGAQgASgOMhguR2FtZURhdGEuVGls",
-            "ZUVudGl0eVR5cGUSEAoIcGFzc2FibGUYBSABKAgSCgoCaHAYBiABKAUSDgoG",
-            "c2hpZWxkGAcgASgFEg0KBWFybW9yGAggASgFEhIKCnByZWZhYlBhdGgYCSAB",
-            "KAkiPgoTVGlsZUVudGl0eURhdGFUYWJsZRInCgVpdGVtcxgBIAMoCzIYLkdh",
-            "bWVEYXRhLlRpbGVFbnRpdHlEYXRhKlMKCExhbmd1YWdlEhEKDUxBTkdVQUdF",
-            "X05PTkUQABIQCgxMQU5HVUFHRV9LT1IQARIQCgxMQU5HVUFHRV9FTkcQAhIQ",
-            "CgxMQU5HVUFHRV9KUE4QAyp/CglDbGFzc1R5cGUSEwoPQ0xBU1NfVFlQRV9O",
-            "T05FEAASFAoQQ0xBU1NfVFlQRV9TQ09VVBABEhYKEkNMQVNTX1RZUEVfQVNT",
-            "QVVMVBACEhQKEENMQVNTX1RZUEVfSEVBVlkQAxIZChVDTEFTU19UWVBFX1NQ",
-            "RUNJQUxJU1QQBCqLAQoISXRlbVR5cGUSEgoOSVRFTV9UWVBFX05PTkUQABIS",
-            "Cg5JVEVNX1RZUEVfQ0FSRBABEhIKDklURU1fVFlQRV9CVUZGEAISFwoTSVRF",
-            "TV9UWVBFX0VRVUlQTUVOVBADEhUKEUlURU1fVFlQRV9DT05TVU1FEAQSEwoP",
-            "SVRFTV9UWVBFX0dPT0RTEAUqmwEKClRhcmdldFR5cGUSFAoQVEFSR0VUX1RZ",
-            "UEVfTk9ORRAAEhQKEFRBUkdFVF9UWVBFX1NFTEYQARIVChFUQVJHRVRfVFlQ",
-            "RV9FTkVNWRACEhYKElRBUkdFVF9UWVBFX0dST1VORBADEhQKEFRBUkdFVF9U",
-            "WVBFX0FMTFkQBBIcChhUQVJHRVRfVFlQRV9FTVBUWV9HUk9VTkQQBSphCghD",
-            "YXJkVHlwZRISCg5DQVJEX1RZUEVfTk9ORRAAEhQKEENBUkRfVFlQRV9TVEFC",
-            "TEUQARIUChBDQVJEX1RZUEVfU1VQUExZEAISFQoRQ0FSRF9UWVBFX0NPTlNV",
-            "TUUQAyq2AwoOQ2FyZEVmZmVjdFR5cGUSGQoVQ0FSRF9FRkZFQ1RfVFlQRV9O",
-            "T05FEAASGwoXQ0FSRF9FRkZFQ1RfVFlQRV9EQU1BR0UQARIZChVDQVJEX0VG",
-            "RkVDVF9UWVBFX0hFQUwQAhIbChdDQVJEX0VGRkVDVF9UWVBFX1NISUVMRBAD",
-            "EiMKH0NBUkRfRUZGRUNUX1RZUEVfUkVTVE9SRV9BQ1RJT04QBBIbChdDQVJE",
-            "X0VGRkVDVF9UWVBFX1JFTE9BRBAFEh4KGkNBUkRfRUZGRUNUX1RZUEVfRFJB",
-            "V19DQVJEEAYSIAocQ0FSRF9FRkZFQ1RfVFlQRV9CVUZGX0FUVEFDSxAHEh8K",
-            "G0NBUkRfRUZGRUNUX1RZUEVfQlVGRl9BUk1PUhAIEiIKHkNBUkRfRUZGRUNU",
-            "X1RZUEVfQlVGRl9NT1ZFTUVOVBAJEiIKHkNBUkRfRUZGRUNUX1RZUEVfREVC",
-            "VUZGX0FUVEFDSxAKEiEKHUNBUkRfRUZGRUNUX1RZUEVfREVCVUZGX0FSTU9S",
-            "EAsSJAogQ0FSRF9FRkZFQ1RfVFlQRV9ERUJVRkZfTU9WRU1FTlQQDCqHAQoO",
-            "VGlsZUVudGl0eVR5cGUSGQoVVElMRV9FTlRJVFlfVFlQRV9OT05FEAASGgoW",
-            "VElMRV9FTlRJVFlfVFlQRV9BQ1RPUhABEh4KGlRJTEVfRU5USVRZX1RZUEVf",
-            "V0FMTF9IQUxGEAISHgoaVElMRV9FTlRJVFlfVFlQRV9XQUxMX0ZVTEwQAyrF",
-            "AgoKU3RhdHVzVHlwZRIUChBTVEFUVVNfVFlQRV9OT05FEAASGAoUU1RBVFVT",
-            "X1RZUEVfU1RBVF9BVEsQARIYChRTVEFUVVNfVFlQRV9TVEFUX0RFRhACEhcK",
-            "E1NUQVRVU19UWVBFX1NUQVRfSFAQAxIbChdTVEFUVVNfVFlQRV9TVEFUX1NI",
-            "SUVMRBAEEh0KGVNUQVRVU19UWVBFX1NUQVRfTU9WRU1FTlQQBRIaChZTVEFU",
-            "VVNfVFlQRV9TVEFUX1JBTkdFEAYSHQoZU1RBVFVTX1RZUEVfU1RBVF9BQ0NV",
-            "UkFDWRAHEh0KGVNUQVRVU19UWVBFX1NUQVRfQ0FSRF9DQVAQCBIdChlTVEFU",
-            "VVNfVFlQRV9TVEFUX0FNTU9fQ0FQEAkSHwobU1RBVFVTX1RZUEVfU1RBVF9F",
-            "TkVSR1lfQ0FQEAoquwEKDUVxdWlwU2xvdFR5cGUSGAoURVFVSVBfU0xPVF9U",
-            "WVBFX05PTkUQABIfChtFUVVJUF9TTE9UX1RZUEVfV0VBUE9OX01BSU4QARIe",
-            "ChpFUVVJUF9TTE9UX1RZUEVfV0VBUE9OX1NVQhACEhkKFUVRVUlQX1NMT1Rf",
-            "VFlQRV9BUk1PUhADEhoKFkVRVUlQX1NMT1RfVFlQRV9IRUxNRVQQBBIYChRF",
-            "UVVJUF9TTE9UX1RZUEVfVE9PTBAFQguqAghHYW1lRGF0YWIGcHJvdG8z"));
+            "YWNrGAggASgFEg0KBXJhbmdlGAkgASgFEg0KBXNpZ2h0GAogASgFEhEKCWFj",
+            "dG9yTGluaxgLIAEoCRIWCg5wcm9qZWN0aWxlUGF0aBgMIAEoCRIMCgRnb2xk",
+            "GA0gASgFEgsKA2V4cBgOIAEoBSI4ChBNb25zdGVyRGF0YVRhYmxlEiQKBWl0",
+            "ZW1zGAEgAygLMhUuR2FtZURhdGEuTW9uc3RlckRhdGEiKgoOTmFtZVByZXNl",
+            "dERhdGESCgoCaWQYASABKAUSDAoEbmFtZRgCIAEoCSI+ChNOYW1lUHJlc2V0",
+            "RGF0YVRhYmxlEicKBWl0ZW1zGAEgAygLMhguR2FtZURhdGEuTmFtZVByZXNl",
+            "dERhdGEi+wEKCFBhd25EYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiAB",
+            "KAkSDAoEbmFtZRgDIAEoCRImCgljbGFzc1R5cGUYBCABKA4yEy5HYW1lRGF0",
+            "YS5DbGFzc1R5cGUSCgoCaHAYBSABKAUSDgoGc2hpZWxkGAYgASgFEg0KBWFy",
+            "bW9yGAcgASgFEhAKCG1vdmVtZW50GAggASgFEg4KBmF0dGFjaxgJIAEoBRIN",
+            "CgVyYW5nZRgKIAEoBRINCgVzaWdodBgLIAEoBRIQCghhY2N1cmFjeRgMIAEo",
+            "BRIMCgRhbW1vGA0gASgFEhEKCWFjdG9yTGluaxgOIAEoCSIyCg1QYXduRGF0",
+            "YVRhYmxlEiEKBWl0ZW1zGAEgAygLMhIuR2FtZURhdGEuUGF3bkRhdGEixwEK",
+            "DlBhd25Hcm93dGhEYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkS",
+            "JgoJY2xhc3NUeXBlGAMgASgOMhMuR2FtZURhdGEuQ2xhc3NUeXBlEg0KBWxl",
+            "dmVsGAQgASgFEhIKCnJlcXVpcmVFeHAYBSABKAUSKAoKc3RhdHVzVHlwZRgG",
+            "IAMoDjIULkdhbWVEYXRhLlN0YXR1c1R5cGUSEwoLc3RhdHVzVmFsdWUYByAD",
+            "KAUSDgoGY2FyZElkGAggAygFIj4KE1Bhd25Hcm93dGhEYXRhVGFibGUSJwoF",
+            "aXRlbXMYASADKAsyGC5HYW1lRGF0YS5QYXduR3Jvd3RoRGF0YSJWCghTaG9w",
+            "RGF0YRIKCgJpZBgBIAEoBRIPCgdpZEFsaWFzGAIgASgJEg0KBWxldmVsGAMg",
+            "ASgFEg4KBmNhcmRJZBgEIAMoBRIOCgZpdGVtSWQYBiADKAUiMgoNU2hvcERh",
+            "dGFUYWJsZRIhCgVpdGVtcxgBIAMoCzISLkdhbWVEYXRhLlNob3BEYXRhIlEK",
+            "D1N0YWdlUHJlc2V0RGF0YRIKCgJpZBgBIAEoBRIPCgdpZEFsaWFzGAIgASgJ",
+            "Eg0KBWxldmVsGAMgASgFEhIKCnByZXNldFBhdGgYBCADKAkiQAoUU3RhZ2VQ",
+            "cmVzZXREYXRhVGFibGUSKAoFaXRlbXMYASADKAsyGS5HYW1lRGF0YS5TdGFn",
+            "ZVByZXNldERhdGEiXwoPU3RhZ2VSZXdhcmREYXRhEgoKAmlkGAEgASgFEg8K",
+            "B2lkQWxpYXMYAiABKAkSDQoFbGV2ZWwYAyABKAUSDgoGY2FyZElkGAQgAygF",
+            "EhAKCGNhcmRQcm9iGAYgAygFIkAKFFN0YWdlUmV3YXJkRGF0YVRhYmxlEigK",
+            "BWl0ZW1zGAEgAygLMhkuR2FtZURhdGEuU3RhZ2VSZXdhcmREYXRhIk4KCFRl",
+            "eHREYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkSCwoDa29yGAMg",
+            "ASgJEgsKA2VuZxgEIAEoCRILCgNqcG4YBSABKAkiMgoNVGV4dERhdGFUYWJs",
+            "ZRIhCgVpdGVtcxgBIAMoCzISLkdhbWVEYXRhLlRleHREYXRhIroBCg5UaWxl",
+            "RW50aXR5RGF0YRIKCgJpZBgBIAEoBRIPCgdpZEFsaWFzGAIgASgJEgwKBG5h",
+            "bWUYAyABKAkSLAoKZW50aXR5VHlwZRgEIAEoDjIYLkdhbWVEYXRhLlRpbGVF",
+            "bnRpdHlUeXBlEhAKCHBhc3NhYmxlGAUgASgIEgoKAmhwGAYgASgFEg4KBnNo",
+            "aWVsZBgHIAEoBRINCgVhcm1vchgIIAEoBRISCgpwcmVmYWJQYXRoGAkgASgJ",
+            "Ij4KE1RpbGVFbnRpdHlEYXRhVGFibGUSJwoFaXRlbXMYASADKAsyGC5HYW1l",
+            "RGF0YS5UaWxlRW50aXR5RGF0YSpTCghMYW5ndWFnZRIRCg1MQU5HVUFHRV9O",
+            "T05FEAASEAoMTEFOR1VBR0VfS09SEAESEAoMTEFOR1VBR0VfRU5HEAISEAoM",
+            "TEFOR1VBR0VfSlBOEAMqfwoJQ2xhc3NUeXBlEhMKD0NMQVNTX1RZUEVfTk9O",
+            "RRAAEhQKEENMQVNTX1RZUEVfU0NPVVQQARIWChJDTEFTU19UWVBFX0FTU0FV",
+            "TFQQAhIUChBDTEFTU19UWVBFX0hFQVZZEAMSGQoVQ0xBU1NfVFlQRV9TUEVD",
+            "SUFMSVNUEAQqiwEKCEl0ZW1UeXBlEhIKDklURU1fVFlQRV9OT05FEAASEgoO",
+            "SVRFTV9UWVBFX0NBUkQQARISCg5JVEVNX1RZUEVfQlVGRhACEhcKE0lURU1f",
+            "VFlQRV9FUVVJUE1FTlQQAxIVChFJVEVNX1RZUEVfQ09OU1VNRRAEEhMKD0lU",
+            "RU1fVFlQRV9HT09EUxAFKpsBCgpUYXJnZXRUeXBlEhQKEFRBUkdFVF9UWVBF",
+            "X05PTkUQABIUChBUQVJHRVRfVFlQRV9TRUxGEAESFQoRVEFSR0VUX1RZUEVf",
+            "RU5FTVkQAhIWChJUQVJHRVRfVFlQRV9HUk9VTkQQAxIUChBUQVJHRVRfVFlQ",
+            "RV9BTExZEAQSHAoYVEFSR0VUX1RZUEVfRU1QVFlfR1JPVU5EEAUqYQoIQ2Fy",
+            "ZFR5cGUSEgoOQ0FSRF9UWVBFX05PTkUQABIUChBDQVJEX1RZUEVfU1RBQkxF",
+            "EAESFAoQQ0FSRF9UWVBFX1NVUFBMWRACEhUKEUNBUkRfVFlQRV9DT05TVU1F",
+            "EAMqtgMKDkNhcmRFZmZlY3RUeXBlEhkKFUNBUkRfRUZGRUNUX1RZUEVfTk9O",
+            "RRAAEhsKF0NBUkRfRUZGRUNUX1RZUEVfREFNQUdFEAESGQoVQ0FSRF9FRkZF",
+            "Q1RfVFlQRV9IRUFMEAISGwoXQ0FSRF9FRkZFQ1RfVFlQRV9TSElFTEQQAxIj",
+            "Ch9DQVJEX0VGRkVDVF9UWVBFX1JFU1RPUkVfQUNUSU9OEAQSGwoXQ0FSRF9F",
+            "RkZFQ1RfVFlQRV9SRUxPQUQQBRIeChpDQVJEX0VGRkVDVF9UWVBFX0RSQVdf",
+            "Q0FSRBAGEiAKHENBUkRfRUZGRUNUX1RZUEVfQlVGRl9BVFRBQ0sQBxIfChtD",
+            "QVJEX0VGRkVDVF9UWVBFX0JVRkZfQVJNT1IQCBIiCh5DQVJEX0VGRkVDVF9U",
+            "WVBFX0JVRkZfTU9WRU1FTlQQCRIiCh5DQVJEX0VGRkVDVF9UWVBFX0RFQlVG",
+            "Rl9BVFRBQ0sQChIhCh1DQVJEX0VGRkVDVF9UWVBFX0RFQlVGRl9BUk1PUhAL",
+            "EiQKIENBUkRfRUZGRUNUX1RZUEVfREVCVUZGX01PVkVNRU5UEAwqhwEKDlRp",
+            "bGVFbnRpdHlUeXBlEhkKFVRJTEVfRU5USVRZX1RZUEVfTk9ORRAAEhoKFlRJ",
+            "TEVfRU5USVRZX1RZUEVfQUNUT1IQARIeChpUSUxFX0VOVElUWV9UWVBFX1dB",
+            "TExfSEFMRhACEh4KGlRJTEVfRU5USVRZX1RZUEVfV0FMTF9GVUxMEAMqxQIK",
+            "ClN0YXR1c1R5cGUSFAoQU1RBVFVTX1RZUEVfTk9ORRAAEhgKFFNUQVRVU19U",
+            "WVBFX1NUQVRfQVRLEAESGAoUU1RBVFVTX1RZUEVfU1RBVF9ERUYQAhIXChNT",
+            "VEFUVVNfVFlQRV9TVEFUX0hQEAMSGwoXU1RBVFVTX1RZUEVfU1RBVF9TSElF",
+            "TEQQBBIdChlTVEFUVVNfVFlQRV9TVEFUX01PVkVNRU5UEAUSGgoWU1RBVFVT",
+            "X1RZUEVfU1RBVF9SQU5HRRAGEh0KGVNUQVRVU19UWVBFX1NUQVRfQUNDVVJB",
+            "Q1kQBxIdChlTVEFUVVNfVFlQRV9TVEFUX0NBUkRfQ0FQEAgSHQoZU1RBVFVT",
+            "X1RZUEVfU1RBVF9BTU1PX0NBUBAJEh8KG1NUQVRVU19UWVBFX1NUQVRfRU5F",
+            "UkdZX0NBUBAKKrsBCg1FcXVpcFNsb3RUeXBlEhgKFEVRVUlQX1NMT1RfVFlQ",
+            "RV9OT05FEAASHwobRVFVSVBfU0xPVF9UWVBFX1dFQVBPTl9NQUlOEAESHgoa",
+            "RVFVSVBfU0xPVF9UWVBFX1dFQVBPTl9TVUIQAhIZChVFUVVJUF9TTE9UX1RZ",
+            "UEVfQVJNT1IQAxIaChZFUVVJUF9TTE9UX1RZUEVfSEVMTUVUEAQSGAoURVFV",
+            "SVBfU0xPVF9UWVBFX1RPT0wQBUILqgIIR2FtZURhdGFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameData.Language), typeof(global::GameData.ClassType), typeof(global::GameData.ItemType), typeof(global::GameData.TargetType), typeof(global::GameData.CardType), typeof(global::GameData.CardEffectType), typeof(global::GameData.TileEntityType), typeof(global::GameData.StatusType), typeof(global::GameData.EquipSlotType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -131,11 +131,11 @@ namespace GameData {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.CardEffectDataTable), global::GameData.CardEffectDataTable.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.EquipmentData), global::GameData.EquipmentData.Parser, new[]{ "Id", "IdAlias", "Name", "Slot", "Price", "IconPath", "StatusType", "StatusValue", "CardId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.EquipmentDataTable), global::GameData.EquipmentDataTable.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.MonsterData), global::GameData.MonsterData.Parser, new[]{ "Id", "IdAlias", "Name", "Hp", "Shield", "Armor", "Movement", "Attack", "Range", "Sight", "PrefabPath", "ProjectilePath", "Gold", "Exp" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.MonsterData), global::GameData.MonsterData.Parser, new[]{ "Id", "IdAlias", "Name", "Hp", "Shield", "Armor", "Movement", "Attack", "Range", "Sight", "ActorLink", "ProjectilePath", "Gold", "Exp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.MonsterDataTable), global::GameData.MonsterDataTable.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.NamePresetData), global::GameData.NamePresetData.Parser, new[]{ "Id", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.NamePresetDataTable), global::GameData.NamePresetDataTable.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnData), global::GameData.PawnData.Parser, new[]{ "Id", "IdAlias", "Name", "ClassType", "Hp", "Shield", "Armor", "Movement", "Attack", "Range", "Sight", "Accuracy", "Ammo", "PrefabPath" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnData), global::GameData.PawnData.Parser, new[]{ "Id", "IdAlias", "Name", "ClassType", "Hp", "Shield", "Armor", "Movement", "Attack", "Range", "Sight", "Accuracy", "Ammo", "ActorLink" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnDataTable), global::GameData.PawnDataTable.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnGrowthData), global::GameData.PawnGrowthData.Parser, new[]{ "Id", "IdAlias", "ClassType", "Level", "RequireExp", "StatusType", "StatusValue", "CardId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnGrowthDataTable), global::GameData.PawnGrowthDataTable.Parser, new[]{ "Items" }, null, null, null, null),
@@ -2604,7 +2604,7 @@ namespace GameData {
       attack_ = other.attack_;
       range_ = other.range_;
       sight_ = other.sight_;
-      prefabPath_ = other.prefabPath_;
+      actorLink_ = other.actorLink_;
       projectilePath_ = other.projectilePath_;
       gold_ = other.gold_;
       exp_ = other.exp_;
@@ -2767,18 +2767,18 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "prefabPath" field.</summary>
-    public const int PrefabPathFieldNumber = 11;
-    private string prefabPath_ = "";
+    /// <summary>Field number for the "actorLink" field.</summary>
+    public const int ActorLinkFieldNumber = 11;
+    private string actorLink_ = "";
     /// <summary>
     /// 리소스경로
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PrefabPath {
-      get { return prefabPath_; }
+    public string ActorLink {
+      get { return actorLink_; }
       set {
-        prefabPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        actorLink_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -2852,7 +2852,7 @@ namespace GameData {
       if (Attack != other.Attack) return false;
       if (Range != other.Range) return false;
       if (Sight != other.Sight) return false;
-      if (PrefabPath != other.PrefabPath) return false;
+      if (ActorLink != other.ActorLink) return false;
       if (ProjectilePath != other.ProjectilePath) return false;
       if (Gold != other.Gold) return false;
       if (Exp != other.Exp) return false;
@@ -2873,7 +2873,7 @@ namespace GameData {
       if (Attack != 0) hash ^= Attack.GetHashCode();
       if (Range != 0) hash ^= Range.GetHashCode();
       if (Sight != 0) hash ^= Sight.GetHashCode();
-      if (PrefabPath.Length != 0) hash ^= PrefabPath.GetHashCode();
+      if (ActorLink.Length != 0) hash ^= ActorLink.GetHashCode();
       if (ProjectilePath.Length != 0) hash ^= ProjectilePath.GetHashCode();
       if (Gold != 0) hash ^= Gold.GetHashCode();
       if (Exp != 0) hash ^= Exp.GetHashCode();
@@ -2935,9 +2935,9 @@ namespace GameData {
         output.WriteRawTag(80);
         output.WriteInt32(Sight);
       }
-      if (PrefabPath.Length != 0) {
+      if (ActorLink.Length != 0) {
         output.WriteRawTag(90);
-        output.WriteString(PrefabPath);
+        output.WriteString(ActorLink);
       }
       if (ProjectilePath.Length != 0) {
         output.WriteRawTag(98);
@@ -3001,9 +3001,9 @@ namespace GameData {
         output.WriteRawTag(80);
         output.WriteInt32(Sight);
       }
-      if (PrefabPath.Length != 0) {
+      if (ActorLink.Length != 0) {
         output.WriteRawTag(90);
-        output.WriteString(PrefabPath);
+        output.WriteString(ActorLink);
       }
       if (ProjectilePath.Length != 0) {
         output.WriteRawTag(98);
@@ -3057,8 +3057,8 @@ namespace GameData {
       if (Sight != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Sight);
       }
-      if (PrefabPath.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PrefabPath);
+      if (ActorLink.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ActorLink);
       }
       if (ProjectilePath.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ProjectilePath);
@@ -3111,8 +3111,8 @@ namespace GameData {
       if (other.Sight != 0) {
         Sight = other.Sight;
       }
-      if (other.PrefabPath.Length != 0) {
-        PrefabPath = other.PrefabPath;
+      if (other.ActorLink.Length != 0) {
+        ActorLink = other.ActorLink;
       }
       if (other.ProjectilePath.Length != 0) {
         ProjectilePath = other.ProjectilePath;
@@ -3183,7 +3183,7 @@ namespace GameData {
             break;
           }
           case 90: {
-            PrefabPath = input.ReadString();
+            ActorLink = input.ReadString();
             break;
           }
           case 98: {
@@ -3258,7 +3258,7 @@ namespace GameData {
             break;
           }
           case 90: {
-            PrefabPath = input.ReadString();
+            ActorLink = input.ReadString();
             break;
           }
           case 98: {
@@ -3943,7 +3943,7 @@ namespace GameData {
       sight_ = other.sight_;
       accuracy_ = other.accuracy_;
       ammo_ = other.ammo_;
-      prefabPath_ = other.prefabPath_;
+      actorLink_ = other.actorLink_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4148,18 +4148,18 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "prefabPath" field.</summary>
-    public const int PrefabPathFieldNumber = 14;
-    private string prefabPath_ = "";
+    /// <summary>Field number for the "actorLink" field.</summary>
+    public const int ActorLinkFieldNumber = 14;
+    private string actorLink_ = "";
     /// <summary>
     /// 리소스경로
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PrefabPath {
-      get { return prefabPath_; }
+    public string ActorLink {
+      get { return actorLink_; }
       set {
-        prefabPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        actorLink_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -4191,7 +4191,7 @@ namespace GameData {
       if (Sight != other.Sight) return false;
       if (Accuracy != other.Accuracy) return false;
       if (Ammo != other.Ammo) return false;
-      if (PrefabPath != other.PrefabPath) return false;
+      if (ActorLink != other.ActorLink) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4212,7 +4212,7 @@ namespace GameData {
       if (Sight != 0) hash ^= Sight.GetHashCode();
       if (Accuracy != 0) hash ^= Accuracy.GetHashCode();
       if (Ammo != 0) hash ^= Ammo.GetHashCode();
-      if (PrefabPath.Length != 0) hash ^= PrefabPath.GetHashCode();
+      if (ActorLink.Length != 0) hash ^= ActorLink.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4283,9 +4283,9 @@ namespace GameData {
         output.WriteRawTag(104);
         output.WriteInt32(Ammo);
       }
-      if (PrefabPath.Length != 0) {
+      if (ActorLink.Length != 0) {
         output.WriteRawTag(114);
-        output.WriteString(PrefabPath);
+        output.WriteString(ActorLink);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4349,9 +4349,9 @@ namespace GameData {
         output.WriteRawTag(104);
         output.WriteInt32(Ammo);
       }
-      if (PrefabPath.Length != 0) {
+      if (ActorLink.Length != 0) {
         output.WriteRawTag(114);
-        output.WriteString(PrefabPath);
+        output.WriteString(ActorLink);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -4402,8 +4402,8 @@ namespace GameData {
       if (Ammo != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ammo);
       }
-      if (PrefabPath.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PrefabPath);
+      if (ActorLink.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ActorLink);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4456,8 +4456,8 @@ namespace GameData {
       if (other.Ammo != 0) {
         Ammo = other.Ammo;
       }
-      if (other.PrefabPath.Length != 0) {
-        PrefabPath = other.PrefabPath;
+      if (other.ActorLink.Length != 0) {
+        ActorLink = other.ActorLink;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4531,7 +4531,7 @@ namespace GameData {
             break;
           }
           case 114: {
-            PrefabPath = input.ReadString();
+            ActorLink = input.ReadString();
             break;
           }
         }
@@ -4606,7 +4606,7 @@ namespace GameData {
             break;
           }
           case 114: {
-            PrefabPath = input.ReadString();
+            ActorLink = input.ReadString();
             break;
           }
         }

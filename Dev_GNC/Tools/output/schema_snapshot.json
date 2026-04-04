@@ -212,9 +212,9 @@
       "field_type": "int32"
     },
     {
-      "field_name": "prefabPath",
+      "field_name": "actorLink",
       "field_number": 11,
-      "field_type": "string"
+      "field_type": "classref:ACardGameActor"
     },
     {
       "field_name": "projectilePath",
@@ -311,9 +311,9 @@
       "field_type": "int32"
     },
     {
-      "field_name": "prefabPath",
+      "field_name": "actorLink",
       "field_number": 14,
-      "field_type": "classref:CardGameActor"
+      "field_type": "classref:ACardGameActor"
     }
   ],
   "PawnGrowthData": [
@@ -419,7 +419,7 @@
     {
       "field_name": "presetPath",
       "field_number": 4,
-      "field_type": "asset:TileMapPreset"
+      "field_type": "asset:UTileMapPreset"
     }
   ],
   "StageRewardData": [

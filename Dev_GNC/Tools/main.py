@@ -73,7 +73,7 @@ def _ok(msg: str = "") -> None:
 # ---------------------------------------------------------------------------
 
 def run_pipeline(args: argparse.Namespace) -> None:
-    TOTAL_STEPS = 8
+    TOTAL_STEPS = 10
 
     # ------------------------------------------------------------------
     # Step 1: config.yaml 로드
@@ -200,6 +200,44 @@ def run_pipeline(args: argparse.Namespace) -> None:
         )
 
     # ------------------------------------------------------------------
+    # Step 9: UE5 C++ Row Struct 헤더 생성
+    # ------------------------------------------------------------------
+    _step(9, TOTAL_STEPS, "UE5 C++ Row Struct 헤더 생성")
+    ue_header_path = config.get("ue_header_path")
+    if ue_header_path:
+        from ue_codegen import generate_row_header
+
+        header_out = (TOOL_DIR / ue_header_path).resolve()
+        header_result = generate_row_header(excel_data, header_out)
+        _ok(f"생성: {header_result}")
+    else:
+        print("  config.yaml에 ue_header_path가 없어 건너뜁니다.")
+        header_result = None
+
+    # ------------------------------------------------------------------
+    # Step 10: 테이블 메타데이터 생성 (ImportDataTables.py용)
+    # ------------------------------------------------------------------
+    _step(10, TOTAL_STEPS, "테이블 메타데이터 생성")
+    import json as _json
+
+    table_meta: dict[str, list[str]] = {}
+    for msg_name, fields in excel_data.schema.items():
+        ref_fields = [
+            fd.field_name for fd in fields
+            if fd.field_type.startswith("asset:") or fd.field_type.startswith("classref:")
+        ]
+        if ref_fields:
+            table_meta[msg_name] = ref_fields
+
+    meta_path = TOOL_DIR / "output" / "json" / "_table_meta.json"
+    meta_path.parent.mkdir(parents=True, exist_ok=True)
+    meta_path.write_text(
+        _json.dumps(table_meta, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    _ok(f"생성: {meta_path.name}  ({len(table_meta)} 테이블)")
+
+    # ------------------------------------------------------------------
     # 요약 리포트
     # ------------------------------------------------------------------
     print("\n" + "=" * 60)
@@ -211,6 +249,9 @@ def run_pipeline(args: argparse.Namespace) -> None:
     print(f"  생성된 .bytes 파일 수  : {len(bytes_files)}")
     print(f"  생성된 JSON 파일 수    : {len(json_files)}")
     print(f"  생성된 .proto 경로     : {proto_path}")
+    if header_result:
+        print(f"  생성된 C++ 헤더 경로   : {header_result}")
+    print(f"  메타데이터 (ref 필드)  : {len(table_meta)} 테이블")
     if warnings:
         print(f"\n  ⚠ 필드 번호 변경 경고: {len(warnings)}건")
     print("=" * 60)

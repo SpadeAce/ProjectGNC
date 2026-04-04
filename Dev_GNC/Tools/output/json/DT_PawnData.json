@@ -13,7 +13,7 @@
     "armor": 0,
     "attack": 0,
     "ammo": 0,
-    "prefabPath": "",
+    "actorLink": "/Game/CardGame/Blueprints/Actor/BP_CardGameActor.BP_CardGameActor_C",
     "Name": "pawn_recruit"
   },
   {
@@ -30,7 +30,7 @@
     "armor": 0,
     "attack": 0,
     "ammo": 0,
-    "prefabPath": "",
+    "actorLink": "/Game/CardGame/Blueprints/Actor/Pawn/BP_ScoutClassActor.BP_ScoutClassActor_C",
     "Name": "pawn_scout"
   },
   {
@@ -47,7 +47,7 @@
     "sight": 6,
     "accuracy": 9000,
     "ammo": 0,
-    "prefabPath": "",
+    "actorLink": "/Game/CardGame/Blueprints/Actor/Pawn/BP_AssaultClassActor.BP_AssaultClassActor_C",
     "Name": "pawn_assault"
   },
   {
@@ -64,7 +64,7 @@
     "accuracy": 8000,
     "attack": 0,
     "ammo": 0,
-    "prefabPath": "",
+    "actorLink": "/Game/CardGame/Blueprints/Actor/Pawn/BP_HeavyClassActor.BP_HeavyClassActor_C",
     "Name": "pawn_heavy"
   },
   {
@@ -81,7 +81,7 @@
     "armor": 0,
     "attack": 0,
     "ammo": 0,
-    "prefabPath": "",
+    "actorLink": "/Game/CardGame/Blueprints/Actor/Pawn/BP_SpecialistClassActor.BP_SpecialistClassActor_C",
     "Name": "pawn_specialist"
   }
 ]

@@ -154,7 +154,7 @@ message MonsterData {
   int32 attack = 8;  // 공격력
   int32 range = 9;  // 사거리
   int32 sight = 10;  // 시야
-  string prefabPath = 11;  // 리소스경로
+  string actorLink = 11;  // 리소스경로
   string projectilePath = 12;  // 투사체 리소스 경로
   int32 gold = 13;  // 획득 골드
   int32 exp = 14;  // 획득 경험치
@@ -187,7 +187,7 @@ message PawnData {
   int32 sight = 11;  // 시야
   int32 accuracy = 12;  // 정확도(만분율)
   int32 ammo = 13;  // 탄약
-  string prefabPath = 14;  // 리소스경로
+  string actorLink = 14;  // 리소스경로
 }
 
 message PawnDataTable {

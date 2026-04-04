@@ -143,5 +143,5 @@ private:
 	// ── 스폰 ───────────────────────────────────────
 	void SpawnPawns(UTileMapPreset* Preset);
 	void SpawnMonsters(UTileMapPreset* Preset);
-	ACardGameActor* SpawnActorOnTile(ASquareTile* Tile);
+	ACardGameActor* SpawnActorOnTile(ASquareTile* Tile, TSubclassOf<ACardGameActor> ActorClass = nullptr);
 };

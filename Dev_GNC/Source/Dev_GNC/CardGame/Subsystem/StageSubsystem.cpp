@@ -744,10 +744,17 @@ void UStageSubsystem::SpawnPawns(UTileMapPreset* Preset)
 		ASquareTile* Tile = GridSub->GetTile(Sp.Position);
 		if (!Tile || !Tile->Slot) continue;
 
-		ACardGameActor* Actor = SpawnActorOnTile(Tile);
-		if (!Actor) continue;
-
 		UDPawn* Pawn = DeckPawns[PawnIndex];
+
+		// ActorLink에서 액터 클래스 resolve
+		TSubclassOf<ACardGameActor> ActorClass = nullptr;
+		if (Pawn->Data && !Pawn->Data->ActorLink.IsNull())
+		{
+			ActorClass = Pawn->Data->ActorLink.LoadSynchronous();
+		}
+
+		ACardGameActor* Actor = SpawnActorOnTile(Tile, ActorClass);
+		if (!Actor) continue;
 		Pawn->ResetStats();
 		Pawn->BuildCardPool();
 		Pawn->InitHand();
@@ -781,12 +788,27 @@ void UStageSubsystem::SpawnMonsters(UTileMapPreset* Preset)
 		ASquareTile* Tile = GridSub->GetTile(Sp.Position);
 		if (!Tile || !Tile->Slot) continue;
 
-		ACardGameActor* Actor = SpawnActorOnTile(Tile);
+		// ActorLink에서 액터 클래스 resolve
+		TSubclassOf<ACardGameActor> ActorClass = nullptr;
+		const FMonsterDataRow* MonsterData = DataSub->GetMonsterData(MonsterId);
+		if (MonsterData && !MonsterData->ActorLink.IsNull())
+		{
+			ActorClass = MonsterData->ActorLink.LoadSynchronous();
+		}
+
+		ACardGameActor* Actor = SpawnActorOnTile(Tile, ActorClass);
 		if (!Actor) continue;
 
 		// 몬스터 데이터 초기화
 		UDMonster* Monster = NewObject<UDMonster>(this);
-		Monster->InitFromId(MonsterId, DataSub);
+		if (MonsterData)
+		{
+			Monster->InitFromData(MonsterData);
+		}
+		else
+		{
+			Monster->InitFromId(MonsterId, DataSub);
+		}
 		Actor->InitFromMonster(Monster);
 
 		EnemyActors.Add(ActorIndex, Actor);
@@ -797,15 +819,20 @@ void UStageSubsystem::SpawnMonsters(UTileMapPreset* Preset)
 	}
 }
 
-ACardGameActor* UStageSubsystem::SpawnActorOnTile(ASquareTile* Tile)
+ACardGameActor* UStageSubsystem::SpawnActorOnTile(ASquareTile* Tile, TSubclassOf<ACardGameActor> ActorClass)
 {
 	if (!Tile || !Tile->Slot) return nullptr;
+
+	if (!ActorClass)
+	{
+		ActorClass = ACardGameActor::StaticClass();
+	}
 
 	FActorSpawnParameters Params;
 	Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
 	ACardGameActor* Actor = GetWorld()->SpawnActor<ACardGameActor>(
-		ACardGameActor::StaticClass(),
+		ActorClass,
 		Tile->GetActorLocation(),
 		FRotator::ZeroRotator,
 		Params);

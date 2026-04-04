@@ -8,11 +8,11 @@
     "attack": 5,
     "range": 1,
     "sight": 5,
-    "prefabPath": "Prefabs/Actor/Monster/Monster_Slime",
     "gold": 50,
     "exp": 50,
     "shield": 0,
     "armor": 0,
+    "actorLink": "",
     "projectilePath": "",
     "Name": "monster_slime"
   },
@@ -27,9 +27,9 @@
     "attack": 5,
     "range": 1,
     "sight": 4,
-    "prefabPath": "Prefabs/Actor/Monster/Monster_Turtle",
     "gold": 100,
     "exp": 100,
+    "actorLink": "",
     "projectilePath": "",
     "Name": "monster_turtle"
   }
