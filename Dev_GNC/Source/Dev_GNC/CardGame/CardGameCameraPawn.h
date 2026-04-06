@@ -60,7 +60,7 @@ protected:
 
 	// ── 카메라 설정 ─────────────────────────────
 	UPROPERTY(EditDefaultsOnly, Category = "CardGame|Camera")
-	float PanSpeed = 10.0f;
+	float PanSpeed = 20.0f;
 
 	UPROPERTY(EditDefaultsOnly, Category = "CardGame|Camera")
 	float RotationInterpSpeed = 5.0f;
@@ -82,6 +82,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "CardGame|Camera")
 	float CameraElevation = 45.0f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "CardGame|Camera")
+	float InitialYaw = 45.0f;
 
 private:
 	// ── 입력 핸들러 ─────────────────────────────

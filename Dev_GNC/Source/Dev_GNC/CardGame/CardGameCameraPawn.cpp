@@ -35,8 +35,8 @@ void ACardGameCameraPawn::BeginPlay()
 	Super::BeginPlay();
 
 	TargetArmLength = DefaultZoomDistance;
-	TargetYaw = GetActorRotation().Yaw;
-	CurrentYaw = TargetYaw;
+	TargetYaw = InitialYaw;
+	CurrentYaw = InitialYaw;
 
 	// Enhanced Input Mapping Context 등록
 	if (APlayerController* PC = Cast<APlayerController>(GetController()))
@@ -98,7 +98,8 @@ void ACardGameCameraPawn::HandlePan(const FInputActionValue& Value)
 	const FVector Forward = YawRot.RotateVector(FVector::ForwardVector);
 	const FVector Right = YawRot.RotateVector(FVector::RightVector);
 
-	const FVector Delta = (Forward * Input.Y + Right * Input.X) * PanSpeed;
+	const float ZoomFactor = SpringArmComponent->TargetArmLength / DefaultZoomDistance;
+	const FVector Delta = -(Forward * Input.Y + Right * Input.X) * PanSpeed * ZoomFactor;
 	AddActorWorldOffset(Delta);
 }
 
