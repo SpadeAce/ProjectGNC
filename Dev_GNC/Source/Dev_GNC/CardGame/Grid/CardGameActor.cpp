@@ -14,10 +14,12 @@
 
 ACardGameActor::ACardGameActor()
 {
-	PrimaryActorTick.bCanEverTick = false; // Tick은 이동 시에만 활성화
+	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bStartWithTickEnabled = false;
 
 	MeshComp = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MeshComp"));
 	MeshComp->SetupAttachment(SceneRoot);
+	MeshComp->SetRelativeRotation(FRotator(0.f, -90.f, 0.f));
 
 	// HUD 위젯 컴포넌트 (HP바/이름)
 	HUDWidgetComp = CreateDefaultSubobject<UWidgetComponent>(TEXT("HUDWidget"));

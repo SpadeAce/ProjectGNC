@@ -7,6 +7,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "Engine/LocalPlayer.h"
 #include "InputActionValue.h"
+#include "Subsystem/GridSubsystem.h"
 
 ACardGameCameraPawn::ACardGameCameraPawn()
 {
@@ -101,6 +102,24 @@ void ACardGameCameraPawn::HandlePan(const FInputActionValue& Value)
 	const float ZoomFactor = SpringArmComponent->TargetArmLength / DefaultZoomDistance;
 	const FVector Delta = -(Forward * Input.Y + Right * Input.X) * PanSpeed * ZoomFactor;
 	AddActorWorldOffset(Delta);
+
+	// 맵 바운드 클램프
+	if (bClampToMapBounds)
+	{
+		if (UGridSubsystem* Grid = GetWorld()->GetSubsystem<UGridSubsystem>())
+		{
+			if (Grid->GetTileCount() > 0)
+			{
+				FVector2D BoundsMin, BoundsMax;
+				Grid->GetMapBounds(BoundsMin, BoundsMax);
+
+				FVector Loc = GetActorLocation();
+				Loc.X = FMath::Clamp(Loc.X, BoundsMin.X - CameraBoundsPadding, BoundsMax.X + CameraBoundsPadding);
+				Loc.Y = FMath::Clamp(Loc.Y, BoundsMin.Y - CameraBoundsPadding, BoundsMax.Y + CameraBoundsPadding);
+				SetActorLocation(Loc);
+			}
+		}
+	}
 }
 
 void ACardGameCameraPawn::HandleRotate(const FInputActionValue& Value)

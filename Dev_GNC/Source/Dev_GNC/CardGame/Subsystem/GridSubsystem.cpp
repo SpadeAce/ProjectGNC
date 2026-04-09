@@ -560,6 +560,32 @@ FVector UGridSubsystem::GetMapCenter() const
 	);
 }
 
+void UGridSubsystem::GetMapBounds(FVector2D& OutMin, FVector2D& OutMax) const
+{
+	if (TilesByPosition.Num() == 0)
+	{
+		OutMin = FVector2D::ZeroVector;
+		OutMax = FVector2D::ZeroVector;
+		return;
+	}
+
+	int32 MinX = TNumericLimits<int32>::Max(), MaxX = TNumericLimits<int32>::Min();
+	int32 MinY = TNumericLimits<int32>::Max(), MaxY = TNumericLimits<int32>::Min();
+
+	for (const auto& Pair : TilesByPosition)
+	{
+		FIntPoint Pos = Pair.Key;
+		if (Pos.X < MinX) MinX = Pos.X;
+		if (Pos.X > MaxX) MaxX = Pos.X;
+		if (Pos.Y < MinY) MinY = Pos.Y;
+		if (Pos.Y > MaxY) MaxY = Pos.Y;
+	}
+
+	const float HalfTile = TileSize * 0.5f;
+	OutMin = FVector2D(MinX * TileSize - HalfTile, MinY * TileSize - HalfTile);
+	OutMax = FVector2D(MaxX * TileSize + HalfTile, MaxY * TileSize + HalfTile);
+}
+
 void UGridSubsystem::DeselectAllTiles()
 {
 	for (auto& Pair : TilesByPosition)

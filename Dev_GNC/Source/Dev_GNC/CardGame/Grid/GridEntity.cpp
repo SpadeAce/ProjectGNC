@@ -18,7 +18,6 @@ void AGridEntity::SetSlot(UGridSlotComponent* Slot)
 	if (Slot && Slot->GetOwner())
 	{
 		SetActorLocation(Slot->GetOwner()->GetActorLocation());
-		SetActorRotation(FRotator::ZeroRotator);
 	}
 }
 

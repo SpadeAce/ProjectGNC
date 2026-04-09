@@ -86,6 +86,14 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "CardGame|Camera")
 	float InitialYaw = 45.0f;
 
+	/** 맵 바운드 기준 카메라 이동 제한 여부 */
+	UPROPERTY(EditDefaultsOnly, Category = "CardGame|Camera")
+	bool bClampToMapBounds = true;
+
+	/** 맵 가장자리로부터의 여유 공간 (월드 유닛) */
+	UPROPERTY(EditDefaultsOnly, Category = "CardGame|Camera", meta = (EditCondition = "bClampToMapBounds"))
+	float CameraBoundsPadding = 200.0f;
+
 private:
 	// ── 입력 핸들러 ─────────────────────────────
 	void HandlePan(const FInputActionValue& Value);

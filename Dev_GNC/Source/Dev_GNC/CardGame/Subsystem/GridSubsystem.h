@@ -106,6 +106,10 @@ public:
 	UFUNCTION(BlueprintPure, Category = "CardGame")
 	FVector GetMapCenter() const;
 
+	/** 맵의 월드 좌표 바운드를 반환한다. */
+	UFUNCTION(BlueprintPure, Category = "CardGame")
+	void GetMapBounds(FVector2D& OutMin, FVector2D& OutMax) const;
+
 	UFUNCTION(BlueprintCallable, Category = "CardGame")
 	void DeselectAllTiles();
 
