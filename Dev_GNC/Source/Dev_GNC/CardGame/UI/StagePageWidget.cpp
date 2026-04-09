@@ -317,7 +317,7 @@ void UStagePageWidget::HandleBattleEnd(bool bVictory)
 	Param.bFlag = bVictory;
 	Param.IntValue = StageSubRef.IsValid() ? StageSubRef->StageGoldReward : 0;
 
-	HUD->OpenPopup<UBattleResultPopupWidget>(Param);
+	HUD->OpenPopup(BattleResultPopupClass, Param);
 
 	UE_LOG(LogStagePage, Log, TEXT("BattleEnd: %s — opened BattleResultPopup"), bVictory ? TEXT("Victory") : TEXT("Defeat"));
 }
@@ -327,7 +327,7 @@ void UStagePageWidget::HandlePauseClicked()
 	ACardGameHUD* HUD = OwningHUD.Get();
 	if (!HUD) return;
 
-	HUD->OpenPopup<UPausePopupWidget>();
+	HUD->OpenPopup(PausePopupClass);
 
 	UE_LOG(LogStagePage, Log, TEXT("Pause clicked — opened PausePopup"));
 }

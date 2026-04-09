@@ -16,6 +16,8 @@ class UDeckSubsystem;
 class UTextBlock;
 class UPanelWidget;
 class UButton;
+class UPausePopupWidget;
+class UBattleResultPopupWidget;
 
 /**
  * UStagePageWidget
@@ -55,6 +57,12 @@ protected:
 	// ── 에디터 설정 ─────────────────────────────────
 	UPROPERTY(EditDefaultsOnly, Category = "CardGame|UI")
 	TSubclassOf<UBattleCardWidget> BattleCardWidgetClass;
+
+	UPROPERTY(EditDefaultsOnly, Category = "CardGame|UI")
+	TSubclassOf<UPausePopupWidget> PausePopupClass;
+
+	UPROPERTY(EditDefaultsOnly, Category = "CardGame|UI")
+	TSubclassOf<UBattleResultPopupWidget> BattleResultPopupClass;
 
 	// ── 드래그-드롭 ─────────────────────────────────
 	virtual bool NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent, UDragDropOperation* InOperation) override;
