@@ -2,7 +2,7 @@
   {
     "id": 1,
     "idAlias": "monster_slime",
-    "name": "슬라임",
+    "nameAlias": "슬라임",
     "hp": 10,
     "movement": 4,
     "attack": 5,
@@ -12,14 +12,14 @@
     "exp": 50,
     "shield": 0,
     "armor": 0,
-    "actorLink": "",
+    "actorLink": "/Game/CardGame/Blueprints/Actor/Monster/BP_SlimeActor.BP_SlimeActor_C",
     "projectilePath": "",
     "Name": "monster_slime"
   },
   {
     "id": 2,
     "idAlias": "monster_turtle",
-    "name": "거북이",
+    "nameAlias": "거북이",
     "hp": 15,
     "shield": 5,
     "armor": 1,
@@ -29,7 +29,7 @@
     "sight": 4,
     "gold": 100,
     "exp": 100,
-    "actorLink": "",
+    "actorLink": "/Game/CardGame/Blueprints/Actor/Monster/BP_TurtleActor.BP_TurtleActor_C",
     "projectilePath": "",
     "Name": "monster_turtle"
   }

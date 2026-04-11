@@ -6,6 +6,7 @@
 #include "LobbySubsystem.h"
 #include "PawnSubsystem.h"
 #include "PlayerDataSubsystem.h"
+#include "TextSubsystem.h"
 #include "Components/Button.h"
 #include "Components/TextBlock.h"
 #include "Components/PanelWidget.h"
@@ -152,7 +153,10 @@ void URecruitPageWidget::RefreshRecruitDisplay()
 
 		if (Text && bHasPawn)
 		{
-			Text->SetText(FText::FromString(LobbySub->RecruitPawns[i]->CodeName));
+			UTextSubsystem* TextSub = GetGameInstance() ? GetGameInstance()->GetSubsystem<UTextSubsystem>() : nullptr;
+			const FString& CodeName = LobbySub->RecruitPawns[i]->CodeName;
+			const FString Resolved = TextSub ? TextSub->Get(CodeName) : CodeName;
+			Text->SetText(FText::FromString(Resolved));
 		}
 	}
 }

@@ -9,6 +9,7 @@
 #include "DeckSubsystem.h"
 #include "PawnSubsystem.h"
 #include "PlayerDataSubsystem.h"
+#include "TextSubsystem.h"
 #include "Components/Button.h"
 #include "Components/TextBlock.h"
 #include "Components/PanelWidget.h"
@@ -165,9 +166,16 @@ void UDeckSettingPageWidget::RefreshSlots()
 		else
 		{
 			UDPawn* Pawn = DeckSub->GetDeckPawn(i);
-			Text->SetText(Pawn
-				? FText::FromString(Pawn->CodeName)
-				: FText::FromString(TEXT("(Empty)")));
+			if (Pawn)
+			{
+				UTextSubsystem* TextSub = GetGameInstance() ? GetGameInstance()->GetSubsystem<UTextSubsystem>() : nullptr;
+				const FString Resolved = TextSub ? TextSub->Get(Pawn->CodeName) : Pawn->CodeName;
+				Text->SetText(FText::FromString(Resolved));
+			}
+			else
+			{
+				Text->SetText(FText::FromString(TEXT("(Empty)")));
+			}
 		}
 	}
 }

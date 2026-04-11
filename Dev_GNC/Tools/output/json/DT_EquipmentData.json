@@ -2,7 +2,7 @@
   {
     "id": 10001,
     "idAlias": "equip_weapon_pistol",
-    "name": "text_equip_weapon_pistol",
+    "nameAlias": "text_equip_weapon_pistol",
     "slot": "WeaponMain",
     "price": 50,
     "iconPath": "Textures/Icon/Equipment/equip_weapon_pistol",
@@ -23,7 +23,7 @@
   {
     "id": 10002,
     "idAlias": "equip_weapon_rifle",
-    "name": "text_equip_weapon_rifle",
+    "nameAlias": "text_equip_weapon_rifle",
     "slot": "WeaponMain",
     "price": 100,
     "iconPath": "Textures/Icon/Equipment/equip_weapon_rifle",
@@ -45,7 +45,7 @@
   {
     "id": 10003,
     "idAlias": "equip_weapon_sniper_rifle",
-    "name": "text_equip_weapon_sniper_rifle",
+    "nameAlias": "text_equip_weapon_sniper_rifle",
     "slot": "WeaponMain",
     "price": 100,
     "iconPath": "Textures/Icon/Equipment/equip_weapon_sniper",
@@ -65,7 +65,7 @@
   {
     "id": 10004,
     "idAlias": "equip_weapon_shotgun",
-    "name": "text_equip_weapon_shotgun",
+    "nameAlias": "text_equip_weapon_shotgun",
     "slot": "WeaponMain",
     "price": 100,
     "iconPath": "Textures/Icon/Equipment/equip_weapon_shootgun",
@@ -87,7 +87,7 @@
   {
     "id": 30001,
     "idAlias": "equip_armor_light",
-    "name": "text_equip_armor_light",
+    "nameAlias": "text_equip_armor_light",
     "slot": "Armor",
     "price": 100,
     "iconPath": "Textures/Icon/Equipment/equip_armor_light",
@@ -105,7 +105,7 @@
   {
     "id": 30002,
     "idAlias": "equip_armor_medium",
-    "name": "text_equip_armor_medium",
+    "nameAlias": "text_equip_armor_medium",
     "slot": "Armor",
     "price": 100,
     "iconPath": "Textures/Icon/Equipment/equip_armor_medium",
@@ -121,7 +121,7 @@
   {
     "id": 30003,
     "idAlias": "equip_armor_heavy",
-    "name": "text_equip_armor_heavy",
+    "nameAlias": "text_equip_armor_heavy",
     "slot": "Armor",
     "price": 100,
     "iconPath": "Textures/Icon/Equipment/equip_armor_heavy",
@@ -139,7 +139,7 @@
   {
     "id": 50101,
     "idAlias": "equip_tool_grenade",
-    "name": "text_equip_tool_grenade",
+    "nameAlias": "text_equip_tool_grenade",
     "slot": "Tool",
     "price": 50,
     "iconPath": "Textures/Card/Grenade",
@@ -153,7 +153,7 @@
   {
     "id": 50102,
     "idAlias": "equip_tool_grenade_smoke",
-    "name": "text_equip_tool_grenade_smoke",
+    "nameAlias": "text_equip_tool_grenade_smoke",
     "slot": "Tool",
     "price": 50,
     "iconPath": "Textures/Card/26",
@@ -167,7 +167,7 @@
   {
     "id": 50103,
     "idAlias": "equip_tool_grenade_flashbang",
-    "name": "text_equip_tool_grenade_flashbang",
+    "nameAlias": "text_equip_tool_grenade_flashbang",
     "slot": "Tool",
     "price": 50,
     "iconPath": "Textures/Card/37",
@@ -181,7 +181,7 @@
   {
     "id": 50104,
     "idAlias": "equip_tool_grenade_incendiary",
-    "name": "text_equip_tool_grenade_incendiary",
+    "nameAlias": "text_equip_tool_grenade_incendiary",
     "slot": "Tool",
     "price": 50,
     "iconPath": "Textures/Card/14",
@@ -195,7 +195,7 @@
   {
     "id": 50105,
     "idAlias": "equip_tool_grenade_flare",
-    "name": "text_equip_tool_grenade_flare",
+    "nameAlias": "text_equip_tool_grenade_flare",
     "slot": "Tool",
     "price": 50,
     "iconPath": "Textures/Card/11",
@@ -209,7 +209,7 @@
   {
     "id": 50201,
     "idAlias": "equip_tool_medikit",
-    "name": "text_equip_tool_medikit",
+    "nameAlias": "text_equip_tool_medikit",
     "slot": "Tool",
     "price": 50,
     "iconPath": "Textures/Card/2",
@@ -223,7 +223,7 @@
   {
     "id": 50301,
     "idAlias": "equip_tool_plate",
-    "name": "text_equip_tool_plate",
+    "nameAlias": "text_equip_tool_plate",
     "slot": "Tool",
     "price": 50,
     "iconPath": "Textures/Card/48",
@@ -237,7 +237,7 @@
   {
     "id": 60101,
     "idAlias": "equip_tool_backpack",
-    "name": "text_equip_tool_backpack",
+    "nameAlias": "text_equip_tool_backpack",
     "slot": "Tool",
     "price": 100,
     "iconPath": "Textures/Card/Backpack",
@@ -253,7 +253,7 @@
   {
     "id": 60102,
     "idAlias": "equip_tool_extended_magazine",
-    "name": "text_equip_tool_extended_magazine",
+    "nameAlias": "text_equip_tool_extended_magazine",
     "slot": "Tool",
     "price": 100,
     "iconPath": "Textures/Card/1",

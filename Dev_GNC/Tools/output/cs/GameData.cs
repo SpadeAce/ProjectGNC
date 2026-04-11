@@ -24,118 +24,119 @@ namespace GameData {
     static GameDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5HYW1lRGF0YS5wcm90bxIIR2FtZURhdGEimAIKCENhcmREYXRhEgoKAmlk",
+            "Cg5HYW1lRGF0YS5wcm90bxIIR2FtZURhdGEiogIKCENhcmREYXRhEgoKAmlk",
             "GAEgASgFEg8KB2lkQWxpYXMYAiABKAkSIAoEdHlwZRgDIAEoDjISLkdhbWVE",
             "YXRhLkNhcmRUeXBlEiQKBnRhcmdldBgEIAEoDjIULkdhbWVEYXRhLlRhcmdl",
-            "dFR5cGUSDAoEbmFtZRgFIAEoCRIMCgRkZXNjGAYgASgJEhIKCmVuZXJneUNv",
-            "c3QYByABKAUSEAoIYW1tb0Nvc3QYCCABKAUSDQoFcHJpY2UYCSABKAUSDQoF",
-            "cmFuZ2UYCiABKAUSDgoGcmFkaXVzGAsgASgFEhAKCGVmZmVjdElkGAwgAygF",
-            "EhMKC2VmZmVjdFZhbHVlGA4gAygFEhAKCGljb25QYXRoGA8gASgJIjIKDUNh",
-            "cmREYXRhVGFibGUSIQoFaXRlbXMYASADKAsyEi5HYW1lRGF0YS5DYXJkRGF0",
-            "YSKhAQoOQ2FyZEVmZmVjdERhdGESCgoCaWQYASABKAUSDwoHaWRBbGlhcxgC",
-            "IAEoCRIMCgRuYW1lGAMgASgJEiwKCmVmZmVjdFR5cGUYBCABKA4yGC5HYW1l",
-            "RGF0YS5DYXJkRWZmZWN0VHlwZRIkCgZ0YXJnZXQYBSABKA4yFC5HYW1lRGF0",
-            "YS5UYXJnZXRUeXBlEhAKCGR1cmF0aW9uGAYgASgFIj4KE0NhcmRFZmZlY3RE",
-            "YXRhVGFibGUSJwoFaXRlbXMYASADKAsyGC5HYW1lRGF0YS5DYXJkRWZmZWN0",
-            "RGF0YSLRAQoNRXF1aXBtZW50RGF0YRIKCgJpZBgBIAEoBRIPCgdpZEFsaWFz",
-            "GAIgASgJEgwKBG5hbWUYAyABKAkSJQoEc2xvdBgEIAEoDjIXLkdhbWVEYXRh",
-            "LkVxdWlwU2xvdFR5cGUSDQoFcHJpY2UYBSABKAUSEAoIaWNvblBhdGgYBiAB",
-            "KAkSKAoKc3RhdHVzVHlwZRgHIAMoDjIULkdhbWVEYXRhLlN0YXR1c1R5cGUS",
-            "EwoLc3RhdHVzVmFsdWUYCCADKAUSDgoGY2FyZElkGAkgAygFIjwKEkVxdWlw",
-            "bWVudERhdGFUYWJsZRImCgVpdGVtcxgBIAMoCzIXLkdhbWVEYXRhLkVxdWlw",
-            "bWVudERhdGEi6QEKC01vbnN0ZXJEYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxp",
-            "YXMYAiABKAkSDAoEbmFtZRgDIAEoCRIKCgJocBgEIAEoBRIOCgZzaGllbGQY",
-            "BSABKAUSDQoFYXJtb3IYBiABKAUSEAoIbW92ZW1lbnQYByABKAUSDgoGYXR0",
-            "YWNrGAggASgFEg0KBXJhbmdlGAkgASgFEg0KBXNpZ2h0GAogASgFEhEKCWFj",
-            "dG9yTGluaxgLIAEoCRIWCg5wcm9qZWN0aWxlUGF0aBgMIAEoCRIMCgRnb2xk",
-            "GA0gASgFEgsKA2V4cBgOIAEoBSI4ChBNb25zdGVyRGF0YVRhYmxlEiQKBWl0",
-            "ZW1zGAEgAygLMhUuR2FtZURhdGEuTW9uc3RlckRhdGEiKgoOTmFtZVByZXNl",
-            "dERhdGESCgoCaWQYASABKAUSDAoEbmFtZRgCIAEoCSI+ChNOYW1lUHJlc2V0",
-            "RGF0YVRhYmxlEicKBWl0ZW1zGAEgAygLMhguR2FtZURhdGEuTmFtZVByZXNl",
-            "dERhdGEi+wEKCFBhd25EYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiAB",
-            "KAkSDAoEbmFtZRgDIAEoCRImCgljbGFzc1R5cGUYBCABKA4yEy5HYW1lRGF0",
-            "YS5DbGFzc1R5cGUSCgoCaHAYBSABKAUSDgoGc2hpZWxkGAYgASgFEg0KBWFy",
-            "bW9yGAcgASgFEhAKCG1vdmVtZW50GAggASgFEg4KBmF0dGFjaxgJIAEoBRIN",
-            "CgVyYW5nZRgKIAEoBRINCgVzaWdodBgLIAEoBRIQCghhY2N1cmFjeRgMIAEo",
-            "BRIMCgRhbW1vGA0gASgFEhEKCWFjdG9yTGluaxgOIAEoCSIyCg1QYXduRGF0",
-            "YVRhYmxlEiEKBWl0ZW1zGAEgAygLMhIuR2FtZURhdGEuUGF3bkRhdGEixwEK",
-            "DlBhd25Hcm93dGhEYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkS",
-            "JgoJY2xhc3NUeXBlGAMgASgOMhMuR2FtZURhdGEuQ2xhc3NUeXBlEg0KBWxl",
-            "dmVsGAQgASgFEhIKCnJlcXVpcmVFeHAYBSABKAUSKAoKc3RhdHVzVHlwZRgG",
-            "IAMoDjIULkdhbWVEYXRhLlN0YXR1c1R5cGUSEwoLc3RhdHVzVmFsdWUYByAD",
-            "KAUSDgoGY2FyZElkGAggAygFIj4KE1Bhd25Hcm93dGhEYXRhVGFibGUSJwoF",
-            "aXRlbXMYASADKAsyGC5HYW1lRGF0YS5QYXduR3Jvd3RoRGF0YSJWCghTaG9w",
-            "RGF0YRIKCgJpZBgBIAEoBRIPCgdpZEFsaWFzGAIgASgJEg0KBWxldmVsGAMg",
-            "ASgFEg4KBmNhcmRJZBgEIAMoBRIOCgZpdGVtSWQYBiADKAUiMgoNU2hvcERh",
-            "dGFUYWJsZRIhCgVpdGVtcxgBIAMoCzISLkdhbWVEYXRhLlNob3BEYXRhIlEK",
-            "D1N0YWdlUHJlc2V0RGF0YRIKCgJpZBgBIAEoBRIPCgdpZEFsaWFzGAIgASgJ",
-            "Eg0KBWxldmVsGAMgASgFEhIKCnByZXNldFBhdGgYBCADKAkiQAoUU3RhZ2VQ",
-            "cmVzZXREYXRhVGFibGUSKAoFaXRlbXMYASADKAsyGS5HYW1lRGF0YS5TdGFn",
-            "ZVByZXNldERhdGEiXwoPU3RhZ2VSZXdhcmREYXRhEgoKAmlkGAEgASgFEg8K",
-            "B2lkQWxpYXMYAiABKAkSDQoFbGV2ZWwYAyABKAUSDgoGY2FyZElkGAQgAygF",
-            "EhAKCGNhcmRQcm9iGAYgAygFIkAKFFN0YWdlUmV3YXJkRGF0YVRhYmxlEigK",
-            "BWl0ZW1zGAEgAygLMhkuR2FtZURhdGEuU3RhZ2VSZXdhcmREYXRhIk4KCFRl",
-            "eHREYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkSCwoDa29yGAMg",
-            "ASgJEgsKA2VuZxgEIAEoCRILCgNqcG4YBSABKAkiMgoNVGV4dERhdGFUYWJs",
-            "ZRIhCgVpdGVtcxgBIAMoCzISLkdhbWVEYXRhLlRleHREYXRhIroBCg5UaWxl",
-            "RW50aXR5RGF0YRIKCgJpZBgBIAEoBRIPCgdpZEFsaWFzGAIgASgJEgwKBG5h",
-            "bWUYAyABKAkSLAoKZW50aXR5VHlwZRgEIAEoDjIYLkdhbWVEYXRhLlRpbGVF",
-            "bnRpdHlUeXBlEhAKCHBhc3NhYmxlGAUgASgIEgoKAmhwGAYgASgFEg4KBnNo",
-            "aWVsZBgHIAEoBRINCgVhcm1vchgIIAEoBRISCgpwcmVmYWJQYXRoGAkgASgJ",
-            "Ij4KE1RpbGVFbnRpdHlEYXRhVGFibGUSJwoFaXRlbXMYASADKAsyGC5HYW1l",
-            "RGF0YS5UaWxlRW50aXR5RGF0YSpTCghMYW5ndWFnZRIRCg1MQU5HVUFHRV9O",
-            "T05FEAASEAoMTEFOR1VBR0VfS09SEAESEAoMTEFOR1VBR0VfRU5HEAISEAoM",
-            "TEFOR1VBR0VfSlBOEAMqfwoJQ2xhc3NUeXBlEhMKD0NMQVNTX1RZUEVfTk9O",
-            "RRAAEhQKEENMQVNTX1RZUEVfU0NPVVQQARIWChJDTEFTU19UWVBFX0FTU0FV",
-            "TFQQAhIUChBDTEFTU19UWVBFX0hFQVZZEAMSGQoVQ0xBU1NfVFlQRV9TUEVD",
-            "SUFMSVNUEAQqiwEKCEl0ZW1UeXBlEhIKDklURU1fVFlQRV9OT05FEAASEgoO",
-            "SVRFTV9UWVBFX0NBUkQQARISCg5JVEVNX1RZUEVfQlVGRhACEhcKE0lURU1f",
-            "VFlQRV9FUVVJUE1FTlQQAxIVChFJVEVNX1RZUEVfQ09OU1VNRRAEEhMKD0lU",
-            "RU1fVFlQRV9HT09EUxAFKpsBCgpUYXJnZXRUeXBlEhQKEFRBUkdFVF9UWVBF",
-            "X05PTkUQABIUChBUQVJHRVRfVFlQRV9TRUxGEAESFQoRVEFSR0VUX1RZUEVf",
-            "RU5FTVkQAhIWChJUQVJHRVRfVFlQRV9HUk9VTkQQAxIUChBUQVJHRVRfVFlQ",
-            "RV9BTExZEAQSHAoYVEFSR0VUX1RZUEVfRU1QVFlfR1JPVU5EEAUqYQoIQ2Fy",
-            "ZFR5cGUSEgoOQ0FSRF9UWVBFX05PTkUQABIUChBDQVJEX1RZUEVfU1RBQkxF",
-            "EAESFAoQQ0FSRF9UWVBFX1NVUFBMWRACEhUKEUNBUkRfVFlQRV9DT05TVU1F",
-            "EAMqtgMKDkNhcmRFZmZlY3RUeXBlEhkKFUNBUkRfRUZGRUNUX1RZUEVfTk9O",
-            "RRAAEhsKF0NBUkRfRUZGRUNUX1RZUEVfREFNQUdFEAESGQoVQ0FSRF9FRkZF",
-            "Q1RfVFlQRV9IRUFMEAISGwoXQ0FSRF9FRkZFQ1RfVFlQRV9TSElFTEQQAxIj",
-            "Ch9DQVJEX0VGRkVDVF9UWVBFX1JFU1RPUkVfQUNUSU9OEAQSGwoXQ0FSRF9F",
-            "RkZFQ1RfVFlQRV9SRUxPQUQQBRIeChpDQVJEX0VGRkVDVF9UWVBFX0RSQVdf",
-            "Q0FSRBAGEiAKHENBUkRfRUZGRUNUX1RZUEVfQlVGRl9BVFRBQ0sQBxIfChtD",
-            "QVJEX0VGRkVDVF9UWVBFX0JVRkZfQVJNT1IQCBIiCh5DQVJEX0VGRkVDVF9U",
-            "WVBFX0JVRkZfTU9WRU1FTlQQCRIiCh5DQVJEX0VGRkVDVF9UWVBFX0RFQlVG",
-            "Rl9BVFRBQ0sQChIhCh1DQVJEX0VGRkVDVF9UWVBFX0RFQlVGRl9BUk1PUhAL",
-            "EiQKIENBUkRfRUZGRUNUX1RZUEVfREVCVUZGX01PVkVNRU5UEAwqhwEKDlRp",
-            "bGVFbnRpdHlUeXBlEhkKFVRJTEVfRU5USVRZX1RZUEVfTk9ORRAAEhoKFlRJ",
-            "TEVfRU5USVRZX1RZUEVfQUNUT1IQARIeChpUSUxFX0VOVElUWV9UWVBFX1dB",
-            "TExfSEFMRhACEh4KGlRJTEVfRU5USVRZX1RZUEVfV0FMTF9GVUxMEAMqxQIK",
-            "ClN0YXR1c1R5cGUSFAoQU1RBVFVTX1RZUEVfTk9ORRAAEhgKFFNUQVRVU19U",
-            "WVBFX1NUQVRfQVRLEAESGAoUU1RBVFVTX1RZUEVfU1RBVF9ERUYQAhIXChNT",
-            "VEFUVVNfVFlQRV9TVEFUX0hQEAMSGwoXU1RBVFVTX1RZUEVfU1RBVF9TSElF",
-            "TEQQBBIdChlTVEFUVVNfVFlQRV9TVEFUX01PVkVNRU5UEAUSGgoWU1RBVFVT",
-            "X1RZUEVfU1RBVF9SQU5HRRAGEh0KGVNUQVRVU19UWVBFX1NUQVRfQUNDVVJB",
-            "Q1kQBxIdChlTVEFUVVNfVFlQRV9TVEFUX0NBUkRfQ0FQEAgSHQoZU1RBVFVT",
-            "X1RZUEVfU1RBVF9BTU1PX0NBUBAJEh8KG1NUQVRVU19UWVBFX1NUQVRfRU5F",
-            "UkdZX0NBUBAKKrsBCg1FcXVpcFNsb3RUeXBlEhgKFEVRVUlQX1NMT1RfVFlQ",
-            "RV9OT05FEAASHwobRVFVSVBfU0xPVF9UWVBFX1dFQVBPTl9NQUlOEAESHgoa",
-            "RVFVSVBfU0xPVF9UWVBFX1dFQVBPTl9TVUIQAhIZChVFUVVJUF9TTE9UX1RZ",
-            "UEVfQVJNT1IQAxIaChZFUVVJUF9TTE9UX1RZUEVfSEVMTUVUEAQSGAoURVFV",
-            "SVBfU0xPVF9UWVBFX1RPT0wQBUILqgIIR2FtZURhdGFiBnByb3RvMw=="));
+            "dFR5cGUSEQoJbmFtZUFsaWFzGAUgASgJEhEKCWRlc2NBbGlhcxgGIAEoCRIS",
+            "CgplbmVyZ3lDb3N0GAcgASgFEhAKCGFtbW9Db3N0GAggASgFEg0KBXByaWNl",
+            "GAkgASgFEg0KBXJhbmdlGAogASgFEg4KBnJhZGl1cxgLIAEoBRIQCghlZmZl",
+            "Y3RJZBgMIAMoBRITCgtlZmZlY3RWYWx1ZRgOIAMoBRIQCghpY29uUGF0aBgP",
+            "IAEoCSIyCg1DYXJkRGF0YVRhYmxlEiEKBWl0ZW1zGAEgAygLMhIuR2FtZURh",
+            "dGEuQ2FyZERhdGEipgEKDkNhcmRFZmZlY3REYXRhEgoKAmlkGAEgASgFEg8K",
+            "B2lkQWxpYXMYAiABKAkSEQoJbmFtZUFsaWFzGAMgASgJEiwKCmVmZmVjdFR5",
+            "cGUYBCABKA4yGC5HYW1lRGF0YS5DYXJkRWZmZWN0VHlwZRIkCgZ0YXJnZXQY",
+            "BSABKA4yFC5HYW1lRGF0YS5UYXJnZXRUeXBlEhAKCGR1cmF0aW9uGAYgASgF",
+            "Ij4KE0NhcmRFZmZlY3REYXRhVGFibGUSJwoFaXRlbXMYASADKAsyGC5HYW1l",
+            "RGF0YS5DYXJkRWZmZWN0RGF0YSLWAQoNRXF1aXBtZW50RGF0YRIKCgJpZBgB",
+            "IAEoBRIPCgdpZEFsaWFzGAIgASgJEhEKCW5hbWVBbGlhcxgDIAEoCRIlCgRz",
+            "bG90GAQgASgOMhcuR2FtZURhdGEuRXF1aXBTbG90VHlwZRINCgVwcmljZRgF",
+            "IAEoBRIQCghpY29uUGF0aBgGIAEoCRIoCgpzdGF0dXNUeXBlGAcgAygOMhQu",
+            "R2FtZURhdGEuU3RhdHVzVHlwZRITCgtzdGF0dXNWYWx1ZRgIIAMoBRIOCgZj",
+            "YXJkSWQYCSADKAUiPAoSRXF1aXBtZW50RGF0YVRhYmxlEiYKBWl0ZW1zGAEg",
+            "AygLMhcuR2FtZURhdGEuRXF1aXBtZW50RGF0YSLuAQoLTW9uc3RlckRhdGES",
+            "CgoCaWQYASABKAUSDwoHaWRBbGlhcxgCIAEoCRIRCgluYW1lQWxpYXMYAyAB",
+            "KAkSCgoCaHAYBCABKAUSDgoGc2hpZWxkGAUgASgFEg0KBWFybW9yGAYgASgF",
+            "EhAKCG1vdmVtZW50GAcgASgFEg4KBmF0dGFjaxgIIAEoBRINCgVyYW5nZRgJ",
+            "IAEoBRINCgVzaWdodBgKIAEoBRIRCglhY3RvckxpbmsYCyABKAkSFgoOcHJv",
+            "amVjdGlsZVBhdGgYDCABKAkSDAoEZ29sZBgNIAEoBRILCgNleHAYDiABKAUi",
+            "OAoQTW9uc3RlckRhdGFUYWJsZRIkCgVpdGVtcxgBIAMoCzIVLkdhbWVEYXRh",
+            "Lk1vbnN0ZXJEYXRhIi8KDk5hbWVQcmVzZXREYXRhEgoKAmlkGAEgASgFEhEK",
+            "CW5hbWVBbGlhcxgCIAEoCSI+ChNOYW1lUHJlc2V0RGF0YVRhYmxlEicKBWl0",
+            "ZW1zGAEgAygLMhguR2FtZURhdGEuTmFtZVByZXNldERhdGEigAIKCFBhd25E",
+            "YXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkSEQoJbmFtZUFsaWFz",
+            "GAMgASgJEiYKCWNsYXNzVHlwZRgEIAEoDjITLkdhbWVEYXRhLkNsYXNzVHlw",
+            "ZRIKCgJocBgFIAEoBRIOCgZzaGllbGQYBiABKAUSDQoFYXJtb3IYByABKAUS",
+            "EAoIbW92ZW1lbnQYCCABKAUSDgoGYXR0YWNrGAkgASgFEg0KBXJhbmdlGAog",
+            "ASgFEg0KBXNpZ2h0GAsgASgFEhAKCGFjY3VyYWN5GAwgASgFEgwKBGFtbW8Y",
+            "DSABKAUSEQoJYWN0b3JMaW5rGA4gASgJIjIKDVBhd25EYXRhVGFibGUSIQoF",
+            "aXRlbXMYASADKAsyEi5HYW1lRGF0YS5QYXduRGF0YSLHAQoOUGF3bkdyb3d0",
+            "aERhdGESCgoCaWQYASABKAUSDwoHaWRBbGlhcxgCIAEoCRImCgljbGFzc1R5",
+            "cGUYAyABKA4yEy5HYW1lRGF0YS5DbGFzc1R5cGUSDQoFbGV2ZWwYBCABKAUS",
+            "EgoKcmVxdWlyZUV4cBgFIAEoBRIoCgpzdGF0dXNUeXBlGAYgAygOMhQuR2Ft",
+            "ZURhdGEuU3RhdHVzVHlwZRITCgtzdGF0dXNWYWx1ZRgHIAMoBRIOCgZjYXJk",
+            "SWQYCCADKAUiPgoTUGF3bkdyb3d0aERhdGFUYWJsZRInCgVpdGVtcxgBIAMo",
+            "CzIYLkdhbWVEYXRhLlBhd25Hcm93dGhEYXRhIlYKCFNob3BEYXRhEgoKAmlk",
+            "GAEgASgFEg8KB2lkQWxpYXMYAiABKAkSDQoFbGV2ZWwYAyABKAUSDgoGY2Fy",
+            "ZElkGAQgAygFEg4KBml0ZW1JZBgGIAMoBSIyCg1TaG9wRGF0YVRhYmxlEiEK",
+            "BWl0ZW1zGAEgAygLMhIuR2FtZURhdGEuU2hvcERhdGEiUQoPU3RhZ2VQcmVz",
+            "ZXREYXRhEgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkSDQoFbGV2ZWwY",
+            "AyABKAUSEgoKcHJlc2V0UGF0aBgEIAMoCSJAChRTdGFnZVByZXNldERhdGFU",
+            "YWJsZRIoCgVpdGVtcxgBIAMoCzIZLkdhbWVEYXRhLlN0YWdlUHJlc2V0RGF0",
+            "YSJfCg9TdGFnZVJld2FyZERhdGESCgoCaWQYASABKAUSDwoHaWRBbGlhcxgC",
+            "IAEoCRINCgVsZXZlbBgDIAEoBRIOCgZjYXJkSWQYBCADKAUSEAoIY2FyZFBy",
+            "b2IYBiADKAUiQAoUU3RhZ2VSZXdhcmREYXRhVGFibGUSKAoFaXRlbXMYASAD",
+            "KAsyGS5HYW1lRGF0YS5TdGFnZVJld2FyZERhdGEiTgoIVGV4dERhdGESCgoC",
+            "aWQYASABKAUSDwoHaWRBbGlhcxgCIAEoCRILCgNrb3IYAyABKAkSCwoDZW5n",
+            "GAQgASgJEgsKA2pwbhgFIAEoCSIyCg1UZXh0RGF0YVRhYmxlEiEKBWl0ZW1z",
+            "GAEgAygLMhIuR2FtZURhdGEuVGV4dERhdGEivwEKDlRpbGVFbnRpdHlEYXRh",
+            "EgoKAmlkGAEgASgFEg8KB2lkQWxpYXMYAiABKAkSEQoJbmFtZUFsaWFzGAMg",
+            "ASgJEiwKCmVudGl0eVR5cGUYBCABKA4yGC5HYW1lRGF0YS5UaWxlRW50aXR5",
+            "VHlwZRIQCghwYXNzYWJsZRgFIAEoCBIKCgJocBgGIAEoBRIOCgZzaGllbGQY",
+            "ByABKAUSDQoFYXJtb3IYCCABKAUSEgoKcHJlZmFiUGF0aBgJIAEoCSI+ChNU",
+            "aWxlRW50aXR5RGF0YVRhYmxlEicKBWl0ZW1zGAEgAygLMhguR2FtZURhdGEu",
+            "VGlsZUVudGl0eURhdGEqUwoITGFuZ3VhZ2USEQoNTEFOR1VBR0VfTk9ORRAA",
+            "EhAKDExBTkdVQUdFX0tPUhABEhAKDExBTkdVQUdFX0VORxACEhAKDExBTkdV",
+            "QUdFX0pQThADKn8KCUNsYXNzVHlwZRITCg9DTEFTU19UWVBFX05PTkUQABIU",
+            "ChBDTEFTU19UWVBFX1NDT1VUEAESFgoSQ0xBU1NfVFlQRV9BU1NBVUxUEAIS",
+            "FAoQQ0xBU1NfVFlQRV9IRUFWWRADEhkKFUNMQVNTX1RZUEVfU1BFQ0lBTElT",
+            "VBAEKosBCghJdGVtVHlwZRISCg5JVEVNX1RZUEVfTk9ORRAAEhIKDklURU1f",
+            "VFlQRV9DQVJEEAESEgoOSVRFTV9UWVBFX0JVRkYQAhIXChNJVEVNX1RZUEVf",
+            "RVFVSVBNRU5UEAMSFQoRSVRFTV9UWVBFX0NPTlNVTUUQBBITCg9JVEVNX1RZ",
+            "UEVfR09PRFMQBSqbAQoKVGFyZ2V0VHlwZRIUChBUQVJHRVRfVFlQRV9OT05F",
+            "EAASFAoQVEFSR0VUX1RZUEVfU0VMRhABEhUKEVRBUkdFVF9UWVBFX0VORU1Z",
+            "EAISFgoSVEFSR0VUX1RZUEVfR1JPVU5EEAMSFAoQVEFSR0VUX1RZUEVfQUxM",
+            "WRAEEhwKGFRBUkdFVF9UWVBFX0VNUFRZX0dST1VORBAFKmEKCENhcmRUeXBl",
+            "EhIKDkNBUkRfVFlQRV9OT05FEAASFAoQQ0FSRF9UWVBFX1NUQUJMRRABEhQK",
+            "EENBUkRfVFlQRV9TVVBQTFkQAhIVChFDQVJEX1RZUEVfQ09OU1VNRRADKrYD",
+            "Cg5DYXJkRWZmZWN0VHlwZRIZChVDQVJEX0VGRkVDVF9UWVBFX05PTkUQABIb",
+            "ChdDQVJEX0VGRkVDVF9UWVBFX0RBTUFHRRABEhkKFUNBUkRfRUZGRUNUX1RZ",
+            "UEVfSEVBTBACEhsKF0NBUkRfRUZGRUNUX1RZUEVfU0hJRUxEEAMSIwofQ0FS",
+            "RF9FRkZFQ1RfVFlQRV9SRVNUT1JFX0FDVElPThAEEhsKF0NBUkRfRUZGRUNU",
+            "X1RZUEVfUkVMT0FEEAUSHgoaQ0FSRF9FRkZFQ1RfVFlQRV9EUkFXX0NBUkQQ",
+            "BhIgChxDQVJEX0VGRkVDVF9UWVBFX0JVRkZfQVRUQUNLEAcSHwobQ0FSRF9F",
+            "RkZFQ1RfVFlQRV9CVUZGX0FSTU9SEAgSIgoeQ0FSRF9FRkZFQ1RfVFlQRV9C",
+            "VUZGX01PVkVNRU5UEAkSIgoeQ0FSRF9FRkZFQ1RfVFlQRV9ERUJVRkZfQVRU",
+            "QUNLEAoSIQodQ0FSRF9FRkZFQ1RfVFlQRV9ERUJVRkZfQVJNT1IQCxIkCiBD",
+            "QVJEX0VGRkVDVF9UWVBFX0RFQlVGRl9NT1ZFTUVOVBAMKocBCg5UaWxlRW50",
+            "aXR5VHlwZRIZChVUSUxFX0VOVElUWV9UWVBFX05PTkUQABIaChZUSUxFX0VO",
+            "VElUWV9UWVBFX0FDVE9SEAESHgoaVElMRV9FTlRJVFlfVFlQRV9XQUxMX0hB",
+            "TEYQAhIeChpUSUxFX0VOVElUWV9UWVBFX1dBTExfRlVMTBADKsUCCgpTdGF0",
+            "dXNUeXBlEhQKEFNUQVRVU19UWVBFX05PTkUQABIYChRTVEFUVVNfVFlQRV9T",
+            "VEFUX0FUSxABEhgKFFNUQVRVU19UWVBFX1NUQVRfREVGEAISFwoTU1RBVFVT",
+            "X1RZUEVfU1RBVF9IUBADEhsKF1NUQVRVU19UWVBFX1NUQVRfU0hJRUxEEAQS",
+            "HQoZU1RBVFVTX1RZUEVfU1RBVF9NT1ZFTUVOVBAFEhoKFlNUQVRVU19UWVBF",
+            "X1NUQVRfUkFOR0UQBhIdChlTVEFUVVNfVFlQRV9TVEFUX0FDQ1VSQUNZEAcS",
+            "HQoZU1RBVFVTX1RZUEVfU1RBVF9DQVJEX0NBUBAIEh0KGVNUQVRVU19UWVBF",
+            "X1NUQVRfQU1NT19DQVAQCRIfChtTVEFUVVNfVFlQRV9TVEFUX0VORVJHWV9D",
+            "QVAQCiq7AQoNRXF1aXBTbG90VHlwZRIYChRFUVVJUF9TTE9UX1RZUEVfTk9O",
+            "RRAAEh8KG0VRVUlQX1NMT1RfVFlQRV9XRUFQT05fTUFJThABEh4KGkVRVUlQ",
+            "X1NMT1RfVFlQRV9XRUFQT05fU1VCEAISGQoVRVFVSVBfU0xPVF9UWVBFX0FS",
+            "TU9SEAMSGgoWRVFVSVBfU0xPVF9UWVBFX0hFTE1FVBAEEhgKFEVRVUlQX1NM",
+            "T1RfVFlQRV9UT09MEAVCC6oCCEdhbWVEYXRhYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GameData.Language), typeof(global::GameData.ClassType), typeof(global::GameData.ItemType), typeof(global::GameData.TargetType), typeof(global::GameData.CardType), typeof(global::GameData.CardEffectType), typeof(global::GameData.TileEntityType), typeof(global::GameData.StatusType), typeof(global::GameData.EquipSlotType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.CardData), global::GameData.CardData.Parser, new[]{ "Id", "IdAlias", "Type", "Target", "Name", "Desc", "EnergyCost", "AmmoCost", "Price", "Range", "Radius", "EffectId", "EffectValue", "IconPath" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.CardData), global::GameData.CardData.Parser, new[]{ "Id", "IdAlias", "Type", "Target", "NameAlias", "DescAlias", "EnergyCost", "AmmoCost", "Price", "Range", "Radius", "EffectId", "EffectValue", "IconPath" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.CardDataTable), global::GameData.CardDataTable.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.CardEffectData), global::GameData.CardEffectData.Parser, new[]{ "Id", "IdAlias", "Name", "EffectType", "Target", "Duration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.CardEffectData), global::GameData.CardEffectData.Parser, new[]{ "Id", "IdAlias", "NameAlias", "EffectType", "Target", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.CardEffectDataTable), global::GameData.CardEffectDataTable.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.EquipmentData), global::GameData.EquipmentData.Parser, new[]{ "Id", "IdAlias", "Name", "Slot", "Price", "IconPath", "StatusType", "StatusValue", "CardId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.EquipmentData), global::GameData.EquipmentData.Parser, new[]{ "Id", "IdAlias", "NameAlias", "Slot", "Price", "IconPath", "StatusType", "StatusValue", "CardId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.EquipmentDataTable), global::GameData.EquipmentDataTable.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.MonsterData), global::GameData.MonsterData.Parser, new[]{ "Id", "IdAlias", "Name", "Hp", "Shield", "Armor", "Movement", "Attack", "Range", "Sight", "ActorLink", "ProjectilePath", "Gold", "Exp" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.MonsterData), global::GameData.MonsterData.Parser, new[]{ "Id", "IdAlias", "NameAlias", "Hp", "Shield", "Armor", "Movement", "Attack", "Range", "Sight", "ActorLink", "ProjectilePath", "Gold", "Exp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.MonsterDataTable), global::GameData.MonsterDataTable.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.NamePresetData), global::GameData.NamePresetData.Parser, new[]{ "Id", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.NamePresetData), global::GameData.NamePresetData.Parser, new[]{ "Id", "NameAlias" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.NamePresetDataTable), global::GameData.NamePresetDataTable.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnData), global::GameData.PawnData.Parser, new[]{ "Id", "IdAlias", "Name", "ClassType", "Hp", "Shield", "Armor", "Movement", "Attack", "Range", "Sight", "Accuracy", "Ammo", "ActorLink" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnData), global::GameData.PawnData.Parser, new[]{ "Id", "IdAlias", "NameAlias", "ClassType", "Hp", "Shield", "Armor", "Movement", "Attack", "Range", "Sight", "Accuracy", "Ammo", "ActorLink" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnDataTable), global::GameData.PawnDataTable.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnGrowthData), global::GameData.PawnGrowthData.Parser, new[]{ "Id", "IdAlias", "ClassType", "Level", "RequireExp", "StatusType", "StatusValue", "CardId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.PawnGrowthDataTable), global::GameData.PawnGrowthDataTable.Parser, new[]{ "Items" }, null, null, null, null),
@@ -147,7 +148,7 @@ namespace GameData {
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.StageRewardDataTable), global::GameData.StageRewardDataTable.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.TextData), global::GameData.TextData.Parser, new[]{ "Id", "IdAlias", "Kor", "Eng", "Jpn" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.TextDataTable), global::GameData.TextDataTable.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.TileEntityData), global::GameData.TileEntityData.Parser, new[]{ "Id", "IdAlias", "Name", "EntityType", "Passable", "Hp", "Shield", "Armor", "PrefabPath" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GameData.TileEntityData), global::GameData.TileEntityData.Parser, new[]{ "Id", "IdAlias", "NameAlias", "EntityType", "Passable", "Hp", "Shield", "Armor", "PrefabPath" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GameData.TileEntityDataTable), global::GameData.TileEntityDataTable.Parser, new[]{ "Items" }, null, null, null, null)
           }));
     }
@@ -460,8 +461,8 @@ namespace GameData {
       idAlias_ = other.idAlias_;
       type_ = other.type_;
       target_ = other.target_;
-      name_ = other.name_;
-      desc_ = other.desc_;
+      nameAlias_ = other.nameAlias_;
+      descAlias_ = other.descAlias_;
       energyCost_ = other.energyCost_;
       ammoCost_ = other.ammoCost_;
       price_ = other.price_;
@@ -539,33 +540,33 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 5;
-    private string name_ = "";
+    /// <summary>Field number for the "nameAlias" field.</summary>
+    public const int NameAliasFieldNumber = 5;
+    private string nameAlias_ = "";
     /// <summary>
     /// 이름
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
+    public string NameAlias {
+      get { return nameAlias_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        nameAlias_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "desc" field.</summary>
-    public const int DescFieldNumber = 6;
-    private string desc_ = "";
+    /// <summary>Field number for the "descAlias" field.</summary>
+    public const int DescAliasFieldNumber = 6;
+    private string descAlias_ = "";
     /// <summary>
     /// 설명
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Desc {
-      get { return desc_; }
+    public string DescAlias {
+      get { return descAlias_; }
       set {
-        desc_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        descAlias_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -706,8 +707,8 @@ namespace GameData {
       if (IdAlias != other.IdAlias) return false;
       if (Type != other.Type) return false;
       if (Target != other.Target) return false;
-      if (Name != other.Name) return false;
-      if (Desc != other.Desc) return false;
+      if (NameAlias != other.NameAlias) return false;
+      if (DescAlias != other.DescAlias) return false;
       if (EnergyCost != other.EnergyCost) return false;
       if (AmmoCost != other.AmmoCost) return false;
       if (Price != other.Price) return false;
@@ -727,8 +728,8 @@ namespace GameData {
       if (IdAlias.Length != 0) hash ^= IdAlias.GetHashCode();
       if (Type != global::GameData.CardType.None) hash ^= Type.GetHashCode();
       if (Target != global::GameData.TargetType.None) hash ^= Target.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Desc.Length != 0) hash ^= Desc.GetHashCode();
+      if (NameAlias.Length != 0) hash ^= NameAlias.GetHashCode();
+      if (DescAlias.Length != 0) hash ^= DescAlias.GetHashCode();
       if (EnergyCost != 0) hash ^= EnergyCost.GetHashCode();
       if (AmmoCost != 0) hash ^= AmmoCost.GetHashCode();
       if (Price != 0) hash ^= Price.GetHashCode();
@@ -771,13 +772,13 @@ namespace GameData {
         output.WriteRawTag(32);
         output.WriteEnum((int) Target);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
-      if (Desc.Length != 0) {
+      if (DescAlias.Length != 0) {
         output.WriteRawTag(50);
-        output.WriteString(Desc);
+        output.WriteString(DescAlias);
       }
       if (EnergyCost != 0) {
         output.WriteRawTag(56);
@@ -831,13 +832,13 @@ namespace GameData {
         output.WriteRawTag(32);
         output.WriteEnum((int) Target);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
-      if (Desc.Length != 0) {
+      if (DescAlias.Length != 0) {
         output.WriteRawTag(50);
-        output.WriteString(Desc);
+        output.WriteString(DescAlias);
       }
       if (EnergyCost != 0) {
         output.WriteRawTag(56);
@@ -887,11 +888,11 @@ namespace GameData {
       if (Target != global::GameData.TargetType.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Target);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (NameAlias.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameAlias);
       }
-      if (Desc.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Desc);
+      if (DescAlias.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DescAlias);
       }
       if (EnergyCost != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EnergyCost);
@@ -937,11 +938,11 @@ namespace GameData {
       if (other.Target != global::GameData.TargetType.None) {
         Target = other.Target;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.NameAlias.Length != 0) {
+        NameAlias = other.NameAlias;
       }
-      if (other.Desc.Length != 0) {
-        Desc = other.Desc;
+      if (other.DescAlias.Length != 0) {
+        DescAlias = other.DescAlias;
       }
       if (other.EnergyCost != 0) {
         EnergyCost = other.EnergyCost;
@@ -999,11 +1000,11 @@ namespace GameData {
             break;
           }
           case 42: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 50: {
-            Desc = input.ReadString();
+            DescAlias = input.ReadString();
             break;
           }
           case 56: {
@@ -1076,11 +1077,11 @@ namespace GameData {
             break;
           }
           case 42: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 50: {
-            Desc = input.ReadString();
+            DescAlias = input.ReadString();
             break;
           }
           case 56: {
@@ -1348,7 +1349,7 @@ namespace GameData {
     public CardEffectData(CardEffectData other) : this() {
       id_ = other.id_;
       idAlias_ = other.idAlias_;
-      name_ = other.name_;
+      nameAlias_ = other.nameAlias_;
       effectType_ = other.effectType_;
       target_ = other.target_;
       duration_ = other.duration_;
@@ -1391,18 +1392,18 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 3;
-    private string name_ = "";
+    /// <summary>Field number for the "nameAlias" field.</summary>
+    public const int NameAliasFieldNumber = 3;
+    private string nameAlias_ = "";
     /// <summary>
     /// 이름
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
+    public string NameAlias {
+      get { return nameAlias_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        nameAlias_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1468,7 +1469,7 @@ namespace GameData {
       }
       if (Id != other.Id) return false;
       if (IdAlias != other.IdAlias) return false;
-      if (Name != other.Name) return false;
+      if (NameAlias != other.NameAlias) return false;
       if (EffectType != other.EffectType) return false;
       if (Target != other.Target) return false;
       if (Duration != other.Duration) return false;
@@ -1481,7 +1482,7 @@ namespace GameData {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (IdAlias.Length != 0) hash ^= IdAlias.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (NameAlias.Length != 0) hash ^= NameAlias.GetHashCode();
       if (EffectType != global::GameData.CardEffectType.None) hash ^= EffectType.GetHashCode();
       if (Target != global::GameData.TargetType.None) hash ^= Target.GetHashCode();
       if (Duration != 0) hash ^= Duration.GetHashCode();
@@ -1511,9 +1512,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (EffectType != global::GameData.CardEffectType.None) {
         output.WriteRawTag(32);
@@ -1545,9 +1546,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (EffectType != global::GameData.CardEffectType.None) {
         output.WriteRawTag(32);
@@ -1577,8 +1578,8 @@ namespace GameData {
       if (IdAlias.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IdAlias);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (NameAlias.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameAlias);
       }
       if (EffectType != global::GameData.CardEffectType.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EffectType);
@@ -1607,8 +1608,8 @@ namespace GameData {
       if (other.IdAlias.Length != 0) {
         IdAlias = other.IdAlias;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.NameAlias.Length != 0) {
+        NameAlias = other.NameAlias;
       }
       if (other.EffectType != global::GameData.CardEffectType.None) {
         EffectType = other.EffectType;
@@ -1647,7 +1648,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -1690,7 +1691,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -1936,7 +1937,7 @@ namespace GameData {
     public EquipmentData(EquipmentData other) : this() {
       id_ = other.id_;
       idAlias_ = other.idAlias_;
-      name_ = other.name_;
+      nameAlias_ = other.nameAlias_;
       slot_ = other.slot_;
       price_ = other.price_;
       iconPath_ = other.iconPath_;
@@ -1982,15 +1983,15 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 3;
-    private string name_ = "";
+    /// <summary>Field number for the "nameAlias" field.</summary>
+    public const int NameAliasFieldNumber = 3;
+    private string nameAlias_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
+    public string NameAlias {
+      get { return nameAlias_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        nameAlias_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -2080,7 +2081,7 @@ namespace GameData {
       }
       if (Id != other.Id) return false;
       if (IdAlias != other.IdAlias) return false;
-      if (Name != other.Name) return false;
+      if (NameAlias != other.NameAlias) return false;
       if (Slot != other.Slot) return false;
       if (Price != other.Price) return false;
       if (IconPath != other.IconPath) return false;
@@ -2096,7 +2097,7 @@ namespace GameData {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (IdAlias.Length != 0) hash ^= IdAlias.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (NameAlias.Length != 0) hash ^= NameAlias.GetHashCode();
       if (Slot != global::GameData.EquipSlotType.None) hash ^= Slot.GetHashCode();
       if (Price != 0) hash ^= Price.GetHashCode();
       if (IconPath.Length != 0) hash ^= IconPath.GetHashCode();
@@ -2129,9 +2130,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (Slot != global::GameData.EquipSlotType.None) {
         output.WriteRawTag(32);
@@ -2166,9 +2167,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (Slot != global::GameData.EquipSlotType.None) {
         output.WriteRawTag(32);
@@ -2201,8 +2202,8 @@ namespace GameData {
       if (IdAlias.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IdAlias);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (NameAlias.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameAlias);
       }
       if (Slot != global::GameData.EquipSlotType.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Slot);
@@ -2234,8 +2235,8 @@ namespace GameData {
       if (other.IdAlias.Length != 0) {
         IdAlias = other.IdAlias;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.NameAlias.Length != 0) {
+        NameAlias = other.NameAlias;
       }
       if (other.Slot != global::GameData.EquipSlotType.None) {
         Slot = other.Slot;
@@ -2277,7 +2278,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -2335,7 +2336,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -2596,7 +2597,7 @@ namespace GameData {
     public MonsterData(MonsterData other) : this() {
       id_ = other.id_;
       idAlias_ = other.idAlias_;
-      name_ = other.name_;
+      nameAlias_ = other.nameAlias_;
       hp_ = other.hp_;
       shield_ = other.shield_;
       armor_ = other.armor_;
@@ -2647,18 +2648,18 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 3;
-    private string name_ = "";
+    /// <summary>Field number for the "nameAlias" field.</summary>
+    public const int NameAliasFieldNumber = 3;
+    private string nameAlias_ = "";
     /// <summary>
     /// 이름
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
+    public string NameAlias {
+      get { return nameAlias_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        nameAlias_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -2844,7 +2845,7 @@ namespace GameData {
       }
       if (Id != other.Id) return false;
       if (IdAlias != other.IdAlias) return false;
-      if (Name != other.Name) return false;
+      if (NameAlias != other.NameAlias) return false;
       if (Hp != other.Hp) return false;
       if (Shield != other.Shield) return false;
       if (Armor != other.Armor) return false;
@@ -2865,7 +2866,7 @@ namespace GameData {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (IdAlias.Length != 0) hash ^= IdAlias.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (NameAlias.Length != 0) hash ^= NameAlias.GetHashCode();
       if (Hp != 0) hash ^= Hp.GetHashCode();
       if (Shield != 0) hash ^= Shield.GetHashCode();
       if (Armor != 0) hash ^= Armor.GetHashCode();
@@ -2903,9 +2904,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (Hp != 0) {
         output.WriteRawTag(32);
@@ -2969,9 +2970,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (Hp != 0) {
         output.WriteRawTag(32);
@@ -3033,8 +3034,8 @@ namespace GameData {
       if (IdAlias.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IdAlias);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (NameAlias.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameAlias);
       }
       if (Hp != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Hp);
@@ -3087,8 +3088,8 @@ namespace GameData {
       if (other.IdAlias.Length != 0) {
         IdAlias = other.IdAlias;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.NameAlias.Length != 0) {
+        NameAlias = other.NameAlias;
       }
       if (other.Hp != 0) {
         Hp = other.Hp;
@@ -3151,7 +3152,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -3226,7 +3227,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -3503,7 +3504,7 @@ namespace GameData {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public NamePresetData(NamePresetData other) : this() {
       id_ = other.id_;
-      name_ = other.name_;
+      nameAlias_ = other.nameAlias_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3528,18 +3529,18 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
+    /// <summary>Field number for the "nameAlias" field.</summary>
+    public const int NameAliasFieldNumber = 2;
+    private string nameAlias_ = "";
     /// <summary>
     /// 이름
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
+    public string NameAlias {
+      get { return nameAlias_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        nameAlias_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -3559,7 +3560,7 @@ namespace GameData {
         return true;
       }
       if (Id != other.Id) return false;
-      if (Name != other.Name) return false;
+      if (NameAlias != other.NameAlias) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3568,7 +3569,7 @@ namespace GameData {
     public override int GetHashCode() {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (NameAlias.Length != 0) hash ^= NameAlias.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3591,9 +3592,9 @@ namespace GameData {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3609,9 +3610,9 @@ namespace GameData {
         output.WriteRawTag(8);
         output.WriteInt32(Id);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3626,8 +3627,8 @@ namespace GameData {
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (NameAlias.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameAlias);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3644,8 +3645,8 @@ namespace GameData {
       if (other.Id != 0) {
         Id = other.Id;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.NameAlias.Length != 0) {
+        NameAlias = other.NameAlias;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3671,7 +3672,7 @@ namespace GameData {
             break;
           }
           case 18: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
         }
@@ -3698,7 +3699,7 @@ namespace GameData {
             break;
           }
           case 18: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
         }
@@ -3932,7 +3933,7 @@ namespace GameData {
     public PawnData(PawnData other) : this() {
       id_ = other.id_;
       idAlias_ = other.idAlias_;
-      name_ = other.name_;
+      nameAlias_ = other.nameAlias_;
       classType_ = other.classType_;
       hp_ = other.hp_;
       shield_ = other.shield_;
@@ -3983,18 +3984,18 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 3;
-    private string name_ = "";
+    /// <summary>Field number for the "nameAlias" field.</summary>
+    public const int NameAliasFieldNumber = 3;
+    private string nameAlias_ = "";
     /// <summary>
     /// 이름
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
+    public string NameAlias {
+      get { return nameAlias_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        nameAlias_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -4180,7 +4181,7 @@ namespace GameData {
       }
       if (Id != other.Id) return false;
       if (IdAlias != other.IdAlias) return false;
-      if (Name != other.Name) return false;
+      if (NameAlias != other.NameAlias) return false;
       if (ClassType != other.ClassType) return false;
       if (Hp != other.Hp) return false;
       if (Shield != other.Shield) return false;
@@ -4201,7 +4202,7 @@ namespace GameData {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (IdAlias.Length != 0) hash ^= IdAlias.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (NameAlias.Length != 0) hash ^= NameAlias.GetHashCode();
       if (ClassType != global::GameData.ClassType.None) hash ^= ClassType.GetHashCode();
       if (Hp != 0) hash ^= Hp.GetHashCode();
       if (Shield != 0) hash ^= Shield.GetHashCode();
@@ -4239,9 +4240,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (ClassType != global::GameData.ClassType.None) {
         output.WriteRawTag(32);
@@ -4305,9 +4306,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (ClassType != global::GameData.ClassType.None) {
         output.WriteRawTag(32);
@@ -4369,8 +4370,8 @@ namespace GameData {
       if (IdAlias.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IdAlias);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (NameAlias.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameAlias);
       }
       if (ClassType != global::GameData.ClassType.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ClassType);
@@ -4423,8 +4424,8 @@ namespace GameData {
       if (other.IdAlias.Length != 0) {
         IdAlias = other.IdAlias;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.NameAlias.Length != 0) {
+        NameAlias = other.NameAlias;
       }
       if (other.ClassType != global::GameData.ClassType.None) {
         ClassType = other.ClassType;
@@ -4487,7 +4488,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -4562,7 +4563,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -7538,7 +7539,7 @@ namespace GameData {
     public TileEntityData(TileEntityData other) : this() {
       id_ = other.id_;
       idAlias_ = other.idAlias_;
-      name_ = other.name_;
+      nameAlias_ = other.nameAlias_;
       entityType_ = other.entityType_;
       passable_ = other.passable_;
       hp_ = other.hp_;
@@ -7584,18 +7585,18 @@ namespace GameData {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 3;
-    private string name_ = "";
+    /// <summary>Field number for the "nameAlias" field.</summary>
+    public const int NameAliasFieldNumber = 3;
+    private string nameAlias_ = "";
     /// <summary>
     /// 이름
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
+    public string NameAlias {
+      get { return nameAlias_; }
       set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        nameAlias_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -7706,7 +7707,7 @@ namespace GameData {
       }
       if (Id != other.Id) return false;
       if (IdAlias != other.IdAlias) return false;
-      if (Name != other.Name) return false;
+      if (NameAlias != other.NameAlias) return false;
       if (EntityType != other.EntityType) return false;
       if (Passable != other.Passable) return false;
       if (Hp != other.Hp) return false;
@@ -7722,7 +7723,7 @@ namespace GameData {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (IdAlias.Length != 0) hash ^= IdAlias.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (NameAlias.Length != 0) hash ^= NameAlias.GetHashCode();
       if (EntityType != global::GameData.TileEntityType.None) hash ^= EntityType.GetHashCode();
       if (Passable != false) hash ^= Passable.GetHashCode();
       if (Hp != 0) hash ^= Hp.GetHashCode();
@@ -7755,9 +7756,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (EntityType != global::GameData.TileEntityType.None) {
         output.WriteRawTag(32);
@@ -7801,9 +7802,9 @@ namespace GameData {
         output.WriteRawTag(18);
         output.WriteString(IdAlias);
       }
-      if (Name.Length != 0) {
+      if (NameAlias.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
+        output.WriteString(NameAlias);
       }
       if (EntityType != global::GameData.TileEntityType.None) {
         output.WriteRawTag(32);
@@ -7845,8 +7846,8 @@ namespace GameData {
       if (IdAlias.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IdAlias);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (NameAlias.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameAlias);
       }
       if (EntityType != global::GameData.TileEntityType.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EntityType);
@@ -7884,8 +7885,8 @@ namespace GameData {
       if (other.IdAlias.Length != 0) {
         IdAlias = other.IdAlias;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.NameAlias.Length != 0) {
+        NameAlias = other.NameAlias;
       }
       if (other.EntityType != global::GameData.TileEntityType.None) {
         EntityType = other.EntityType;
@@ -7933,7 +7934,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {
@@ -7988,7 +7989,7 @@ namespace GameData {
             break;
           }
           case 26: {
-            Name = input.ReadString();
+            NameAlias = input.ReadString();
             break;
           }
           case 32: {

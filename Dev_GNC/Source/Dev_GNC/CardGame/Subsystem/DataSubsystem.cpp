@@ -219,5 +219,5 @@ FString UDataSubsystem::GetRandomName() const
 		return TEXT("Unknown");
 	}
 	const int32 Index = FMath::RandRange(0, NamePresetList.Num() - 1);
-	return NamePresetList[Index]->Name;
+	return NamePresetList[Index]->NameAlias;
 }

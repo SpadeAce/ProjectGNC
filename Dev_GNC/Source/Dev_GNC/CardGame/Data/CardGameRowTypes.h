@@ -21,8 +21,8 @@ struct FCardDataRow : public FTableRowBase
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString IdAlias;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) ECardType Type = ECardType::None;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) ETargetType Target = ETargetType::None;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Name;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Desc;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString NameAlias;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString DescAlias;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 EnergyCost = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 AmmoCost = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Price = 0;
@@ -41,7 +41,7 @@ struct FCardEffectRow : public FTableRowBase
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Id = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString IdAlias;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Name;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString NameAlias;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) ECardEffectType EffectType = ECardEffectType::None;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) ETargetType Target = ETargetType::None;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Duration = 0;
@@ -55,7 +55,7 @@ struct FEquipmentDataRow : public FTableRowBase
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Id = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString IdAlias;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Name;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString NameAlias;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) EEquipSlotType Slot = EEquipSlotType::None;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Price = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString IconPath;
@@ -72,7 +72,7 @@ struct FMonsterDataRow : public FTableRowBase
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Id = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString IdAlias;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Name;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString NameAlias;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 HP = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Shield = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Armor = 0;
@@ -93,7 +93,7 @@ struct FNamePresetRow : public FTableRowBase
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Id = 0;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Name;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString NameAlias;
 };
 
 // ── 6. PawnData ──────────────────────────────────────────────
@@ -104,7 +104,7 @@ struct FPawnDataRow : public FTableRowBase
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Id = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString IdAlias;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Name;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString NameAlias;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) EClassType ClassType = EClassType::None;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 HP = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Shield = 0;
@@ -193,7 +193,7 @@ struct FTileEntityRow : public FTableRowBase
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Id = 0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString IdAlias;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString Name;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString NameAlias;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) ETileEntityType EntityType = ETileEntityType::None;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) bool bPassable = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 HP = 0;

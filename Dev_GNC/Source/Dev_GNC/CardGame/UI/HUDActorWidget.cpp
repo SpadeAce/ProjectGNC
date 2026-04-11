@@ -4,6 +4,7 @@
 #include "DPawn.h"
 #include "DMonster.h"
 #include "CardGameRowTypes.h"
+#include "TextSubsystem.h"
 #include "Components/ProgressBar.h"
 #include "Components/TextBlock.h"
 
@@ -52,20 +53,29 @@ void UHUDActorWidget::Refresh()
 	int32 Ammo = 0;
 	FString Name;
 
+	UTextSubsystem* TextSub = GetGameInstance() ? GetGameInstance()->GetSubsystem<UTextSubsystem>() : nullptr;
+
 	if (UDPawn* Pawn = BoundPawn.Get())
 	{
 		HP = Pawn->HP;
 		Shield = Pawn->Shield;
 		Armor = Pawn->Armor;
 		Ammo = Pawn->Ammo;
-		Name = Pawn->CodeName;
+		Name = TextSub ? TextSub->Get(Pawn->CodeName) : Pawn->CodeName;
 	}
 	else if (UDMonster* Monster = BoundMonster.Get())
 	{
 		HP = Monster->HP;
 		Shield = Monster->Shield;
 		Armor = Monster->Armor;
-		Name = Monster->Data ? Monster->Data->Name : TEXT("???");
+		if (Monster->Data)
+		{
+			Name = TextSub ? TextSub->Get(Monster->Data->NameAlias) : Monster->Data->NameAlias;
+		}
+		else
+		{
+			Name = TEXT("???");
+		}
 	}
 
 	// HP 바

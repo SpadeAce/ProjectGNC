@@ -12,6 +12,7 @@
 #include "ItemSubsystem.h"
 #include "LobbySubsystem.h"
 #include "StageSubsystem.h"
+#include "TextSubsystem.h"
 #include "Components/Button.h"
 #include "Components/TextBlock.h"
 #include "Components/PanelWidget.h"
@@ -133,7 +134,16 @@ void UBattleResultPopupWidget::SetupRewardCards()
 			if (Txt)
 			{
 				const FCardDataRow* CardRow = DataSub->GetCardData(RewardCardIds[i]);
-				Txt->SetText(CardRow ? FText::FromString(CardRow->Name) : FText::FromString(TEXT("???")));
+				if (CardRow)
+				{
+					UTextSubsystem* TextSub = GetGameInstance() ? GetGameInstance()->GetSubsystem<UTextSubsystem>() : nullptr;
+					const FString Resolved = TextSub ? TextSub->Get(CardRow->NameAlias) : CardRow->NameAlias;
+					Txt->SetText(FText::FromString(Resolved));
+				}
+				else
+				{
+					Txt->SetText(FText::FromString(TEXT("???")));
+				}
 			}
 		}
 		else

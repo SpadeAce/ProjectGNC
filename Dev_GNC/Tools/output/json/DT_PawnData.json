@@ -2,7 +2,7 @@
   {
     "id": 1,
     "idAlias": "pawn_recruit",
-    "name": "text_pawn_name_none",
+    "nameAlias": "text_pawn_name_none",
     "hp": 10,
     "movement": 3,
     "range": 5,
@@ -19,7 +19,7 @@
   {
     "id": 2,
     "idAlias": "pawn_scout",
-    "name": "text_pawn_name_scout",
+    "nameAlias": "text_pawn_name_scout",
     "classType": "Scout",
     "hp": 10,
     "movement": 4,
@@ -36,7 +36,7 @@
   {
     "id": 3,
     "idAlias": "pawn_assault",
-    "name": "text_pawn_name_assault",
+    "nameAlias": "text_pawn_name_assault",
     "classType": "Assault",
     "hp": 10,
     "shield": 5,
@@ -53,7 +53,7 @@
   {
     "id": 4,
     "idAlias": "pawn_heavy",
-    "name": "text_pawn_name_heavy",
+    "nameAlias": "text_pawn_name_heavy",
     "classType": "Heavy",
     "hp": 15,
     "shield": 5,
@@ -70,7 +70,7 @@
   {
     "id": 5,
     "idAlias": "pawn_specialist",
-    "name": "text_pawn_name_specialist",
+    "nameAlias": "text_pawn_name_specialist",
     "classType": "Specialist",
     "hp": 10,
     "movement": 3,

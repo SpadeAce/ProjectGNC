@@ -21,12 +21,12 @@
       "field_type": "enum:TargetType"
     },
     {
-      "field_name": "name",
+      "field_name": "nameAlias",
       "field_number": 5,
       "field_type": "string"
     },
     {
-      "field_name": "desc",
+      "field_name": "descAlias",
       "field_number": 6,
       "field_type": "string"
     },
@@ -88,7 +88,7 @@
       "field_type": "string"
     },
     {
-      "field_name": "name",
+      "field_name": "nameAlias",
       "field_number": 3,
       "field_type": "string"
     },
@@ -120,7 +120,7 @@
       "field_type": "string"
     },
     {
-      "field_name": "name",
+      "field_name": "nameAlias",
       "field_number": 3,
       "field_type": "string"
     },
@@ -172,7 +172,7 @@
       "field_type": "string"
     },
     {
-      "field_name": "name",
+      "field_name": "nameAlias",
       "field_number": 3,
       "field_type": "string"
     },
@@ -239,7 +239,7 @@
       "field_type": "int32"
     },
     {
-      "field_name": "name",
+      "field_name": "nameAlias",
       "field_number": 2,
       "field_type": "string"
     }
@@ -256,7 +256,7 @@
       "field_type": "string"
     },
     {
-      "field_name": "name",
+      "field_name": "nameAlias",
       "field_number": 3,
       "field_type": "string"
     },
@@ -493,7 +493,7 @@
       "field_type": "string"
     },
     {
-      "field_name": "name",
+      "field_name": "nameAlias",
       "field_number": 3,
       "field_type": "string"
     },

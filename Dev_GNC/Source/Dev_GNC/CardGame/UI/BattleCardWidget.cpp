@@ -25,8 +25,8 @@ void UBattleCardWidget::SetData(UDCard* InCard, UDPawn* InOwner)
 
 	// 로컬라이즈된 이름/설명
 	UTextSubsystem* TextSub = GetGameInstance()->GetSubsystem<UTextSubsystem>();
-	const FString CardName = TextSub ? TextSub->Get(Data->Name) : Data->Name;
-	const FString CardDesc = TextSub ? TextSub->Get(Data->Desc) : Data->Desc;
+	const FString CardName = TextSub ? TextSub->Get(Data->NameAlias) : Data->NameAlias;
+	const FString CardDesc = TextSub ? TextSub->Get(Data->DescAlias) : Data->DescAlias;
 
 	if (TextEnergyCost)
 	{

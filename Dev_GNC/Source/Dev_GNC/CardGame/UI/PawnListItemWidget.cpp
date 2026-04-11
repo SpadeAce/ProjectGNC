@@ -2,6 +2,7 @@
 
 #include "PawnListItemWidget.h"
 #include "DPawn.h"
+#include "TextSubsystem.h"
 #include "Components/TextBlock.h"
 #include "Components/Button.h"
 
@@ -11,7 +12,16 @@ void UPawnListItemWidget::SetData(UDPawn* InPawn)
 
 	if (TextName)
 	{
-		TextName->SetText(InPawn ? FText::FromString(InPawn->CodeName) : FText::GetEmpty());
+		if (InPawn)
+		{
+			UTextSubsystem* TextSub = GetGameInstance() ? GetGameInstance()->GetSubsystem<UTextSubsystem>() : nullptr;
+			const FString Resolved = TextSub ? TextSub->Get(InPawn->CodeName) : InPawn->CodeName;
+			TextName->SetText(FText::FromString(Resolved));
+		}
+		else
+		{
+			TextName->SetText(FText::GetEmpty());
+		}
 	}
 }
 

@@ -8,25 +8,30 @@ echo  Excel - Protobuf - DataTable JSON
 echo ================================================
 echo.
 
-REM Check Python
-where python >NUL 2>&1
+REM Check Python (py launcher preferred — avoids Microsoft Store stub)
+set "PY_CMD=py -3"
+%PY_CMD% --version >NUL 2>&1
 if errorlevel 1 (
-    echo [ERROR] python is not in PATH.
-    goto :END
+    set "PY_CMD=python"
+    where python >NUL 2>&1
+    if errorlevel 1 (
+        echo [ERROR] Python is not installed or not in PATH.
+        goto :END
+    )
 )
 
 REM Check packages
-python -c "import openpyxl, jinja2, google.protobuf, yaml" >NUL 2>&1
+%PY_CMD% -c "import openpyxl, jinja2, google.protobuf, yaml" >NUL 2>&1
 if errorlevel 1 (
     echo [INFO] Installing required packages...
-    pip install -r requirements.txt
+    %PY_CMD% -m pip install -r requirements.txt
     echo.
 )
 
 REM Run pipeline
 echo Pipeline start...
 echo.
-python main.py %*
+%PY_CMD% main.py %*
 
 if errorlevel 1 (
     echo.

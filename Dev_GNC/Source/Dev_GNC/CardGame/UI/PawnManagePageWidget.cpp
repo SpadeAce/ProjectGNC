@@ -9,6 +9,7 @@
 #include "CardGameRowTypes.h"
 #include "PawnSubsystem.h"
 #include "ItemSubsystem.h"
+#include "TextSubsystem.h"
 #include "Components/Button.h"
 #include "Components/TextBlock.h"
 #include "Components/PanelWidget.h"
@@ -193,7 +194,12 @@ void UPawnManagePageWidget::RefreshPawnStats()
 		return;
 	}
 
-	if (TextPawnName) TextPawnName->SetText(FText::FromString(Pawn->CodeName));
+	if (TextPawnName)
+	{
+		UTextSubsystem* TextSub = GetGameInstance() ? GetGameInstance()->GetSubsystem<UTextSubsystem>() : nullptr;
+		const FString Resolved = TextSub ? TextSub->Get(Pawn->CodeName) : Pawn->CodeName;
+		TextPawnName->SetText(FText::FromString(Resolved));
+	}
 	if (TextHP)       TextHP->SetText(FText::FromString(FString::Printf(TEXT("HP: %d"), Pawn->HP)));
 	if (TextATK)      TextATK->SetText(FText::FromString(FString::Printf(TEXT("ATK: %d"), Pawn->Attack)));
 	if (TextDEF)      TextDEF->SetText(FText::FromString(FString::Printf(TEXT("DEF: %d"), Pawn->Armor)));
