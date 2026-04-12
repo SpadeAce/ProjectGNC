@@ -1,10 +1,13 @@
 // Copyright GNC Project. All Rights Reserved.
 
 #include "EquipListItemWidget.h"
+#include "EquipDragDropOp.h"
 #include "DEquipment.h"
 #include "CardGameRowTypes.h"
+#include "TextSubsystem.h"
 #include "Components/TextBlock.h"
 #include "Components/Button.h"
+#include "Blueprint/WidgetBlueprintLibrary.h"
 
 void UEquipListItemWidget::SetData(UDEquipment* InEquip)
 {
@@ -19,7 +22,9 @@ void UEquipListItemWidget::SetData(UDEquipment* InEquip)
 
 	if (TextName)
 	{
-		TextName->SetText(FText::FromString(InEquip->Data->IdAlias));
+		UTextSubsystem* TextSub = GetGameInstance() ? GetGameInstance()->GetSubsystem<UTextSubsystem>() : nullptr;
+		const FString Resolved = TextSub ? TextSub->Get(InEquip->Data->NameAlias) : InEquip->Data->NameAlias;
+		TextName->SetText(FText::FromString(Resolved));
 	}
 	if (TextSlotType)
 	{
@@ -35,30 +40,62 @@ void UEquipListItemWidget::SetData(UDEquipment* InEquip)
 	}
 }
 
-void UEquipListItemWidget::NativeConstruct()
+void UEquipListItemWidget::NativeOnListItemObjectSet(UObject* ListItemObject)
 {
-	Super::NativeConstruct();
-
-	if (ButtonSelect)
-	{
-		ButtonSelect->OnClicked.AddDynamic(this, &UEquipListItemWidget::HandleSelectClicked);
-	}
+	IUserObjectListEntry::NativeOnListItemObjectSet(ListItemObject);
+	SetData(Cast<UDEquipment>(ListItemObject));
 }
 
-void UEquipListItemWidget::NativeDestruct()
+FReply UEquipListItemWidget::NativeOnMouseButtonDown(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent)
 {
-	if (ButtonSelect)
+	if (InMouseEvent.GetEffectingButton() == EKeys::LeftMouseButton && Equip)
 	{
-		ButtonSelect->OnClicked.RemoveAll(this);
+		return UWidgetBlueprintLibrary::DetectDragIfPressed(InMouseEvent, this, EKeys::LeftMouseButton).NativeReply;
 	}
-
-	Super::NativeDestruct();
+	if (InMouseEvent.GetEffectingButton() == EKeys::RightMouseButton)
+	{
+		bRightMouseDown = true;
+		return FReply::Handled();
+	}
+	return Super::NativeOnMouseButtonDown(InGeometry, InMouseEvent);
 }
 
-void UEquipListItemWidget::HandleSelectClicked()
+FReply UEquipListItemWidget::NativeOnMouseButtonUp(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent)
 {
-	if (Equip)
+	if (InMouseEvent.GetEffectingButton() == EKeys::RightMouseButton && bRightMouseDown)
 	{
-		OnItemClicked.Broadcast(Equip);
+		bRightMouseDown = false;
+		if (Equip)
+		{
+			OnItemRightClicked.Broadcast(Equip);
+		}
+		return FReply::Handled();
 	}
+	return Super::NativeOnMouseButtonUp(InGeometry, InMouseEvent);
+}
+
+void UEquipListItemWidget::NativeOnDragDetected(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent, UDragDropOperation*& OutOperation)
+{
+	// 드래그 비주얼용 위젯을 별도 생성 (BP 서브클래스 그대로 복제)
+	UEquipListItemWidget* DragVisual = CreateWidget<UEquipListItemWidget>(this, GetClass());
+	if (DragVisual)
+	{
+		DragVisual->SetData(Equip);
+	}
+
+	UEquipDragDropOp* DragOp = NewObject<UEquipDragDropOp>();
+	DragOp->Equipment = Equip;
+	DragOp->DefaultDragVisual = DragVisual;
+	DragOp->Pivot = EDragPivot::CenterCenter;
+	DragOp->OnDragCancelled.AddDynamic(this, &UEquipListItemWidget::HandleDragCancelled);
+
+	// 원본 아이템을 리스트에서 숨김
+	SetVisibility(ESlateVisibility::Hidden);
+
+	OutOperation = DragOp;
+}
+
+void UEquipListItemWidget::HandleDragCancelled(UDragDropOperation* Operation)
+{
+	SetVisibility(ESlateVisibility::Visible);
 }

@@ -3,6 +3,7 @@
 #include "PawnManagePageWidget.h"
 #include "PawnListItemWidget.h"
 #include "EquipListItemWidget.h"
+#include "EquipDragDropOp.h"
 #include "CardGameHUD.h"
 #include "DPawn.h"
 #include "DEquipment.h"
@@ -14,6 +15,7 @@
 #include "Components/TextBlock.h"
 #include "Components/PanelWidget.h"
 #include "Components/ScrollBox.h"
+#include "Components/TileView.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogPawnManagePage, Log, All);
 
@@ -48,6 +50,12 @@ void UPawnManagePageWidget::NativePreOpen(const FViewParam& Param)
 	if (ButtonEquipSlot1) ButtonEquipSlot1->OnClicked.AddDynamic(this, &UPawnManagePageWidget::HandleEquipSlot1Clicked);
 	if (ButtonEquipSlot2) ButtonEquipSlot2->OnClicked.AddDynamic(this, &UPawnManagePageWidget::HandleEquipSlot2Clicked);
 	if (ButtonEquipSlot3) ButtonEquipSlot3->OnClicked.AddDynamic(this, &UPawnManagePageWidget::HandleEquipSlot3Clicked);
+
+	if (TileUnequippedList)
+	{
+		TileUnequippedList->OnEntryWidgetGenerated().AddUObject(this, &UPawnManagePageWidget::HandleEntryWidgetGenerated);
+		TileUnequippedList->OnEntryWidgetReleased().AddUObject(this, &UPawnManagePageWidget::HandleEntryWidgetReleased);
+	}
 }
 
 void UPawnManagePageWidget::NativeOnOpened()
@@ -55,7 +63,6 @@ void UPawnManagePageWidget::NativeOnOpened()
 	Super::NativeOnOpened();
 
 	SelectedPawn = nullptr;
-	SelectedEquip = nullptr;
 	if (PanelPawnInfo) PanelPawnInfo->SetVisibility(ESlateVisibility::Collapsed);
 
 	RefreshPawnList();
@@ -74,6 +81,11 @@ void UPawnManagePageWidget::NativePreClose()
 	for (UButton* Btn : EquipSlotButtons)
 	{
 		if (Btn) Btn->OnClicked.RemoveAll(this);
+	}
+	if (TileUnequippedList)
+	{
+		TileUnequippedList->OnEntryWidgetGenerated().RemoveAll(this);
+		TileUnequippedList->OnEntryWidgetReleased().RemoveAll(this);
 	}
 
 	Super::NativePreClose();
@@ -103,22 +115,6 @@ void UPawnManagePageWidget::HandleEquipSlotClicked(int32 SlotIndex)
 		RefreshEquipSlots();
 		RefreshUnequippedList();
 		RefreshPawnStats();
-		return;
-	}
-
-	// 선택된 장비가 있고 슬롯 타입이 맞으면 장착
-	UDEquipment* Equip = SelectedEquip.Get();
-	if (Equip && Equip->Data && Equip->Data->Slot == SlotTypeMap[SlotIndex])
-	{
-		Pawn->Equip(Equip);
-		SelectedEquip = nullptr;
-		RefreshEquipSlots();
-		RefreshUnequippedList();
-		RefreshPawnStats();
-	}
-	else
-	{
-		UE_LOG(LogPawnManagePage, Log, TEXT("장비 슬롯 타입 불일치 또는 선택된 장비 없음"));
 	}
 }
 
@@ -131,7 +127,6 @@ void UPawnManagePageWidget::HandlePawnSelected(UDPawn* InPawn)
 	}
 
 	SelectedPawn = InPawn;
-	SelectedEquip = nullptr;
 
 	if (InPawn)
 	{
@@ -148,11 +143,121 @@ void UPawnManagePageWidget::HandlePawnSelected(UDPawn* InPawn)
 	RefreshUnequippedList();
 }
 
-void UPawnManagePageWidget::HandleEquipItemSelected(UDEquipment* InEquip)
+void UPawnManagePageWidget::HandleEntryWidgetGenerated(UUserWidget& Widget)
 {
-	SelectedEquip = InEquip;
-	UE_LOG(LogPawnManagePage, Log, TEXT("장비 선택: %s"),
-		InEquip && InEquip->Data ? *InEquip->Data->IdAlias : TEXT("null"));
+	if (UEquipListItemWidget* EquipWidget = Cast<UEquipListItemWidget>(&Widget))
+	{
+		EquipWidget->OnItemRightClicked.AddDynamic(this, &UPawnManagePageWidget::HandleEquipItemRightClicked);
+	}
+}
+
+void UPawnManagePageWidget::HandleEntryWidgetReleased(UUserWidget& Widget)
+{
+	if (UEquipListItemWidget* EquipWidget = Cast<UEquipListItemWidget>(&Widget))
+	{
+		EquipWidget->OnItemRightClicked.RemoveDynamic(this, &UPawnManagePageWidget::HandleEquipItemRightClicked);
+	}
+}
+
+void UPawnManagePageWidget::HandleEquipItemRightClicked(UDEquipment* InEquip)
+{
+	if (!SelectedPawn.Get() || !InEquip || !InEquip->Data) return;
+
+	AutoEquipToSlot(InEquip);
+}
+
+void UPawnManagePageWidget::AutoEquipToSlot(UDEquipment* InEquip)
+{
+	UDPawn* Pawn = SelectedPawn.Get();
+	if (!Pawn || !InEquip || !InEquip->Data) return;
+
+	const EEquipSlotType TargetSlot = InEquip->Data->Slot;
+
+	// 매칭되는 슬롯 인덱스 수집
+	TArray<int32> MatchingSlots;
+	for (int32 i = 0; i < EquipSlotCount; ++i)
+	{
+		if (SlotTypeMap[i] == TargetSlot)
+		{
+			MatchingSlots.Add(i);
+		}
+	}
+
+	if (MatchingSlots.IsEmpty()) return;
+
+	// 빈 슬롯 우선 탐색
+	int32 TargetIndex = -1;
+	for (int32 SlotIdx : MatchingSlots)
+	{
+		if (FindEquipInSlot(SlotIdx) == nullptr)
+		{
+			TargetIndex = SlotIdx;
+			break;
+		}
+	}
+
+	// 빈 슬롯 없으면 첫 번째 매칭 슬롯 (기존 장비 교체)
+	if (TargetIndex < 0)
+	{
+		TargetIndex = MatchingSlots[0];
+		UDEquipment* OldEquip = FindEquipInSlot(TargetIndex);
+		if (OldEquip)
+		{
+			Pawn->Unequip(OldEquip);
+		}
+	}
+
+	// 장착
+	Pawn->Equip(InEquip);
+
+	// UI 갱신
+	RefreshEquipSlots();
+	RefreshUnequippedList();
+	RefreshPawnStats();
+}
+
+bool UPawnManagePageWidget::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent, UDragDropOperation* InOperation)
+{
+	UEquipDragDropOp* DragOp = Cast<UEquipDragDropOp>(InOperation);
+	if (!DragOp || !DragOp->Equipment || !DragOp->Equipment->Data) return false;
+
+	UDPawn* Pawn = SelectedPawn.Get();
+	if (!Pawn) return false;
+
+	const FVector2D ScreenPos = InDragDropEvent.GetScreenSpacePosition();
+
+	for (int32 i = 0; i < EquipSlotCount; ++i)
+	{
+		UButton* SlotBtn = (i < EquipSlotButtons.Num()) ? EquipSlotButtons[i] : nullptr;
+		if (!SlotBtn) continue;
+
+		const FGeometry SlotGeo = SlotBtn->GetCachedGeometry();
+		const FVector2D LocalPos = SlotGeo.AbsoluteToLocal(ScreenPos);
+		const FVector2D Size = SlotGeo.GetLocalSize();
+
+		if (LocalPos.X >= 0.f && LocalPos.Y >= 0.f && LocalPos.X <= Size.X && LocalPos.Y <= Size.Y)
+		{
+			// 슬롯 타입 일치 확인
+			if (DragOp->Equipment->Data->Slot != SlotTypeMap[i]) break;
+
+			// 기존 장비 해제
+			UDEquipment* OldEquip = FindEquipInSlot(i);
+			if (OldEquip)
+			{
+				Pawn->Unequip(OldEquip);
+			}
+
+			// 장착
+			Pawn->Equip(DragOp->Equipment);
+
+			RefreshEquipSlots();
+			RefreshUnequippedList();
+			RefreshPawnStats();
+			return true;
+		}
+	}
+
+	return false;
 }
 
 void UPawnManagePageWidget::HandleStatsChanged()
@@ -229,23 +334,22 @@ void UPawnManagePageWidget::RefreshEquipSlots()
 
 void UPawnManagePageWidget::RefreshUnequippedList()
 {
-	if (!ScrollUnequippedList) return;
-	ScrollUnequippedList->ClearChildren();
+	if (!TileUnequippedList) return;
 
 	UItemSubsystem* ItemSub = ItemSubRef.Get();
-	if (!ItemSub || !EquipListItemClass) return;
+	if (!ItemSub)
+	{
+		TileUnequippedList->ClearListItems();
+		return;
+	}
 
+	TArray<UObject*> Items;
 	for (UDEquipment* Equip : ItemSub->GetEquips())
 	{
 		if (!Equip || Equip->IsEquipped()) continue;
-
-		UEquipListItemWidget* Item = CreateWidget<UEquipListItemWidget>(this, EquipListItemClass);
-		if (!Item) continue;
-
-		Item->SetData(Equip);
-		Item->OnItemClicked.AddDynamic(this, &UPawnManagePageWidget::HandleEquipItemSelected);
-		ScrollUnequippedList->AddChild(Item);
+		Items.Add(Equip);
 	}
+	TileUnequippedList->SetListItems(Items);
 }
 
 UDEquipment* UPawnManagePageWidget::FindEquipInSlot(int32 SlotIndex) const

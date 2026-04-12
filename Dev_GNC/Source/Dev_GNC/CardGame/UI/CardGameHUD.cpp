@@ -9,6 +9,9 @@
 #include "Components/CanvasPanelSlot.h"
 #include "Blueprint/WidgetTree.h"
 #include "CardGame/CardGameMode.h"
+#include "CardGame/CardGameCameraPawn.h"
+#include "EnhancedInputSubsystems.h"
+#include "Engine/LocalPlayer.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogCardGameHUD, Log, All);
 
@@ -185,6 +188,7 @@ UPopupWidget* ACardGameHUD::OpenPopup(TSubclassOf<UPopupWidget> PopupClass, cons
 	NewPopup->NativeOnOpened();
 
 	UE_LOG(LogCardGameHUD, Log, TEXT("OpenPopup: %s (Active: %d)"), *PopupClass->GetName(), ActivePopups.Num());
+	UpdateCameraInput();
 	return NewPopup;
 }
 
@@ -198,6 +202,7 @@ void ACardGameHUD::ClosePopup(UPopupWidget* Popup)
 	ActivePopups.Remove(Popup);
 
 	UE_LOG(LogCardGameHUD, Log, TEXT("ClosePopup: %s (Active: %d)"), *Popup->GetClass()->GetName(), ActivePopups.Num());
+	UpdateCameraInput();
 }
 
 void ACardGameHUD::CloseAllPopups()
@@ -214,6 +219,7 @@ void ACardGameHUD::CloseAllPopups()
 	ActivePopups.Empty();
 
 	UE_LOG(LogCardGameHUD, Log, TEXT("CloseAllPopups"));
+	UpdateCameraInput();
 }
 
 // ────────────────────────────────────────────────────────────
@@ -327,4 +333,32 @@ void ACardGameHUD::InitFloatingTextPool()
 	}
 
 	UE_LOG(LogCardGameHUD, Log, TEXT("FloatingText pool created: %d"), FloatingTextPool.Num());
+}
+
+void ACardGameHUD::UpdateCameraInput()
+{
+	APlayerController* PC = GetOwningPlayerController();
+	if (!PC) return;
+
+	ACardGameCameraPawn* CameraPawn = Cast<ACardGameCameraPawn>(PC->GetPawn());
+	if (!CameraPawn) return;
+
+	UInputMappingContext* CameraMC = CameraPawn->GetCameraMappingContext();
+	if (!CameraMC) return;
+
+	UEnhancedInputLocalPlayerSubsystem* InputSubsystem =
+		ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
+	if (!InputSubsystem) return;
+
+	if (ActivePopups.Num() > 0)
+	{
+		InputSubsystem->RemoveMappingContext(CameraMC);
+	}
+	else
+	{
+		if (!InputSubsystem->HasMappingContext(CameraMC))
+		{
+			InputSubsystem->AddMappingContext(CameraMC, 0);
+		}
+	}
 }

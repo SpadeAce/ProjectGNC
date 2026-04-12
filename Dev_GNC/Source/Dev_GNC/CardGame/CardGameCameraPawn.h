@@ -32,6 +32,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "CardGame|Camera")
 	void SetPivot(FVector WorldPos);
 
+	/** 카메라 입력 MappingContext를 반환한다. HUD에서 팝업 시 입력 제어에 사용. */
+	UFUNCTION(BlueprintPure, Category = "CardGame|Camera")
+	UInputMappingContext* GetCameraMappingContext() const { return CameraMappingContext; }
+
 protected:
 	virtual void BeginPlay() override;
 

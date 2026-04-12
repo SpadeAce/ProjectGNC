@@ -10,6 +10,7 @@
 class UButton;
 class UTextBlock;
 class UScrollBox;
+class UTileView;
 class UPanelWidget;
 class UDPawn;
 class UDEquipment;
@@ -30,6 +31,7 @@ public:
 	virtual void NativePreOpen(const FViewParam& Param) override;
 	virtual void NativeOnOpened() override;
 	virtual void NativePreClose() override;
+	virtual bool NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent, UDragDropOperation* InOperation) override;
 
 protected:
 	// ── 닫기 ────────────────────────────────────────
@@ -63,7 +65,7 @@ protected:
 
 	// ── 하단: 미장착 장비 목록 ──────────────────────
 	UPROPERTY(meta = (BindWidget))
-	TObjectPtr<UScrollBox> ScrollUnequippedList;
+	TObjectPtr<UTileView> TileUnequippedList;
 
 	// ── 에디터 설정 ─────────────────────────────────
 	UPROPERTY(EditDefaultsOnly, Category = "CardGame|UI")
@@ -88,7 +90,6 @@ private:
 
 	// 선택 상태
 	TWeakObjectPtr<UDPawn> SelectedPawn;
-	TWeakObjectPtr<UDEquipment> SelectedEquip;
 
 	// ── 핸들러 ──────────────────────────────────────
 	UFUNCTION() void HandleCloseClicked();
@@ -100,8 +101,12 @@ private:
 	void HandleEquipSlotClicked(int32 SlotIndex);
 
 	UFUNCTION() void HandlePawnSelected(UDPawn* InPawn);
-	UFUNCTION() void HandleEquipItemSelected(UDEquipment* InEquip);
+	UFUNCTION() void HandleEquipItemRightClicked(UDEquipment* InEquip);
 	UFUNCTION() void HandleStatsChanged();
+
+	void HandleEntryWidgetGenerated(UUserWidget& Widget);
+	void HandleEntryWidgetReleased(UUserWidget& Widget);
+	void AutoEquipToSlot(UDEquipment* InEquip);
 
 	// ── 갱신 ────────────────────────────────────────
 	void RefreshPawnList();

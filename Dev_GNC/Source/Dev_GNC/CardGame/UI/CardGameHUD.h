@@ -63,6 +63,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "CardGame|UI")
 	void CloseAllPopups();
 
+	/** 활성 팝업이 있는지 반환한다. */
+	UFUNCTION(BlueprintPure, Category = "CardGame|UI")
+	bool HasActivePopups() const { return ActivePopups.Num() > 0; }
+
 	// ── 플로팅 텍스트 ───────────────────────────────
 
 	/** 월드 좌표에 플로팅 텍스트를 표시한다. */
@@ -123,4 +127,5 @@ private:
 
 	void InitRootWidget();
 	void InitFloatingTextPool();
+	void UpdateCameraInput();
 };

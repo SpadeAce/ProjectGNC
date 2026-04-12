@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "Blueprint/IUserObjectListEntry.h"
 #include "EquipListItemWidget.generated.h"
 
 class UDEquipment;
 class UTextBlock;
 class UButton;
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEquipItemClicked, UDEquipment*, Equipment);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEquipItemRightClicked, UDEquipment*, Equipment);
 
 /**
  * UEquipListItemWidget
@@ -18,7 +19,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEquipItemClicked, UDEquipment*, E
  * Unity PawnManageEquipItem 대응.
  */
 UCLASS(Abstract, BlueprintType)
-class UEquipListItemWidget : public UUserWidget
+class UEquipListItemWidget : public UUserWidget, public IUserObjectListEntry
 {
 	GENERATED_BODY()
 
@@ -30,7 +31,7 @@ public:
 	UDEquipment* GetEquip() const { return Equip; }
 
 	UPROPERTY(BlueprintAssignable, Category = "CardGame|UI")
-	FOnEquipItemClicked OnItemClicked;
+	FOnEquipItemRightClicked OnItemRightClicked;
 
 protected:
 	UPROPERTY(meta = (BindWidget))
@@ -42,13 +43,17 @@ protected:
 	UPROPERTY(meta = (BindWidget))
 	TObjectPtr<UButton> ButtonSelect;
 
-	virtual void NativeConstruct() override;
-	virtual void NativeDestruct() override;
+	virtual void NativeOnListItemObjectSet(UObject* ListItemObject) override;
+	virtual FReply NativeOnMouseButtonDown(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent) override;
+	virtual FReply NativeOnMouseButtonUp(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent) override;
+	virtual void NativeOnDragDetected(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent, UDragDropOperation*& OutOperation) override;
 
 private:
 	UPROPERTY()
 	TObjectPtr<UDEquipment> Equip;
 
+	bool bRightMouseDown = false;
+
 	UFUNCTION()
-	void HandleSelectClicked();
+	void HandleDragCancelled(UDragDropOperation* Operation);
 };
